@@ -1,0 +1,2645 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title></title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+			
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent standard default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+        <a href="#!" class="brand-logo black"><img src="http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'></span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Sep 23, 2022 11:59:40 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@search_bydescription</a></li>
+					<li><a href='#'>@pgm_records</a></li>
+					<li><a href='#'>@home_btn</a></li>
+					<li><a href='#'>@home_heading</a></li>
+					<li><a href='#'>@verify_pgmpage_deletebtn</a></li>
+					<li><a href='#'>@verify_homepage_heading</a></li>
+					<li><a href='#'>@pgm_deletebtn</a></li>
+					<li><a href='#'>@login</a></li>
+					<li><a href='#'>@search_bystatus</a></li>
+					<li><a href='#'>@verify_pgmpage_footertxt</a></li>
+					<li><a href='#'>@assign_heading</a></li>
+					<li><a href='#'>@assign_search</a></li>
+					<li><a href='#'>@home_title</a></li>
+					<li><a href='#'>@verify_btn_user</a></li>
+					<li><a href='#'>@pgm_footer</a></li>
+					<li><a href='#'>@verify_btn_attendance</a></li>
+					<li><a href='#'>@verify_pgmpage_footer</a></li>
+					<li><a href='#'>@verify_btn_assignment</a></li>
+					<li><a href='#'>@assign_footer</a></li>
+					<li><a href='#'>@verify_pgmpage_heading</a></li>
+					<li><a href='#'>@search_byname</a></li>
+					<li><a href='#'>@pgm_search</a></li>
+					<li><a href='#'>@verify_btn_program</a></li>
+					<li><a href='#'>@verify_search</a></li>
+					<li><a href='#'>@verify_pgmpage_records</a></li>
+					<li><a href='#'>@pgm_heading</a></li>
+					<li><a href='#'>@verify_btn_batch</a></li>
+					<li><a href='#'>@verify_btn_logout</a></li>
+					<li><a href='#'>@verify_homepage_title</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Features</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>12</span> features passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Scenarios</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='child-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>26</span> scenarios passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Steps</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='grandchild-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>78</span> steps passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Login Page</span>
+						<span class='test-time'>Sep 23, 2022 11:59:41 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='2' status='pass'>
+
+	<span class='duration right label'>00 00 03.153</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validating the url</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@login</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='3' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.LoginSteps.user_is_on_the_browser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on the browser</div>
+
+
+		</li>
+		<li test-id='4' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.LoginSteps.user_opens_the_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User opens the LMS website</div>
+
+
+		</li>
+		<li test-id='5' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.LoginSteps.user_should_see_the_login_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see the Login Page</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='6' status='pass'>
+
+	<span class='duration right label'>00 00 00.448</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validating Login functionality with invalid password field</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@login</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='7' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.LoginSteps.user_is_on_the_login_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on the Login Page</div>
+
+
+		</li>
+		<li test-id='8' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.LoginSteps.user_clicks_the_login_button_after_entering_invalid_password(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks the Login Button after entering invalid password 'test'</div>
+
+
+		</li>
+		<li test-id='9' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.LoginSteps.user_should_receive_the_message_invalid_username_and_password_please_try_again(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should receive the message 'Invalid username and password Please try again'</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='10' status='pass'>
+
+	<span class='duration right label'>00 00 00.343</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validating Login functionality with invalid username field</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@login</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='11' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.LoginSteps.user_is_on_the_login_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on the Login Page</div>
+
+
+		</li>
+		<li test-id='12' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.LoginSteps.user_clicks_the_login_button_after_entering_invalid_username(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks the Login Button after entering invalid username 'testing'</div>
+
+
+		</li>
+		<li test-id='13' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.LoginSteps.user_should_receive_the_message_invalid_username_and_password_please_try_again(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should receive the message 'Invalid username and password Please try again'</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='14' status='pass'>
+
+	<span class='duration right label'>00 00 00.313</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validating Login functionality with valid username and password</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@login</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='15' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.LoginSteps.user_is_on_the_login_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on the Login Page</div>
+
+
+		</li>
+		<li test-id='16' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.LoginSteps.user_clicks_the_login_button_after_entering_valid_username_and_password(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks the Login Button after entering valid 'LSM' and 'LMS'</div>
+
+
+		</li>
+		<li test-id='17' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.LoginSteps.user_should_see_the_lms_home_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see the LMS HomePage</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>Feature to Validate MenuBarButtons of LMS UI HomePage</span>
+						<span class='test-time'>Sep 23, 2022 11:59:45 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='19' status='pass'>
+
+	<span class='duration right label'>00 00 00.046</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Visibility of ProgramButton in HomePage</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@home_btn</span>
+				<span class='category label'>@verify_btn_program</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='20' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_opens_browser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens browser</div>
+
+
+		</li>
+		<li test-id='21' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_landed_on_the_home_page_after_logging_into_the_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User landed on the Home page after logging into the LMS website</div>
+
+
+		</li>
+		<li test-id='22' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Buttons_Steps.user_should_see_a_button_with_text_on_the_menu_bar(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see a button with text "Program" on the menu bar</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='23' status='pass'>
+
+	<span class='duration right label'>00 00 00.035</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Visibility of BatchButton in HomePage</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@home_btn</span>
+				<span class='category label'>@verify_btn_batch</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='24' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_opens_browser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens browser</div>
+
+
+		</li>
+		<li test-id='25' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_landed_on_the_home_page_after_logging_into_the_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User landed on the Home page after logging into the LMS website</div>
+
+
+		</li>
+		<li test-id='26' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Buttons_Steps.user_should_see_a_button_with_text_on_the_menu_bar(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see a button with text "Batch" on the menu bar</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='27' status='pass'>
+
+	<span class='duration right label'>00 00 00.036</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Visibility of UserButton in HomePage</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@home_btn</span>
+				<span class='category label'>@verify_btn_user</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='28' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_opens_browser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens browser</div>
+
+
+		</li>
+		<li test-id='29' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_landed_on_the_home_page_after_logging_into_the_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User landed on the Home page after logging into the LMS website</div>
+
+
+		</li>
+		<li test-id='30' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Buttons_Steps.user_should_see_a_button_with_text_on_the_menu_bar(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see a button with text "User" on the menu bar</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='31' status='pass'>
+
+	<span class='duration right label'>00 00 00.024</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Visibility of AssignmentButton in HomePage</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@verify_btn_assignment</span>
+				<span class='category label'>@home_btn</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='32' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_opens_browser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens browser</div>
+
+
+		</li>
+		<li test-id='33' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_landed_on_the_home_page_after_logging_into_the_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User landed on the Home page after logging into the LMS website</div>
+
+
+		</li>
+		<li test-id='34' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Buttons_Steps.user_should_see_a_button_with_text_on_the_menu_bar(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see a button with text "Assignment" on the menu bar</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='35' status='pass'>
+
+	<span class='duration right label'>00 00 00.027</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Visibility of AttendanceButton in HomePage</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@verify_btn_attendance</span>
+				<span class='category label'>@home_btn</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='36' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_opens_browser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens browser</div>
+
+
+		</li>
+		<li test-id='37' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_landed_on_the_home_page_after_logging_into_the_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User landed on the Home page after logging into the LMS website</div>
+
+
+		</li>
+		<li test-id='38' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Buttons_Steps.user_should_see_a_button_with_text_on_the_menu_bar(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see a button with text "Attendance" on the menu bar</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='39' status='pass'>
+
+	<span class='duration right label'>00 00 00.032</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Visibility of LogoutButton in HomePage</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@home_btn</span>
+				<span class='category label'>@verify_btn_logout</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='40' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_opens_browser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens browser</div>
+
+
+		</li>
+		<li test-id='41' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_landed_on_the_home_page_after_logging_into_the_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User landed on the Home page after logging into the LMS website</div>
+
+
+		</li>
+		<li test-id='42' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Buttons_Steps.user_should_see_a_button_with_text_on_the_menu_bar(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see a button with text "Logout" on the menu bar</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='43'>
+					<div class='test-heading'>
+						<span class='test-name'>Feature to Validate Heading of LMS UI HomePage</span>
+						<span class='test-time'>Sep 23, 2022 11:59:45 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='44' status='pass'>
+
+	<span class='duration right label'>00 00 00.023</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify  the heading of the Home page</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@verify_homepage_heading</span>
+				<span class='category label'>@home_heading</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='45' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_opens_browser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens browser</div>
+
+
+		</li>
+		<li test-id='46' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_landed_on_the_home_page_after_logging_into_the_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User landed on the Home page after logging into the LMS website</div>
+
+
+		</li>
+		<li test-id='47' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Heading_Steps.user_should_see_heading_with_text_on_the_home_page(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see heading with text "LMS - Learning Management System" on the Home page</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='48'>
+					<div class='test-heading'>
+						<span class='test-name'>Feature to Validate Title of LMS UI HomePage</span>
+						<span class='test-time'>Sep 23, 2022 11:59:45 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='49' status='pass'>
+
+	<span class='duration right label'>00 00 00.006</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify  the title of the Home page</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@home_title</span>
+				<span class='category label'>@verify_homepage_title</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='50' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_opens_browser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens browser</div>
+
+
+		</li>
+		<li test-id='51' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.user_landed_on_the_home_page_after_logging_into_the_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User landed on the Home page after logging into the LMS website</div>
+
+
+		</li>
+		<li test-id='52' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Home_Title_Steps.verify_that_title_of_the_page_is(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then verify that title of the page is "LMS"</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='53'>
+					<div class='test-heading'>
+						<span class='test-name'>Feature to Validate state of DeleteButton of LMS UI Program Page</span>
+						<span class='test-time'>Sep 23, 2022 11:59:45 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='54' status='pass'>
+
+	<span class='duration right label'>00 00 00.110</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validating the default state of Delete button</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@verify_pgmpage_deletebtn</span>
+				<span class='category label'>@pgm_deletebtn</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='55' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_is_logged_on_to_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is logged on to LMS website</div>
+
+
+		</li>
+		<li test-id='56' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Heading_Steps.user_is_on_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User is on Program page</div>
+
+
+		</li>
+		<li test-id='57' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_DeleteBtn_Steps.user_should_see_the_delete_button_on_the_top_left_hand_side_as_disabled_in_programpage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see the Delete button on the top left hand side as Disabled in ProgramPage</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='58'>
+					<div class='test-heading'>
+						<span class='test-name'>Feature to Validate Footer of LMS UI Program Page</span>
+						<span class='test-time'>Sep 23, 2022 11:59:46 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='59' status='pass'>
+
+	<span class='duration right label'>00 00 00.085</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate the text below the table</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@pgm_footer</span>
+				<span class='category label'>@verify_pgmpage_footertxt</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='60' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_is_logged_on_to_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is logged on to LMS website</div>
+
+
+		</li>
+		<li test-id='61' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Heading_Steps.user_is_on_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User is on Program page</div>
+
+
+		</li>
+		<li test-id='62' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Footer_Steps.user_should_see_the_text_as_below_the_table_in_program_page(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see the text as "Showing {x} to {y} of {z} entries" below the table in ProgramPage.</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='63' status='pass'>
+
+	<span class='duration right label'>00 00 00.847</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate the footer</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@verify_pgmpage_footer</span>
+				<span class='category label'>@pgm_footer</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='64' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_is_logged_on_to_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is logged on to LMS website</div>
+
+
+		</li>
+		<li test-id='65' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Heading_Steps.user_is_on_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User is on Program page</div>
+
+
+		</li>
+		<li test-id='66' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Footer_Steps.user_should_see_the_footer_as_in_program_page(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see the footer as "In total there are {z}  programs" in ProgramPage.</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='67'>
+					<div class='test-heading'>
+						<span class='test-name'>Feature to Validate Heading of LMS UI Program Page</span>
+						<span class='test-time'>Sep 23, 2022 11:59:46 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='68' status='pass'>
+
+	<span class='duration right label'>00 00 00.073</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify  the heading of the Program page</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@verify_pgmpage_heading</span>
+				<span class='category label'>@pgm_heading</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='69' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Heading_Steps.user_is_logged_into_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is logged into LMS website</div>
+
+
+		</li>
+		<li test-id='70' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Heading_Steps.user_is_on_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User is on Program page</div>
+
+
+		</li>
+		<li test-id='71' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Heading_Steps.user_should_see_a_heading_with_text_on_the_program_page(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see a heading with text "Manage Program" on the Program page</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='72'>
+					<div class='test-heading'>
+						<span class='test-name'>Feature to Validate No.of.Records in LMS UI Program Page</span>
+						<span class='test-time'>Sep 23, 2022 11:59:47 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='73' status='pass'>
+
+	<span class='duration right label'>00 00 00.106</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate that number of records displayed</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@verify_pgmpage_records</span>
+				<span class='category label'>@pgm_records</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='74' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_is_logged_on_to_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is logged on to LMS website</div>
+
+
+		</li>
+		<li test-id='75' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Heading_Steps.user_is_on_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User is on Program page</div>
+
+
+		</li>
+		<li test-id='76' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_NoofRecords_Steps.verify_that_number_of_records_displayed_on_the_programpage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Verify that number of records  displayed on the programpage</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='77'>
+					<div class='test-heading'>
+						<span class='test-name'>Feature to Validate SearchProgram of LMS UI Program Page</span>
+						<span class='test-time'>Sep 23, 2022 11:59:47 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='78' status='pass'>
+
+	<span class='duration right label'>00 00 00.087</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate Search Feature</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@verify_search</span>
+				<span class='category label'>@pgm_search</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='79' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_is_logged_on_to_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is logged on to LMS website</div>
+
+
+		</li>
+		<li test-id='80' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Heading_Steps.user_is_on_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User is on Program page</div>
+
+
+		</li>
+		<li test-id='81' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Search_Steps.text_box_used_for_search_has_text_as_in_program_page(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Text box used for search has text as 'Search...' in ProgramPage</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='82' status='pass'>
+
+	<span class='duration right label'>00 00 02.494</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Search Program By Name</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@pgm_search</span>
+				<span class='category label'>@search_byname</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='83' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Heading_Steps.user_is_on_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on Program page</div>
+
+
+		</li>
+		<li test-id='84' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Search_Steps.user_enters_name_phrase_into_search_box_from_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters <name phrase> into search box from ProgramPage.</div>
+
+
+		</li>
+		<li test-id='85' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Search_Steps.entries_for_name_phrase_are_shown_in_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Entries for <name phrase> are shown in ProgramPage.</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='86' status='pass'>
+
+	<span class='duration right label'>00 00 02.538</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Search Program By Description</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@search_bydescription</span>
+				<span class='category label'>@pgm_search</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='87' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Heading_Steps.user_is_on_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on Program page</div>
+
+
+		</li>
+		<li test-id='88' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Search_Steps.user_enters_description_phrase_into_search_box_from_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters <description phrase> into search box from ProgramPage.</div>
+
+
+		</li>
+		<li test-id='89' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Search_Steps.entries_for_description_phrase_are_shown_in_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Entries for <description phrase> are shown in ProgramPage.</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='90' status='pass'>
+
+	<span class='duration right label'>00 00 06.255</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Search Program By Status</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@search_bystatus</span>
+				<span class='category label'>@pgm_search</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='91' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Heading_Steps.user_is_on_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on Program page</div>
+
+
+		</li>
+		<li test-id='92' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Search_Steps.user_enters_status_phrase_into_search_box_in_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters <status phrase> into search box in ProgramPage.</div>
+
+
+		</li>
+		<li test-id='93' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.Program_Search_Steps.entries_for_status_phrase_are_shown_in_program_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Entries for <status phrase> are shown in ProgramPage.</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='94'>
+					<div class='test-heading'>
+						<span class='test-name'>Assignment Footer</span>
+						<span class='test-time'>Sep 23, 2022 11:59:58 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='95' status='pass'>
+
+	<span class='duration right label'>00 00 02.224</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate the text below the table</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@assign_footer</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='96' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_is_logged_on_to_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is logged on to LMS website</div>
+
+
+		</li>
+		<li test-id='97' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_is_on_manage_assignment_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User is on Manage Assignment page</div>
+
+
+		</li>
+		<li test-id='98' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignementfooterSteps.below_the_table(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see the text as 'Showing 1 to 3 of 3 entries' below the table on Assignment Page</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='99' status='pass'>
+
+	<span class='duration right label'>00 00 00.090</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate the footer</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@assign_footer</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='100' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_is_logged_on_to_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is logged on to LMS website</div>
+
+
+		</li>
+		<li test-id='101' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_is_on_manage_assignment_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User is on Manage Assignment page</div>
+
+
+		</li>
+		<li test-id='102' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignementfooterSteps.user_should_see_the_footer_as(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see the footer as 'In total there are 3 assignments.' on Assignment Page</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='103'>
+					<div class='test-heading'>
+						<span class='test-name'>Assignment Heading</span>
+						<span class='test-time'>Sep 24, 2022 12:00:00 AM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='104' status='pass'>
+
+	<span class='duration right label'>00 00 00.097</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate the heading</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@assign_heading</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='105' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_is_logged_on_to_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is logged on to LMS website</div>
+
+
+		</li>
+		<li test-id='106' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_is_on_manage_assignment_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User is on Manage Assignment page</div>
+
+
+		</li>
+		<li test-id='107' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_should_see_a_heading_with_text_on_the_assignment_page(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see a heading with text 'Manage Assignment' on the Assignment page</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='108'>
+					<div class='test-heading'>
+						<span class='test-name'>Search Assignment</span>
+						<span class='test-time'>Sep 24, 2022 12:00:01 AM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='109' status='pass'>
+
+	<span class='duration right label'>00 00 00.112</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate Search Feature</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@assign_search</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='110' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_is_logged_on_to_lms_website())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is logged on to LMS website</div>
+
+
+		</li>
+		<li test-id='111' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_headingSteps.user_is_on_manage_assignment_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User is on Manage Assignment page</div>
+
+
+		</li>
+		<li test-id='112' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_searchSteps.text_box_used_for_search_has_text_as(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Text box used for search has text as 'Search...'</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='113' status='pass'>
+
+	<span class='duration right label'>00 00 02.316</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Search Assignment By Name</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@assign_search</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='114' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_searchSteps.user_is_on_manage_assignment_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on  Manage Assignment page</div>
+
+
+		</li>
+		<li test-id='115' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_searchSteps.user_clicks_on_search_with_name_phrase_into_search_box())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks on search with <name phrase> into search box.</div>
+
+
+		</li>
+		<li test-id='116' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdefinitions.assignment_searchSteps.entries_for_name_phrase_are_shown())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Entries for <name phrase> are shown.</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><div id='category-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='category-collection' class='category-collection'>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@search_bydescription</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:49 PM</td>
+										<td class='linked' test-id='86'>Search Program By Description</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@pgm_records</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:47 PM</td>
+										<td class='linked' test-id='73'>Validate that number of records displayed</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@home_btn</span>
+						<span class='category-status right'>
+						<span class='label pass'>6</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 6</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='19'>Verify Visibility of ProgramButton in HomePage</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='23'>Verify Visibility of BatchButton in HomePage</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='27'>Verify Visibility of UserButton in HomePage</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='31'>Verify Visibility of AssignmentButton in HomePage</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='35'>Verify Visibility of AttendanceButton in HomePage</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='39'>Verify Visibility of LogoutButton in HomePage</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@home_heading</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='44'>Verify  the heading of the Home page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_pgmpage_deletebtn</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='54'>Validating the default state of Delete button</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_homepage_heading</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='44'>Verify  the heading of the Home page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@pgm_deletebtn</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='54'>Validating the default state of Delete button</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@login</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:41 PM</td>
+										<td class='linked' test-id='2'>Validating the url</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 23, 2022 11:59:44 PM</td>
+										<td class='linked' test-id='6'>Validating Login functionality with invalid password field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 23, 2022 11:59:44 PM</td>
+										<td class='linked' test-id='10'>Validating Login functionality with invalid username field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='14'>Validating Login functionality with valid username and password</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@search_bystatus</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:52 PM</td>
+										<td class='linked' test-id='90'>Search Program By Status</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_pgmpage_footertxt</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:46 PM</td>
+										<td class='linked' test-id='59'>Validate the text below the table</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@assign_heading</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 24, 2022 12:00:00 AM</td>
+										<td class='linked' test-id='104'>Validate the heading</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@assign_search</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 24, 2022 12:00:01 AM</td>
+										<td class='linked' test-id='109'>Validate Search Feature</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 24, 2022 12:00:01 AM</td>
+										<td class='linked' test-id='113'>Search Assignment By Name</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@home_title</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='49'>Verify  the title of the Home page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_btn_user</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='27'>Verify Visibility of UserButton in HomePage</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@pgm_footer</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:46 PM</td>
+										<td class='linked' test-id='59'>Validate the text below the table</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 23, 2022 11:59:46 PM</td>
+										<td class='linked' test-id='63'>Validate the footer</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_btn_attendance</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='35'>Verify Visibility of AttendanceButton in HomePage</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_pgmpage_footer</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:46 PM</td>
+										<td class='linked' test-id='63'>Validate the footer</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_btn_assignment</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='31'>Verify Visibility of AssignmentButton in HomePage</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@assign_footer</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:58 PM</td>
+										<td class='linked' test-id='95'>Validate the text below the table</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 24, 2022 12:00:00 AM</td>
+										<td class='linked' test-id='99'>Validate the footer</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_pgmpage_heading</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:46 PM</td>
+										<td class='linked' test-id='68'>Verify  the heading of the Program page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@search_byname</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:47 PM</td>
+										<td class='linked' test-id='82'>Search Program By Name</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@pgm_search</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:47 PM</td>
+										<td class='linked' test-id='78'>Validate Search Feature</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 23, 2022 11:59:47 PM</td>
+										<td class='linked' test-id='82'>Search Program By Name</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 23, 2022 11:59:49 PM</td>
+										<td class='linked' test-id='86'>Search Program By Description</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 23, 2022 11:59:52 PM</td>
+										<td class='linked' test-id='90'>Search Program By Status</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_btn_program</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='19'>Verify Visibility of ProgramButton in HomePage</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_search</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:47 PM</td>
+										<td class='linked' test-id='78'>Validate Search Feature</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_pgmpage_records</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:47 PM</td>
+										<td class='linked' test-id='73'>Validate that number of records displayed</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@pgm_heading</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:46 PM</td>
+										<td class='linked' test-id='68'>Verify  the heading of the Program page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_btn_batch</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='23'>Verify Visibility of BatchButton in HomePage</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_btn_logout</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='39'>Verify Visibility of LogoutButton in HomePage</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@verify_homepage_title</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 23, 2022 11:59:45 PM</td>
+										<td class='linked' test-id='49'>Verify  the title of the Home page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>12</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>26</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>78</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Sep 23, 2022 11:59:40 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Sep 24, 2022 12:00:03 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>00 00 22.765</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Skipped</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>@search_bydescription</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@pgm_records</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@home_btn</td>
+							<td>6</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@home_heading</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_pgmpage_deletebtn</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_homepage_heading</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@pgm_deletebtn</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@login</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@search_bystatus</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_pgmpage_footertxt</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@assign_heading</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@assign_search</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@home_title</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_btn_user</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@pgm_footer</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_btn_attendance</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_pgmpage_footer</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_btn_assignment</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@assign_footer</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_pgmpage_heading</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@search_byname</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@pgm_search</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_btn_program</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_search</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_pgmpage_records</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@pgm_heading</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_btn_batch</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_btn_logout</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@verify_homepage_title</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 12,
+				passParent: 12,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				childCount: 26,
+				passChild: 26,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				grandChildCount: 78,
+				passGrandChild: 78,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+			};
+			</script>
+		
+		<script>
+			var timeline = {
+			        "Login Page":4.296,"Feature to Validate MenuBarButtons of LMS UI HomePage":0.228,"Feature to Validate Heading of LMS UI HomePage":0.023,"Feature to Validate Title of LMS UI HomePage":0.006,"Feature to Validate state of DeleteButton of LMS UI Program Page":0.111,"Feature to Validate Footer of LMS UI Program Page":0.936,"Feature to Validate Heading of LMS UI Program Page":0.073,"Feature to Validate No.of.Records in LMS UI Program Page":0.106,"Feature to Validate SearchProgram of LMS UI Program Page":11.399,"Assignment Footer":2.322,"Assignment Heading":0.097,"Search Assignment":2.437
+			};
+		</script>
+		
+		  <script src='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
+		
+		
+		<script type='text/javascript'>
+				
+		</script> 
+
+	</body>
+</html>
