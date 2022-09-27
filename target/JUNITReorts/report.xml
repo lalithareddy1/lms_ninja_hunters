@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="88" time="156.569">
+<testcase classname="Login Page" name="Validating the url" time="3.444">
+<system-out><![CDATA[Given User is on the browser................................................passed
+When User opens the LMS website.............................................passed
+Then User should see the Login Page.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Page" name="Validating Login functionality with invalid password field" time="0.433">
+<system-out><![CDATA[Given User is on the Login Page.............................................passed
+When User clicks the Login Button after entering invalid password 'test'....passed
+Then User should receive the message 'Invalid username and password Please try again'.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Page" name="Validating Login functionality with invalid username field" time="0.359">
+<system-out><![CDATA[Given User is on the Login Page.............................................passed
+When User clicks the Login Button after entering invalid username 'testing'.passed
+Then User should receive the message 'Invalid username and password Please try again'.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Page" name="Validating Login functionality with valid username and password" time="0.259">
+<system-out><![CDATA[Given User is on the Login Page.............................................passed
+When User clicks the Login Button after entering valid 'LSM' and 'LMS'......passed
+Then User should see the LMS HomePage.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate MenuBarButtons of LMS UI HomePage" name="Verify Visibility of ProgramButton in HomePage" time="0.039">
+<system-out><![CDATA[Given User opens browser....................................................passed
+When User landed on the Home page after logging into the LMS website........passed
+Then User should see a button with text "Program" on the menu bar...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate MenuBarButtons of LMS UI HomePage" name="Verify Visibility of BatchButton in HomePage" time="0.043">
+<system-out><![CDATA[Given User opens browser....................................................passed
+When User landed on the Home page after logging into the LMS website........passed
+Then User should see a button with text "Batch" on the menu bar.............passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate MenuBarButtons of LMS UI HomePage" name="Verify Visibility of UserButton in HomePage" time="0.03">
+<system-out><![CDATA[Given User opens browser....................................................passed
+When User landed on the Home page after logging into the LMS website........passed
+Then User should see a button with text "User" on the menu bar..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate MenuBarButtons of LMS UI HomePage" name="Verify Visibility of AssignmentButton in HomePage" time="0.035">
+<system-out><![CDATA[Given User opens browser....................................................passed
+When User landed on the Home page after logging into the LMS website........passed
+Then User should see a button with text "Assignment" on the menu bar........passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate MenuBarButtons of LMS UI HomePage" name="Verify Visibility of AttendanceButton in HomePage" time="0.025">
+<system-out><![CDATA[Given User opens browser....................................................passed
+When User landed on the Home page after logging into the LMS website........passed
+Then User should see a button with text "Attendance" on the menu bar........passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate MenuBarButtons of LMS UI HomePage" name="Verify Visibility of LogoutButton in HomePage" time="0.029">
+<system-out><![CDATA[Given User opens browser....................................................passed
+When User landed on the Home page after logging into the LMS website........passed
+Then User should see a button with text "Logout" on the menu bar............passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Heading of LMS UI HomePage" name="Verify  the heading of the Home page" time="0.025">
+<system-out><![CDATA[Given User opens browser....................................................passed
+When User landed on the Home page after logging into the LMS website........passed
+Then User should see heading with text "LMS - Learning Management System" on the Home page.passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Title of LMS UI HomePage" name="Verify  the title of the Home page" time="0.007">
+<system-out><![CDATA[Given User opens browser....................................................passed
+When User landed on the Home page after logging into the LMS website........passed
+Then verify that title of the page is "LMS".................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Heading of LMS UI Program Page" name="Verify  the heading of the Program page" time="0.08">
+<system-out><![CDATA[Given User is logged into LMS website.......................................passed
+When User is on Program page................................................passed
+Then User should see a heading with text "Manage Program" on the Program page.passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Footer of LMS UI Program Page" name="Validate the text below the table" time="0.081">
+<system-out><![CDATA[Given User is logged on to LMS website......................................passed
+When User is on Program page................................................passed
+Then User should see the text as "Showing {x} to {y} of {z} entries" below the table in ProgramPage..passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Footer of LMS UI Program Page" name="Validate the footer" time="0.66">
+<system-out><![CDATA[Given User is logged on to LMS website......................................passed
+When User is on Program page................................................passed
+Then User should see the footer as "In total there are {z}  programs" in ProgramPage..passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate state of DeleteButton of LMS UI Program Page" name="Validating the default state of Delete button" time="0.09">
+<system-out><![CDATA[Given User is logged on to LMS website......................................passed
+When User is on Program page................................................passed
+Then User should see the Delete button on the top left hand side as Disabled in ProgramPage.passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate No.of.Records in LMS UI Program Page" name="Validate that number of records displayed" time="0.09">
+<system-out><![CDATA[Given User is logged on to LMS website......................................passed
+When User is on Program page................................................passed
+Then Verify that number of records  displayed on the programpage............passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate SearchProgram of LMS UI Program Page" name="Validate Search Feature" time="0.084">
+<system-out><![CDATA[Given User is logged on to LMS website......................................passed
+When User is on Program page................................................passed
+Then Text box used for search has text as 'Search...' in ProgramPage........passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate SearchProgram of LMS UI Program Page" name="Search Program By Name" time="2.498">
+<system-out><![CDATA[Given User is on Program page...............................................passed
+When User enters <name phrase> into search box from ProgramPage.............passed
+Then Entries for <name phrase> are shown in ProgramPage.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate SearchProgram of LMS UI Program Page" name="Search Program By Description" time="2.558">
+<system-out><![CDATA[Given User is on Program page...............................................passed
+When User enters <description phrase> into search box from ProgramPage......passed
+Then Entries for <description phrase> are shown in ProgramPage..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate SearchProgram of LMS UI Program Page" name="Search Program By Status" time="5.19">
+<system-out><![CDATA[Given User is on Program page...............................................passed
+When User enters <status phrase> into search box in ProgramPage.............passed
+Then Entries for <status phrase> are shown in ProgramPage...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Edit Program of LMS UI Program Page" name="Select Program" time="2.253">
+<system-out><![CDATA[Given User is on Program page...............................................passed
+When User selects Program using checkbox....................................passed
+Then Program gets selected..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Edit Program of LMS UI Program Page" name="Edit Feature" time="0.245">
+<system-out><![CDATA[Given User is on Program page...............................................passed
+When User clicks on <Edit> button in ProgramPage............................passed
+Then User is on Program Details form........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Edit Program of LMS UI Program Page" name="Edit Program Name" time="2.347">
+<system-out><![CDATA[Given User is on Program Details form.......................................passed
+When User edits Name and selects the Save button in ProgramPage.............passed
+Then User can see updated Name in ProgramPage...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Edit Program of LMS UI Program Page" name="Edit Program Description" time="2.4">
+<system-out><![CDATA[Given User is on Program Details form.......................................passed
+When User edits Description and selects the Save button in ProgramPage......passed
+Then User can see updated Description in ProgramPage........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Edit Program of LMS UI Program Page" name="Change Program Status" time="2.35">
+<system-out><![CDATA[Given User is on Program Details form.......................................passed
+When User changes status and selects the Save button in ProgramPage.........passed
+Then User can see updated status in ProgramPage.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Edit Program of LMS UI Program Page" name="Click Save" time="0.301">
+<system-out><![CDATA[Given User is on Program Details form.......................................passed
+When User clicks <Save> button in ProgramPage...............................passed
+Then User can see 'Successful Program Updated' message in ProgramPage.......passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Delete Functionality of LMS UI Program Page" name="Select Program" time="2.334">
+<system-out><![CDATA[Given User is on Program page...............................................passed
+When User selects Program using checkbox....................................passed
+Then Program gets selected..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Delete Functionality of LMS UI Program Page" name="Delete Feature" time="0.212">
+<system-out><![CDATA[Given User is on Program page...............................................passed
+When User clicks on <Delete> button.........................................passed
+Then User lands on Confirm Deletion form....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Delete Functionality of LMS UI Program Page" name="Click Yes" time="0.163">
+<system-out><![CDATA[Given User is on Confirm Deletion form......................................passed
+When User clicks <Yes> button...............................................passed
+Then User can see 'Successful Program Deleted' message......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Delete Functionality of LMS UI Program Page" name="Click No" time="2.252">
+<system-out><![CDATA[Given User clicks on <Delete> button........................................passed
+When User clicks <No> button................................................passed
+Then User can see Confirm Deletion form disappears..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Add Program Functionality of LMS UI Program Page" name="Validate Add New Program" time="0.414">
+<system-out><![CDATA[Given User is on Program page...............................................passed
+When User clicks <A New Program> button.....................................passed
+Then User is on Program Details form........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Add Program Functionality of LMS UI Program Page" name="Empty form submission" time="0.382">
+<system-out><![CDATA[Given User is on Program Details form.......................................passed
+When User clicks <Save> button without entering data in Programdetailsform..passed
+Then User gets message 'Name is required.' in PgmPage.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Add Program Functionality of LMS UI Program Page" name="Enter Program Name" time="2.35">
+<system-out><![CDATA[Given User is on Program Details form.......................................passed
+When User enters <Name> in text box in Programdetailsform...................passed
+Then User can see name entered in PgmPage...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Add Program Functionality of LMS UI Program Page" name="Enter Program Description" time="2.295">
+<system-out><![CDATA[Given User is on Program Details form.......................................passed
+When User enters <Description> in text box in Programdetailsform............passed
+Then User can see Description entered in PgmPage............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Add Program Functionality of LMS UI Program Page" name="Select Status" time="2.26">
+<system-out><![CDATA[Given User is on Program Details form.......................................passed
+When User selects <Status> using radiobutton in Programdetailsform..........passed
+Then User can see status selected in PgmPage................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Add Program Functionality of LMS UI Program Page" name="Click Save" time="0.241">
+<system-out><![CDATA[Given User is on Program Details form.......................................passed
+When User clicks <Save> button in Programdetailsform........................passed
+Then User gets message 'Successful Program created' in PgmPage..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page" name="Select multiple Program" time="10.945">
+<system-out><![CDATA[Given User is on Program page...............................................passed
+When User selects more than one Program using checkbox......................passed
+Then multiple Program gets selected.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page" name="Delete Feature" time="2.271">
+<system-out><![CDATA[Given User is on Program page...............................................passed
+When User clicks on <Delete> button on top left corner......................passed
+Then User lands on Confirm Deletion form....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page" name="Click Yes" time="0.15">
+<system-out><![CDATA[Given User is on Confirm Deletion form......................................passed
+When User clicks <Yes> button...............................................passed
+Then User can see 'Successful Programs Deleted' message.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page" name="Click No" time="14.99">
+<system-out><![CDATA[Given User is on Program page...............................................passed
+When User selects more than one Program using checkbox......................passed
+When User clicks on <Delete> button on top left corner......................passed
+When User clicks <No> button................................................passed
+Then User can see Confirm Deletion form disappears..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate pagination functionality of LMS UI Program Page" name="Verify previous link on the first page" time="0.097">
+<system-out><![CDATA[Given User is logged on to LMS website......................................passed
+When User is on first page of Manage Program................................passed
+Then Verify that previous link is disabled..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate pagination functionality of LMS UI Program Page" name="Verify next link" time="0.45">
+<system-out><![CDATA[Given User is on first page.................................................passed
+When User clicks navigate > button..........................................passed
+Then User is on page number '2'.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate pagination functionality of LMS UI Program Page" name="Verify previous link on the first page" time="0.677">
+<system-out><![CDATA[Given User is on page number '2'............................................passed
+When User clicks navigate < button..........................................passed
+Then User is on page number '1'.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate pagination functionality of LMS UI Program Page" name="Verify next link on the last page" time="0.153">
+<system-out><![CDATA[Given User is logged on to LMS website......................................passed
+When User is on last page of Manage Program.................................passed
+Then Verify that next link is disabled......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate the Results are displayed in ascending order" name="Verify that the results are displayed in Ascending order of Program name" time="3.357">
+<system-out><![CDATA[Given User is on first page of Manage Program...............................passed
+When User clicks on the Ascending arrow (down ) near to the Program name....passed
+Then User can see the results in Ascending order of Program name............passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate the Results are displayed in ascending order" name="Verify that the results are displayed in Ascending order of Program Description" time="3.293">
+<system-out><![CDATA[Given User is on first page of Manage Program...............................passed
+When User clicks on the Ascending arrow (down ) near to the Program Description.passed
+Then User can see the results in Ascending order of Program Description.....passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate the Results are displayed in ascending order" name="Verify that the results are displayed in Ascending order of Program Status" time="3.229">
+<system-out><![CDATA[Given User is on first page of Manage Program...............................passed
+When User clicks on the Ascending arrow (down ) near to the Program status..passed
+Then User can see the results in Ascending order of Program status..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Assignment Footer" name="Validate the text below the table" time="3.247">
+<system-out><![CDATA[Given User is logged on to LMS website......................................passed
+When User is on Manage Assignment page......................................passed
+Then User should see the text as 'Showing 1 to 3 of 3 entries' below the table on Assignment Page.passed
+]]></system-out>
+</testcase>
+<testcase classname="Assignment Footer" name="Validate the footer" time="3.109">
+<system-out><![CDATA[Given User is logged on to LMS website......................................passed
+When User is on Manage Assignment page......................................passed
+Then User should see the footer as 'In total there are 3 assignments.' on Assignment Page.passed
+]]></system-out>
+</testcase>
+<testcase classname="Results in Ascending order" name="Verify that the results are displayed in Ascending order of Assignment name" time="3.071">
+<system-out><![CDATA[Given User is on Manage Assignment page.....................................passed
+When User clicks onthe Ascending arrow (Up ) near to the Assignment name....passed
+Then User can see the results in Ascending order of Assignment name.........passed
+]]></system-out>
+</testcase>
+<testcase classname="Results in Ascending order" name="Verify that the results are displayed in Ascending order of Assignment Description" time="5.329">
+<system-out><![CDATA[Given User is on Manage Assignment page.....................................passed
+When User clicks onthe Ascending arrow (Up ) near to the Assignment Description.passed
+Then User can see the results in Ascending order of Assignment Description..passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Assignment" name="Validate Search Feature" time="3.11">
+<system-out><![CDATA[Given User is logged on to LMS website......................................passed
+When User is on Manage Assignment page......................................passed
+Then Text box used for search has text as 'Search...'.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Assignment" name="Search Assignment By Name" time="4.383">
+<system-out><![CDATA[Given User is on  Manage Assignment page....................................passed
+When User clicks on search with <name phrase> into search box...............passed
+Then Entries for <name phrase> are shown....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add new assignment" name="validate add new assignment" time="3.459">
+<system-out><![CDATA[Given User is on Manage Assignment page.....................................passed
+When User clicks A New Assignment button....................................passed
+Then User can see Assignment details form...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add new assignment" name="Empty form submission" time="0.203">
+<system-out><![CDATA[Given User is on Assignment Details form....................................passed
+When User clicks Save button without entering data..........................passed
+Then User gets message 'Name is required'...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add new assignment" name="Enter Assignment Name" time="0.332">
+<system-out><![CDATA[Given User is on Assignment Details form....................................passed
+When User enters Assignment name............................................passed
+Then User can see Name entered..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add new assignment" name="Enter Assignment Description" time="0.276">
+<system-out><![CDATA[Given User is on Assignment Details form....................................passed
+When User enters Assignment description.....................................passed
+Then User can see Description entered.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add new assignment" name="Enter assignment grade" time="0.307">
+<system-out><![CDATA[Given User is on Assignment Details form....................................passed
+When User enters assignment grade...........................................passed
+Then User can see Grade entered.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add new assignment" name="Enter assignment due date" time="0.3">
+<system-out><![CDATA[Given User is on Assignment Details form....................................passed
+When User enters assignment due date........................................passed
+Then User can see Assignment due date.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add new assignment" name="Click Cancel" time="0.122">
+<system-out><![CDATA[Given User is on Assignment Details form....................................passed
+When User clicks Cancel button..............................................passed
+Then User can get assignment Details form disappears........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add new assignment" name="Click Save" time="0.09">
+<system-out><![CDATA[Given User is on Assignment Details form....................................passed
+When User clicks Save button................................................passed
+Then User can get 'Successful assignment created' message...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Delete Assignment" name="_2" time="0.316">
+<system-out><![CDATA[Given User is on Assignment page............................................passed
+When User clicks on a <Delete> button after selecting an assignment.........passed
+Then User lands on a Confirm Deletion form..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Delete Assignment" name="Click No" time="2.156">
+<system-out><![CDATA[Given User is on a Confirm Deletion form....................................passed
+When User clicks on <No> button.............................................passed
+Then User can see a Confirm Deletion form disappears........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Delete Assignment" name="Click Yes" time="0.237">
+<system-out><![CDATA[Given User is on a Confirm Deletion form....................................passed
+When User clicks on <Yes> button............................................passed
+Then User can see 'Successful Assignment Deleted' message...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Edit Assignment Details" name="Select Assignment" time="0.274">
+<system-out><![CDATA[Given User is on the Assignment page........................................passed
+When User selects Assignment using checkbox on assignement page.............passed
+Then Assignment gets selected on assignement page...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Edit Assignment Details" name="Edit Feature" time="0.202">
+<system-out><![CDATA[Given User is on the Assignment page........................................passed
+When User clicks on <Edit> button on assignement page.......................passed
+Then User lands on Assignment Details form of assignement page..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Edit Assignment Details" name="Edit Assignment Name" time="0.323">
+<system-out><![CDATA[Given User is on Assignment Details form....................................passed
+When User edits assignment Name.............................................passed
+Then User can see updated assignment Name...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Edit Assignment Details" name="Edit Assignment Description" time="0.242">
+<system-out><![CDATA[Given User is on Assignment Details form....................................passed
+When User edits Assignment Description......................................passed
+Then User can see updated Assignment Description............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Edit Assignment Details" name="Edit Assignment Grade" time="0.281">
+<system-out><![CDATA[Given User is on Assignment Details form....................................passed
+When User edits  Assignment Grade...........................................passed
+Then User can see updated Assignment Grade..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Edit Assignment Details" name="Edit Assignment Due Date" time="0.277">
+<system-out><![CDATA[Given User is on Assignment Details form....................................passed
+When User edits Assignment Due Date.........................................passed
+Then User can see updated Assignment Due Date...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Edit Assignment Details" name="Click Cancel" time="0.102">
+<system-out><![CDATA[Given User is on Assignment Details form....................................passed
+When User clicks <Cancel> button on form....................................passed
+Then User can see Assignment Details form disappears........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Edit Assignment Details" name="Click Save" time="0.081">
+<system-out><![CDATA[Given User is on Assignment Details form....................................passed
+When User clicks <Save> button on form......................................passed
+Then User can see a 'Successful Assignment Updated' message.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Manage User page" name="Verify landing in Manage user page" time="3.263">
+<system-out><![CDATA[Given User is on any page after login.......................................passed
+When User clicks the Tab 'User'.............................................passed
+Then User should see the Manage user page...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Page Heading" name="Verify the manage user page heading" time="3.035">
+<system-out><![CDATA[Given User is on any page after login.......................................passed
+When User is on Manage user page after clicking User Tab....................passed
+Then User should see the page heading as 'Manage User'......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Pagination" name="Verify the presence of pagination" time="3.078">
+<system-out><![CDATA[Given User is on any page after login.......................................passed
+When User is on Manage user page after clicking User Tab....................passed
+Then user should see the pagination controls below the data table...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Pagination" name="Verify the pagination control with less rows" time="0.095">
+<system-out><![CDATA[Given User is on Manage user page...........................................passed
+When Manage user table has less than or equals to 5 rows....................passed
+Then Pagination control should be disabled..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Table footer" name="Verify table footer" time="0.031">
+<system-out><![CDATA[Given User is logged on to the LMS website..................................passed
+When User lands on Manage User page.........................................passed
+Then User should see the table footer as 'In total there are 4 users.'......passed
+]]></system-out>
+</testcase>
+<testcase classname="Add new user" name="Verify the presence of Add new user button" time="0.047">
+<system-out><![CDATA[Given User is on Manage User page...........................................passed
+When User is on the Manage user page after clicking Uset tab................passed
+Then User should see a button with the text + 'Add New User'................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add new user" name="Verify the functionality of Add new user button" time="0.287">
+<system-out><![CDATA[Given User is on Manage User page...........................................passed
+When User clicks Add New User button........................................passed
+Then User should see the "User Details" dialog box..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Table header" name="Verify Table header" time="3.362">
+<system-out><![CDATA[Given User is on any page after login.......................................passed
+When User is on the Manage user page after clicking User Tab................passed
+Then User should see the table header as Empty checkbox-icon and all the fields with sorticon, edit and delete as column name.passed
+]]></system-out>
+</testcase>
+<testcase classname="Table header" name="Verify the functionality of sort icon present in table header" time="0.146">
+<system-out><![CDATA[Given User table is displayed in manage user page...........................passed
+When User clicks sort icon in table header..................................passed
+Then Table rows should be sorted............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Table header" name="User checks Checkbox in table header" time="20.314">
+<system-out><![CDATA[Given User table is displayed in manage user page...........................passed
+When User checks empty checkbox in header...................................passed
+Then check box in all rows of user table should be checked..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Table header" name="User unchecks Checkbox in table header" time="1.216">
+<system-out><![CDATA[Given User table is displayed in manage user page...........................passed
+When User unchecks empty checkbox in header.................................passed
+Then check box in all rows of user table should be unchecked................passed
+]]></system-out>
+</testcase>
+<testcase classname="Delete icon" name="Verifying the presence of Delete icon in manage user page" time="3.067">
+<system-out><![CDATA[Given User is on any page after login.......................................passed
+When User is on the Manage user page after clicking User Tab................passed
+Then User should see the delete icon at the top left corner of the user table.passed
+]]></system-out>
+</testcase>
+<testcase classname="Delete icon" name="Behaviour of delete icon when rows unchecked" time="5.56">
+<system-out><![CDATA[Given User table is displayed in manage user page...........................passed
+When no rows is checked.....................................................passed
+Then Delete icon on the top left corner of the user table disabled..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Delete icon" name="Behaviour of delete icon when rows checked" time="0.298">
+<system-out><![CDATA[Given User table is displayed in manage user page...........................passed
+When User checks rows in the user table.....................................passed
+Then Delete icon on the top left corner of the user table enabled...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Logout" name="Logging out" time="0.89">
+<system-out><![CDATA[Given User has completed all the workflows..................................passed
+When User clicks on logout..................................................passed
+Then LMS login page should be landed........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

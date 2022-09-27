@@ -3,6 +3,7 @@ package com.lms.pages;
 import java.util.List;
 import java.util.Set;
 
+import org.jsoup.internal.FieldsAreNonnullByDefault;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -69,6 +70,9 @@ public class UserPage extends TestBase {
 	
 	@FindBy(xpath = "//span[@ng-reflect-ng-class='pi pi-times']")
 	WebElement cross_button;
+
+	@FindBy(xpath = "(//button[contains(@class,'p-button-danger p-button')])[1]")
+	WebElement header_delete;
 	
 	public UserPage() {
 		// TODO Auto-generated constructor stub
@@ -102,6 +106,16 @@ public class UserPage extends TestBase {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		try {
 			wait.until(ExpectedConditions.elementToBeClickable(element));
+		} catch (Exception e) {
+			// return false;
+		}
+
+	}
+	
+	public void waitUntillElementSelected(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, 5);
+		try {
+			wait.until(ExpectedConditions.elementToBeSelected(element));
 		} catch (Exception e) {
 			// return false;
 		}
@@ -229,21 +243,29 @@ public class UserPage extends TestBase {
 		return attribute_value;
 	}
 	
-	public void validate_all_rows_Unselected() {
+	
+	public void selectAllrows() {
+		int total_rows = validateNumberOfrows();
+		for (int i = 1; i <= total_rows; i++) {			
+			WebElement select_rows = driver.findElement(By.xpath("//tbody[@class='p-datatable-tbody']/tr["+i+"]//div[@role='checkbox']"));
+			select_rows.click();
+			
+			
+			
+	}
+
+		
+	}
+	
+	public String validate_all_rows_Unselected() {
 		System.out.println("Inside validatin all rows selected ");
-		//boolean selected_value = true;
 		String attribute_value = "false";
 		int total_rows = validateNumberOfrows();
 		for (int i = 1; i <= total_rows; i++) {			
-				//driver.findElement(By.xpath("//tbody[@class='p-datatable-tbody']/tr[" + i + "]"));
-				//boolean selected_value = driver.findElement(By.xpath("//table/tbody/tr["+i+"]/td[1]")).isSelected();
-				//System.out.println("**** IN SIDE **********" + selected_value);
 			attribute_value =  driver.findElement(By.xpath("//tbody[@class='p-datatable-tbody']/tr["+i+"]//div[@role='checkbox']")).getAttribute("aria-checked");
 		}
-		
-		System.out.println("******** OUT SIDE **********" + attribute_value);
 
-		//return selected_value;
+		return attribute_value;
 	}
 	
 	public void unclick_header_checkbox() {
@@ -260,7 +282,6 @@ public class UserPage extends TestBase {
 	}
 	
 	public String validate_checkbox() {
-		//System.out.println("header_checkbox.isSelected() ===========" + header_checkbox_after_click.isSelected());
 		String value_after_select = driver.findElement(By.xpath("//div[@class='p-checkbox-box p-highlight']")).getAttribute("aria-checked");
 		return value_after_select;
 	}
@@ -300,6 +321,25 @@ public class UserPage extends TestBase {
 		cross_button.click();
 		
 	}
+	
+	public boolean validate_headerDeleteIcon() {
+		return header_checkbox.isDisplayed();
+		
+	}
+	
+	public boolean validate_headerDeleteIconEnabled() {
+		waitUntillElementSelected(header_checkbox);
+		return header_checkbox.isSelected();
+
+		
+	}
+	
+	public boolean validate_headerIconAfterSelect() {
+		return header_delete.isSelected();
+
+		
+	}
+	
 
 	
 	
