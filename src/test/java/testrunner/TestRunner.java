@@ -29,7 +29,7 @@ plugin = { "pretty",
 			"html:target/HtmlReports",
 			"json:target/JSONReports/reports.json", 
 			"junit:target/JUNITReorts/report.xml" ,
-			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+			//"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 			},
 monochrome = true
 

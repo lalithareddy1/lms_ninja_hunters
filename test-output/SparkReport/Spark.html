@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sep 27, 2022 02:22:56 AM</span></a>
+<a href="#"><span class="badge badge-primary">Sep 27, 2022 08:52:12 AM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -72,6 +77,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,7 +85,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@verify_previouslink_infirstpage</a><a class="dropdown-item" href="#">@status_ascorder</a><a class="dropdown-item" href="#">@verify_btn_attendance</a><a class="dropdown-item" href="#">@pgm_deletebtn</a><a class="dropdown-item" href="#">@edit_pgmdescription</a><a class="dropdown-item" href="#">@verify_btn_batch</a><a class="dropdown-item" href="#">@assign_new</a><a class="dropdown-item" href="#">@login</a><a class="dropdown-item" href="#">@user_header</a><a class="dropdown-item" href="#">@clickno</a><a class="dropdown-item" href="#">@verify_nextlink_inlasttpage</a><a class="dropdown-item" href="#">@user_pagination</a><a class="dropdown-item" href="#">@verify_btn_user</a><a class="dropdown-item" href="#">@pagination</a><a class="dropdown-item" href="#">@verify_previouslink</a><a class="dropdown-item" href="#">@pgm_footer</a><a class="dropdown-item" href="#">@enter_name</a><a class="dropdown-item" href="#">@edit_feature</a><a class="dropdown-item" href="#">@verify_homepage_heading</a><a class="dropdown-item" href="#">@clickyes</a><a class="dropdown-item" href="#">@pgm_records</a><a class="dropdown-item" href="#">@select_status</a><a class="dropdown-item" href="#">@search_bydescription</a><a class="dropdown-item" href="#">@user_manage</a><a class="dropdown-item" href="#">@add_newUser</a><a class="dropdown-item" href="#">@addpgm</a><a class="dropdown-item" href="#">@verify_pgmpage_footer</a><a class="dropdown-item" href="#">@verify_pgmpage_deletebtn</a><a class="dropdown-item" href="#">@verify_btn_program</a><a class="dropdown-item" href="#">@logout</a><a class="dropdown-item" href="#">@emptysubmission</a><a class="dropdown-item" href="#">@change_status</a><a class="dropdown-item" href="#">@description_ascorder</a><a class="dropdown-item" href="#">@user_pageHeading</a><a class="dropdown-item" href="#">@pgm_edit</a><a class="dropdown-item" href="#">@home_title</a><a class="dropdown-item" href="#">@delete_feature</a><a class="dropdown-item" href="#">@assign_footer</a><a class="dropdown-item" href="#">@selectpgm</a><a class="dropdown-item" href="#">@select_multiplepgm</a><a class="dropdown-item" href="#">@pgm_delete</a><a class="dropdown-item" href="#">@asc_orderresults</a><a class="dropdown-item" href="#">@pgm_search</a><a class="dropdown-item" href="#">@search_bystatus</a><a class="dropdown-item" href="#">@verify_pgmpage_records</a><a class="dropdown-item" href="#">@verify_btn_assignment</a><a class="dropdown-item" href="#">@edit_pgmname</a><a class="dropdown-item" href="#">@click_save</a><a class="dropdown-item" href="#">@verify_pgmpage_footertxt</a><a class="dropdown-item" href="#">@save</a><a class="dropdown-item" href="#">@home_btn</a><a class="dropdown-item" href="#">@assign_edit</a><a class="dropdown-item" href="#">@assign_search</a><a class="dropdown-item" href="#">@verify_pgmpage_heading</a><a class="dropdown-item" href="#">@user_footer</a><a class="dropdown-item" href="#">@search_byname</a><a class="dropdown-item" href="#">@enter_description</a><a class="dropdown-item" href="#">@name_ascorder</a><a class="dropdown-item" href="#">@verify_btn_logout</a><a class="dropdown-item" href="#">@home_heading</a><a class="dropdown-item" href="#">@verify_nextlink</a><a class="dropdown-item" href="#">@multi_delete</a><a class="dropdown-item" href="#">@pgm_heading</a><a class="dropdown-item" href="#">@verify_homepage_title</a><a class="dropdown-item" href="#">@add_newpgm</a><a class="dropdown-item" href="#">@verify_search</a>
+<a class="dropdown-item" href="#">@search_byname</a><a class="dropdown-item" href="#">@verify_btn_attendance</a><a class="dropdown-item" href="#">@logout</a><a class="dropdown-item" href="#">@verify_nextlink_inlasttpage</a><a class="dropdown-item" href="#">@pgm_edit</a><a class="dropdown-item" href="#">@clickyes</a><a class="dropdown-item" href="#">@assign_edit</a><a class="dropdown-item" href="#">@verify_btn_batch</a><a class="dropdown-item" href="#">@user_pagination</a><a class="dropdown-item" href="#">@login</a><a class="dropdown-item" href="#">@enter_description</a><a class="dropdown-item" href="#">@user_header</a><a class="dropdown-item" href="#">@verify_btn_user</a><a class="dropdown-item" href="#">@select_multiplepgm</a><a class="dropdown-item" href="#">@addpgm</a><a class="dropdown-item" href="#">@assign_footer</a><a class="dropdown-item" href="#">@pgm_deletebtn</a><a class="dropdown-item" href="#">@pgm_footer</a><a class="dropdown-item" href="#">@pgm_delete</a><a class="dropdown-item" href="#">@enter_name</a><a class="dropdown-item" href="#">@status_ascorder</a><a class="dropdown-item" href="#">@verify_homepage_heading</a><a class="dropdown-item" href="#">@add_newpgm</a><a class="dropdown-item" href="#">@asc_orderresults</a><a class="dropdown-item" href="#">@click_save</a><a class="dropdown-item" href="#">@pagination</a><a class="dropdown-item" href="#">@name_ascorder</a><a class="dropdown-item" href="#">@save</a><a class="dropdown-item" href="#">@assign_search</a><a class="dropdown-item" href="#">@selectpgm</a><a class="dropdown-item" href="#">@verify_pgmpage_deletebtn</a><a class="dropdown-item" href="#">@edit_pgmname</a><a class="dropdown-item" href="#">@verify_search</a><a class="dropdown-item" href="#">@user_pageHeading</a><a class="dropdown-item" href="#">@verify_pgmpage_footer</a><a class="dropdown-item" href="#">@user_footer</a><a class="dropdown-item" href="#">@verify_btn_program</a><a class="dropdown-item" href="#">@user_manage</a><a class="dropdown-item" href="#">@verify_previouslink_infirstpage</a><a class="dropdown-item" href="#">@verify_previouslink</a><a class="dropdown-item" href="#">@verify_nextlink</a><a class="dropdown-item" href="#">@home_title</a><a class="dropdown-item" href="#">@select_status</a><a class="dropdown-item" href="#">@change_status</a><a class="dropdown-item" href="#">@add_newUser</a><a class="dropdown-item" href="#">@description_ascorder</a><a class="dropdown-item" href="#">@search_bystatus</a><a class="dropdown-item" href="#">@search_bydescription</a><a class="dropdown-item" href="#">@edit_pgmdescription</a><a class="dropdown-item" href="#">@pgm_search</a><a class="dropdown-item" href="#">@verify_btn_assignment</a><a class="dropdown-item" href="#">@verify_pgmpage_footertxt</a><a class="dropdown-item" href="#">@home_btn</a><a class="dropdown-item" href="#">@verify_pgmpage_records</a><a class="dropdown-item" href="#">@verify_pgmpage_heading</a><a class="dropdown-item" href="#">@pgm_records</a><a class="dropdown-item" href="#">@edit_feature</a><a class="dropdown-item" href="#">@verify_btn_logout</a><a class="dropdown-item" href="#">@home_heading</a><a class="dropdown-item" href="#">@emptysubmission</a><a class="dropdown-item" href="#">@multi_delete</a><a class="dropdown-item" href="#">@pgm_heading</a><a class="dropdown-item" href="#">@assign_new</a><a class="dropdown-item" href="#">@verify_homepage_title</a><a class="dropdown-item" href="#">@delete_feature</a><a class="dropdown-item" href="#">@clickno</a>
 </ul>
 </li>
 </ul>
@@ -92,7 +98,7 @@
           <div class="test-detail">
             <p class="name">Login Page</p>
             <p class="text-sm">
-              <span>02:22:57 AM</span> / <span>00:11:998</span>
+              <span>08:52:13 AM</span> / <span>00:04:715</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -101,9 +107,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Login Page</h5>
-<span class='badge badge-success'>09.27.2022 02:22:57</span>
-<span class='badge badge-danger'>09.27.2022 02:23:09</span>
-<span class='badge badge-default'>00:11:998</span>
+<span class='badge badge-success'>09.27.2022 08:52:13</span>
+<span class='badge badge-danger'>09.27.2022 08:52:18</span>
+<span class='badge badge-default'>00:04:715</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -224,7 +230,7 @@
           <div class="test-detail">
             <p class="name">Feature to Validate MenuBarButtons of LMS UI HomePage</p>
             <p class="text-sm">
-              <span>02:23:09 AM</span> / <span>00:00:424</span>
+              <span>08:52:18 AM</span> / <span>00:00:280</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -233,9 +239,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Feature to Validate MenuBarButtons of LMS UI HomePage</h5>
-<span class='badge badge-success'>09.27.2022 02:23:09</span>
-<span class='badge badge-danger'>09.27.2022 02:23:09</span>
-<span class='badge badge-default'>00:00:424</span>
+<span class='badge badge-success'>09.27.2022 08:52:18</span>
+<span class='badge badge-danger'>09.27.2022 08:52:18</span>
+<span class='badge badge-default'>00:00:280</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -408,7 +414,7 @@
           <div class="test-detail">
             <p class="name">Feature to Validate Heading of LMS UI HomePage</p>
             <p class="text-sm">
-              <span>02:23:09 AM</span> / <span>00:00:049</span>
+              <span>08:52:18 AM</span> / <span>00:00:028</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -417,9 +423,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Feature to Validate Heading of LMS UI HomePage</h5>
-<span class='badge badge-success'>09.27.2022 02:23:09</span>
-<span class='badge badge-danger'>09.27.2022 02:23:09</span>
-<span class='badge badge-default'>00:00:049</span>
+<span class='badge badge-success'>09.27.2022 08:52:18</span>
+<span class='badge badge-danger'>09.27.2022 08:52:18</span>
+<span class='badge badge-default'>00:00:028</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=53</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -462,7 +468,7 @@
           <div class="test-detail">
             <p class="name">Feature to Validate Title of LMS UI HomePage</p>
             <p class="text-sm">
-              <span>02:23:09 AM</span> / <span>00:00:014</span>
+              <span>08:52:18 AM</span> / <span>00:00:008</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -471,9 +477,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Feature to Validate Title of LMS UI HomePage</h5>
-<span class='badge badge-success'>09.27.2022 02:23:09</span>
-<span class='badge badge-danger'>09.27.2022 02:23:09</span>
-<span class='badge badge-default'>00:00:014</span>
+<span class='badge badge-success'>09.27.2022 08:52:18</span>
+<span class='badge badge-danger'>09.27.2022 08:52:18</span>
+<span class='badge badge-default'>00:00:008</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=59</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -516,7 +522,7 @@
           <div class="test-detail">
             <p class="name">Feature to Validate Heading of LMS UI Program Page</p>
             <p class="text-sm">
-              <span>02:23:09 AM</span> / <span>00:00:108</span>
+              <span>08:52:18 AM</span> / <span>00:00:117</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -525,9 +531,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Feature to Validate Heading of LMS UI Program Page</h5>
-<span class='badge badge-success'>09.27.2022 02:23:09</span>
-<span class='badge badge-danger'>09.27.2022 02:23:09</span>
-<span class='badge badge-default'>00:00:108</span>
+<span class='badge badge-success'>09.27.2022 08:52:18</span>
+<span class='badge badge-danger'>09.27.2022 08:52:18</span>
+<span class='badge badge-default'>00:00:117</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=65</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -570,7 +576,7 @@
           <div class="test-detail">
             <p class="name">Feature to Validate Footer of LMS UI Program Page</p>
             <p class="text-sm">
-              <span>02:23:09 AM</span> / <span>00:01:112</span>
+              <span>08:52:18 AM</span> / <span>00:00:657</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -579,9 +585,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Feature to Validate Footer of LMS UI Program Page</h5>
-<span class='badge badge-success'>09.27.2022 02:23:09</span>
-<span class='badge badge-danger'>09.27.2022 02:23:10</span>
-<span class='badge badge-default'>00:01:112</span>
+<span class='badge badge-success'>09.27.2022 08:52:18</span>
+<span class='badge badge-danger'>09.27.2022 08:52:19</span>
+<span class='badge badge-default'>00:00:657</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=71</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -650,7 +656,7 @@
           <div class="test-detail">
             <p class="name">Feature to Validate state of DeleteButton of LMS UI Program Page</p>
             <p class="text-sm">
-              <span>02:23:10 AM</span> / <span>00:00:132</span>
+              <span>08:52:19 AM</span> / <span>00:00:106</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -659,9 +665,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Feature to Validate state of DeleteButton of LMS UI Program Page</h5>
-<span class='badge badge-success'>09.27.2022 02:23:10</span>
-<span class='badge badge-danger'>09.27.2022 02:23:11</span>
-<span class='badge badge-default'>00:00:132</span>
+<span class='badge badge-success'>09.27.2022 08:52:19</span>
+<span class='badge badge-danger'>09.27.2022 08:52:19</span>
+<span class='badge badge-default'>00:00:106</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=82</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -704,7 +710,7 @@
           <div class="test-detail">
             <p class="name">Feature to Validate No.of.Records in LMS UI Program Page</p>
             <p class="text-sm">
-              <span>02:23:11 AM</span> / <span>00:00:136</span>
+              <span>08:52:19 AM</span> / <span>00:00:105</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -713,9 +719,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Feature to Validate No.of.Records in LMS UI Program Page</h5>
-<span class='badge badge-success'>09.27.2022 02:23:11</span>
-<span class='badge badge-danger'>09.27.2022 02:23:11</span>
-<span class='badge badge-default'>00:00:136</span>
+<span class='badge badge-success'>09.27.2022 08:52:19</span>
+<span class='badge badge-danger'>09.27.2022 08:52:19</span>
+<span class='badge badge-default'>00:00:105</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=88</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -758,7 +764,7 @@
           <div class="test-detail">
             <p class="name">Feature to Validate SearchProgram of LMS UI Program Page</p>
             <p class="text-sm">
-              <span>02:23:11 AM</span> / <span>00:19:358</span>
+              <span>08:52:19 AM</span> / <span>00:20:106</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -767,9 +773,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Feature to Validate SearchProgram of LMS UI Program Page</h5>
-<span class='badge badge-success'>09.27.2022 02:23:11</span>
-<span class='badge badge-danger'>09.27.2022 02:23:30</span>
-<span class='badge badge-default'>00:19:358</span>
+<span class='badge badge-success'>09.27.2022 08:52:19</span>
+<span class='badge badge-danger'>09.27.2022 08:52:39</span>
+<span class='badge badge-default'>00:20:106</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=94</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -890,7 +896,7 @@
           <div class="test-detail">
             <p class="name">Feature to Validate Edit Program of LMS UI Program Page</p>
             <p class="text-sm">
-              <span>02:23:30 AM</span> / <span>00:09:455</span>
+              <span>08:52:39 AM</span> / <span>00:10:145</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -899,9 +905,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Feature to Validate Edit Program of LMS UI Program Page</h5>
-<span class='badge badge-success'>09.27.2022 02:23:30</span>
-<span class='badge badge-danger'>09.27.2022 02:23:40</span>
-<span class='badge badge-default'>00:09:455</span>
+<span class='badge badge-success'>09.27.2022 08:52:39</span>
+<span class='badge badge-danger'>09.27.2022 08:52:49</span>
+<span class='badge badge-default'>00:10:145</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=115</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -1074,7 +1080,7 @@
           <div class="test-detail">
             <p class="name">Feature to Validate Delete Functionality of LMS UI Program Page</p>
             <p class="text-sm">
-              <span>02:23:40 AM</span> / <span>00:04:868</span>
+              <span>08:52:49 AM</span> / <span>00:05:123</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1083,9 +1089,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Feature to Validate Delete Functionality of LMS UI Program Page</h5>
-<span class='badge badge-success'>09.27.2022 02:23:40</span>
-<span class='badge badge-danger'>09.27.2022 02:23:45</span>
-<span class='badge badge-default'>00:04:868</span>
+<span class='badge badge-success'>09.27.2022 08:52:49</span>
+<span class='badge badge-danger'>09.27.2022 08:52:54</span>
+<span class='badge badge-default'>00:05:123</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=146</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -1206,7 +1212,7 @@
           <div class="test-detail">
             <p class="name">Feature to Validate Add Program Functionality of LMS UI Program Page</p>
             <p class="text-sm">
-              <span>02:23:45 AM</span> / <span>00:07:553</span>
+              <span>08:52:54 AM</span> / <span>00:08:382</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1215,9 +1221,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Feature to Validate Add Program Functionality of LMS UI Program Page</h5>
-<span class='badge badge-success'>09.27.2022 02:23:45</span>
-<span class='badge badge-danger'>09.27.2022 02:23:52</span>
-<span class='badge badge-default'>00:07:553</span>
+<span class='badge badge-success'>09.27.2022 08:52:54</span>
+<span class='badge badge-danger'>09.27.2022 08:53:03</span>
+<span class='badge badge-default'>00:08:382</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=167</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -1390,7 +1396,7 @@
           <div class="test-detail">
             <p class="name">Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page</p>
             <p class="text-sm">
-              <span>02:23:52 AM</span> / <span>00:27:804</span>
+              <span>08:53:03 AM</span> / <span>00:28:552</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1399,9 +1405,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page</h5>
-<span class='badge badge-success'>09.27.2022 02:23:52</span>
-<span class='badge badge-danger'>09.27.2022 02:24:20</span>
-<span class='badge badge-default'>00:27:804</span>
+<span class='badge badge-success'>09.27.2022 08:53:03</span>
+<span class='badge badge-danger'>09.27.2022 08:53:31</span>
+<span class='badge badge-default'>00:28:552</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=198</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -1532,7 +1538,7 @@
           <div class="test-detail">
             <p class="name">Validate pagination functionality of LMS UI Program Page</p>
             <p class="text-sm">
-              <span>02:24:20 AM</span> / <span>00:01:039</span>
+              <span>08:53:31 AM</span> / <span>00:01:351</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1541,9 +1547,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Validate pagination functionality of LMS UI Program Page</h5>
-<span class='badge badge-success'>09.27.2022 02:24:20</span>
-<span class='badge badge-danger'>09.27.2022 02:24:21</span>
-<span class='badge badge-default'>00:01:039</span>
+<span class='badge badge-success'>09.27.2022 08:53:31</span>
+<span class='badge badge-danger'>09.27.2022 08:53:33</span>
+<span class='badge badge-default'>00:01:351</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=221</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -1664,7 +1670,7 @@
           <div class="test-detail">
             <p class="name">Validate the Results are displayed in ascending order</p>
             <p class="text-sm">
-              <span>02:24:21 AM</span> / <span>00:09:097</span>
+              <span>08:53:33 AM</span> / <span>00:09:555</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1673,9 +1679,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Validate the Results are displayed in ascending order</h5>
-<span class='badge badge-success'>09.27.2022 02:24:21</span>
-<span class='badge badge-danger'>09.27.2022 02:24:30</span>
-<span class='badge badge-default'>00:09:097</span>
+<span class='badge badge-success'>09.27.2022 08:53:33</span>
+<span class='badge badge-danger'>09.27.2022 08:53:42</span>
+<span class='badge badge-default'>00:09:555</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=242</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -1770,7 +1776,7 @@
           <div class="test-detail">
             <p class="name">Assignment Footer</p>
             <p class="text-sm">
-              <span>02:24:30 AM</span> / <span>00:06:261</span>
+              <span>08:53:42 AM</span> / <span>00:06:350</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1779,9 +1785,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Assignment Footer</h5>
-<span class='badge badge-success'>09.27.2022 02:24:30</span>
-<span class='badge badge-danger'>09.27.2022 02:24:36</span>
-<span class='badge badge-default'>00:06:261</span>
+<span class='badge badge-success'>09.27.2022 08:53:42</span>
+<span class='badge badge-danger'>09.27.2022 08:53:49</span>
+<span class='badge badge-default'>00:06:350</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=258</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -1850,7 +1856,7 @@
           <div class="test-detail">
             <p class="name">Search Assignment</p>
             <p class="text-sm">
-              <span>02:24:36 AM</span> / <span>00:07:472</span>
+              <span>08:53:49 AM</span> / <span>00:07:632</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1859,9 +1865,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Search Assignment</h5>
-<span class='badge badge-success'>09.27.2022 02:24:36</span>
-<span class='badge badge-danger'>09.27.2022 02:24:44</span>
-<span class='badge badge-default'>00:07:472</span>
+<span class='badge badge-success'>09.27.2022 08:53:49</span>
+<span class='badge badge-danger'>09.27.2022 08:53:56</span>
+<span class='badge badge-default'>00:07:632</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=269</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -1930,7 +1936,7 @@
           <div class="test-detail">
             <p class="name">Add new assignment</p>
             <p class="text-sm">
-              <span>02:24:44 AM</span> / <span>00:04:770</span>
+              <span>08:53:56 AM</span> / <span>00:10:906</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1939,9 +1945,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Add new assignment</h5>
-<span class='badge badge-success'>09.27.2022 02:24:44</span>
-<span class='badge badge-danger'>09.27.2022 02:24:49</span>
-<span class='badge badge-default'>00:04:770</span>
+<span class='badge badge-success'>09.27.2022 08:53:56</span>
+<span class='badge badge-danger'>09.27.2022 08:54:07</span>
+<span class='badge badge-default'>00:10:906</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=280</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -2159,25 +2165,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="321"
+        <li class="test-item"  status="fail" test-id="321"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Edit Assignment Details</p>
             <p class="text-sm">
-              <span>02:24:49 AM</span> / <span>00:01:545</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>08:54:07 AM</span> / <span>00:03:981</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Edit Assignment Details</h5>
-<span class='badge badge-success'>09.27.2022 02:24:49</span>
-<span class='badge badge-danger'>09.27.2022 02:24:50</span>
-<span class='badge badge-default'>00:01:545</span>
+<h5 class="test-status text-fail">Edit Assignment Details</h5>
+<span class='badge badge-success'>09.27.2022 08:54:07</span>
+<span class='badge badge-danger'>09.27.2022 08:54:11</span>
+<span class='badge badge-default'>00:03:981</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=321</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -2187,23 +2193,66 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="322"><span class="badge log pass-bg mr-2">Pass</span>Select Assignment</div>
+        <div class="node" id="322"><span class="badge log fail-bg mr-2">Fail</span>Select Assignment</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="stepdefinitions.EditAssignementSteps.user_is_on_the_assignment_page()">
                 <span>Given User is on the Assignment page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.EditAssignementSteps.user_selects_assignment_using_checkbox_on_assignement_page()">
+              <div class="step fail-bg" title="stepdefinitions.EditAssignementSteps.user_selects_assignment_using_checkbox_on_assignement_page()">
                 <span>When User selects Assignment using checkbox on assignement page</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div role="checkbox" ng-reflect-ng-class="[object Object]" aria-checked="false" class="p-checkbox-box p-component">...</div> is not clickable at point (195, 280). Other element would receive the click: <div class="ng-tns-c132-10 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted" ng-reflect-ng-class="[object Object]" style="z-index: 1014;">...</div>
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VUHI299', ip: '192.168.0.41', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Lalitha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51119}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: abae3ee61a5c5944c3611cb241198497
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor107.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at com.lms.pages.AssignmentPage.editassignment(AssignmentPage.java:280)
+	at stepdefinitions.EditAssignementSteps.user_selects_assignment_using_checkbox_on_assignement_page(EditAssignementSteps.java:23)
+	at ✽.User selects Assignment using checkbox on assignement page(file:///D:/JavaSeleniumExamples/LMSNinjaHuntersBDD/src/test/resources/features/Feature4assignmentfeatures/step6_assignment_edit.feature:6)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.EditAssignementSteps.assignment_gets_selected_on_assignement_page()">
+              <div class="step skip-bg" title="stepdefinitions.EditAssignementSteps.assignment_gets_selected_on_assignement_page()">
                 <span>Then Assignment gets selected on assignement page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
       <div>
       </div>
               </div>
@@ -2402,7 +2451,7 @@
           <div class="test-detail">
             <p class="name">Manage User page</p>
             <p class="text-sm">
-              <span>02:24:50 AM</span> / <span>00:03:340</span>
+              <span>08:54:11 AM</span> / <span>00:03:335</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -2411,9 +2460,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Manage User page</h5>
-<span class='badge badge-success'>09.27.2022 02:24:50</span>
-<span class='badge badge-danger'>09.27.2022 02:24:53</span>
-<span class='badge badge-default'>00:03:340</span>
+<span class='badge badge-success'>09.27.2022 08:54:11</span>
+<span class='badge badge-danger'>09.27.2022 08:54:15</span>
+<span class='badge badge-default'>00:03:335</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=362</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -2456,7 +2505,7 @@
           <div class="test-detail">
             <p class="name">User Page Heading</p>
             <p class="text-sm">
-              <span>02:24:53 AM</span> / <span>00:03:034</span>
+              <span>08:54:15 AM</span> / <span>00:03:035</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -2465,9 +2514,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">User Page Heading</h5>
-<span class='badge badge-success'>09.27.2022 02:24:53</span>
-<span class='badge badge-danger'>09.27.2022 02:24:57</span>
-<span class='badge badge-default'>00:03:034</span>
+<span class='badge badge-success'>09.27.2022 08:54:15</span>
+<span class='badge badge-danger'>09.27.2022 08:54:18</span>
+<span class='badge badge-default'>00:03:035</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=368</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -2510,7 +2559,7 @@
           <div class="test-detail">
             <p class="name">Pagination</p>
             <p class="text-sm">
-              <span>02:24:57 AM</span> / <span>00:03:114</span>
+              <span>08:54:18 AM</span> / <span>00:03:169</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -2519,9 +2568,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Pagination</h5>
-<span class='badge badge-success'>09.27.2022 02:24:57</span>
-<span class='badge badge-danger'>09.27.2022 02:25:00</span>
-<span class='badge badge-default'>00:03:114</span>
+<span class='badge badge-success'>09.27.2022 08:54:18</span>
+<span class='badge badge-danger'>09.27.2022 08:54:21</span>
+<span class='badge badge-default'>00:03:169</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=374</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -2590,7 +2639,7 @@
           <div class="test-detail">
             <p class="name">Table footer</p>
             <p class="text-sm">
-              <span>02:25:00 AM</span> / <span>00:00:025</span>
+              <span>08:54:21 AM</span> / <span>00:00:031</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -2599,9 +2648,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Table footer</h5>
-<span class='badge badge-success'>09.27.2022 02:25:00</span>
-<span class='badge badge-danger'>09.27.2022 02:25:00</span>
-<span class='badge badge-default'>00:00:025</span>
+<span class='badge badge-success'>09.27.2022 08:54:21</span>
+<span class='badge badge-danger'>09.27.2022 08:54:21</span>
+<span class='badge badge-default'>00:00:031</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=385</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -2644,7 +2693,7 @@
           <div class="test-detail">
             <p class="name">Add new user</p>
             <p class="text-sm">
-              <span>02:25:00 AM</span> / <span>00:00:293</span>
+              <span>08:54:21 AM</span> / <span>00:00:343</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -2653,9 +2702,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Add new user</h5>
-<span class='badge badge-success'>09.27.2022 02:25:00</span>
-<span class='badge badge-danger'>09.27.2022 02:25:00</span>
-<span class='badge badge-default'>00:00:293</span>
+<span class='badge badge-success'>09.27.2022 08:54:21</span>
+<span class='badge badge-danger'>09.27.2022 08:54:21</span>
+<span class='badge badge-default'>00:00:343</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=391</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -2724,7 +2773,7 @@
           <div class="test-detail">
             <p class="name">Table header</p>
             <p class="text-sm">
-              <span>02:25:00 AM</span> / <span>00:25:049</span>
+              <span>08:54:21 AM</span> / <span>00:25:010</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -2733,9 +2782,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Table header</h5>
-<span class='badge badge-success'>09.27.2022 02:25:00</span>
-<span class='badge badge-danger'>09.27.2022 02:25:25</span>
-<span class='badge badge-default'>00:25:049</span>
+<span class='badge badge-success'>09.27.2022 08:54:21</span>
+<span class='badge badge-danger'>09.27.2022 08:54:46</span>
+<span class='badge badge-default'>00:25:010</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=402</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -2856,7 +2905,7 @@
           <div class="test-detail">
             <p class="name">Logout</p>
             <p class="text-sm">
-              <span>02:25:25 AM</span> / <span>00:00:773</span>
+              <span>08:54:46 AM</span> / <span>00:00:917</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -2865,9 +2914,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Logout</h5>
-<span class='badge badge-success'>09.27.2022 02:25:25</span>
-<span class='badge badge-danger'>09.27.2022 02:25:26</span>
-<span class='badge badge-default'>00:00:773</span>
+<span class='badge badge-success'>09.27.2022 08:54:46</span>
+<span class='badge badge-danger'>09.27.2022 08:54:47</span>
+<span class='badge badge-default'>00:00:917</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=423</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -2912,7 +2961,59 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:54:07 AM</td>
+<td>
+<a href="#" class="linked" test-id='321' id='324'>When User selects Assignment using checkbox on assignement page</a>
+<div class="">
+<span class="badge badge-default">Edit Assignment Details.Select Assignment.When User selects Assignment using checkbox on assignement page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
@@ -2925,12 +3026,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@verify_previouslink_infirstpage</p>
+<p class="name">@search_byname</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@verify_previouslink_infirstpage</h4>
+<h4>@search_byname</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -2944,47 +3045,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:20 AM</td>
+<td>08:52:19 AM</td>
 <td>
-<a href="#" class="linked" test-id='221' id='222'>Verify previous link on the first page</a>
+<a href="#" class="linked" test-id='94' id='100'>Search Program By Name</a>
 <div class="">
-<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify previous link on the first page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@status_ascorder</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@status_ascorder</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:27 AM</td>
-<td>
-<a href="#" class="linked" test-id='242' id='253'>Verify that the results are displayed in Ascending order of Program Status</a>
-<div class="">
-<span class="badge badge-default">Validate the Results are displayed in ascending order.Verify that the results are displayed in Ascending order of Program Status</span>
+<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Search Program By Name</span>
 </div>
 </td>
 </tr>
@@ -3016,1207 +3081,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
+<td>08:52:18 AM</td>
 <td>
 <a href="#" class="linked" test-id='22' id='43'>Verify Visibility of AttendanceButton in HomePage</a>
 <div class="">
 <span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of AttendanceButton in HomePage</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@pgm_deletebtn</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@pgm_deletebtn</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:10 AM</td>
-<td>
-<a href="#" class="linked" test-id='82' id='83'>Validating the default state of Delete button</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate state of DeleteButton of LMS UI Program Page.Validating the default state of Delete button</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@edit_pgmdescription</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@edit_pgmdescription</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:35 AM</td>
-<td>
-<a href="#" class="linked" test-id='115' id='131'>Edit Program Description</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Edit Program of LMS UI Program Page.Edit Program Description</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@verify_btn_batch</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@verify_btn_batch</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='22' id='28'>Verify Visibility of BatchButton in HomePage</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of BatchButton in HomePage</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>8</span>
-</span>
-<p class="name">@assign_new</p>
-<p class="duration text-sm">8 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@assign_new</h4>
-<span status="pass" class='badge log pass-bg'>8 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:44 AM</td>
-<td>
-<a href="#" class="linked" test-id='280' id='281'>validate add new assignment</a>
-<div class="">
-<span class="badge badge-default">Add new assignment.validate add new assignment</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:47 AM</td>
-<td>
-<a href="#" class="linked" test-id='280' id='286'>Empty form submission</a>
-<div class="">
-<span class="badge badge-default">Add new assignment.Empty form submission</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:47 AM</td>
-<td>
-<a href="#" class="linked" test-id='280' id='291'>Enter Assignment Name</a>
-<div class="">
-<span class="badge badge-default">Add new assignment.Enter Assignment Name</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:48 AM</td>
-<td>
-<a href="#" class="linked" test-id='280' id='296'>Enter Assignment Description</a>
-<div class="">
-<span class="badge badge-default">Add new assignment.Enter Assignment Description</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:48 AM</td>
-<td>
-<a href="#" class="linked" test-id='280' id='301'>Enter assignment grade</a>
-<div class="">
-<span class="badge badge-default">Add new assignment.Enter assignment grade</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:48 AM</td>
-<td>
-<a href="#" class="linked" test-id='280' id='306'>Enter assignment due date</a>
-<div class="">
-<span class="badge badge-default">Add new assignment.Enter assignment due date</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:48 AM</td>
-<td>
-<a href="#" class="linked" test-id='280' id='311'>Click Cancel</a>
-<div class="">
-<span class="badge badge-default">Add new assignment.Click Cancel</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:48 AM</td>
-<td>
-<a href="#" class="linked" test-id='280' id='316'>Click Save</a>
-<div class="">
-<span class="badge badge-default">Add new assignment.Click Save</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>4</span>
-</span>
-<p class="name">@login</p>
-<p class="duration text-sm">4 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@login</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:22:57 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Validating the url</a>
-<div class="">
-<span class="badge badge-default">Login Page.Validating the url</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:07 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='7'>Validating Login functionality with invalid password field</a>
-<div class="">
-<span class="badge badge-default">Login Page.Validating Login functionality with invalid password field</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:08 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>Validating Login functionality with invalid username field</a>
-<div class="">
-<span class="badge badge-default">Login Page.Validating Login functionality with invalid username field</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:08 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='17'>Validating Login functionality with valid username and password</a>
-<div class="">
-<span class="badge badge-default">Login Page.Validating Login functionality with valid username and password</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>4</span>
-</span>
-<p class="name">@user_header</p>
-<p class="duration text-sm">4 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@user_header</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:25:00 AM</td>
-<td>
-<a href="#" class="linked" test-id='402' id='403'>Verify Table header</a>
-<div class="">
-<span class="badge badge-default">Table header.Verify Table header</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:25:03 AM</td>
-<td>
-<a href="#" class="linked" test-id='402' id='408'>Verify the functionality of sort icon present in table header</a>
-<div class="">
-<span class="badge badge-default">Table header.Verify the functionality of sort icon present in table header</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:25:03 AM</td>
-<td>
-<a href="#" class="linked" test-id='402' id='413'>User checks Checkbox in table header</a>
-<div class="">
-<span class="badge badge-default">Table header.User checks Checkbox in table header</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:25:24 AM</td>
-<td>
-<a href="#" class="linked" test-id='402' id='418'>User unchecks Checkbox in table header</a>
-<div class="">
-<span class="badge badge-default">Table header.User unchecks Checkbox in table header</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@clickno</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@clickno</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:42 AM</td>
-<td>
-<a href="#" class="linked" test-id='146' id='162'>Click No</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Click No</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:05 AM</td>
-<td>
-<a href="#" class="linked" test-id='198' id='214'>Click No</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page.Click No</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@verify_nextlink_inlasttpage</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@verify_nextlink_inlasttpage</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:21 AM</td>
-<td>
-<a href="#" class="linked" test-id='221' id='237'>Verify next link on the last page</a>
-<div class="">
-<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify next link on the last page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@user_pagination</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@user_pagination</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:57 AM</td>
-<td>
-<a href="#" class="linked" test-id='374' id='375'>Verify the presence of pagination</a>
-<div class="">
-<span class="badge badge-default">Pagination.Verify the presence of pagination</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:25:00 AM</td>
-<td>
-<a href="#" class="linked" test-id='374' id='380'>Verify the pagination control with less rows</a>
-<div class="">
-<span class="badge badge-default">Pagination.Verify the pagination control with less rows</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@verify_btn_user</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@verify_btn_user</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='22' id='33'>Verify Visibility of UserButton in HomePage</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of UserButton in HomePage</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>4</span>
-</span>
-<p class="name">@pagination</p>
-<p class="duration text-sm">4 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@pagination</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:20 AM</td>
-<td>
-<a href="#" class="linked" test-id='221' id='222'>Verify previous link on the first page</a>
-<div class="">
-<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify previous link on the first page</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:20 AM</td>
-<td>
-<a href="#" class="linked" test-id='221' id='227'>Verify next link</a>
-<div class="">
-<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify next link</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:20 AM</td>
-<td>
-<a href="#" class="linked" test-id='221' id='232'>Verify previous link on the first page</a>
-<div class="">
-<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify previous link on the first page</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:21 AM</td>
-<td>
-<a href="#" class="linked" test-id='221' id='237'>Verify next link on the last page</a>
-<div class="">
-<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify next link on the last page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@verify_previouslink</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@verify_previouslink</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:20 AM</td>
-<td>
-<a href="#" class="linked" test-id='221' id='232'>Verify previous link on the first page</a>
-<div class="">
-<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify previous link on the first page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@pgm_footer</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@pgm_footer</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='71' id='72'>Validate the text below the table</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Footer of LMS UI Program Page.Validate the text below the table</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:10 AM</td>
-<td>
-<a href="#" class="linked" test-id='71' id='77'>Validate the footer</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Footer of LMS UI Program Page.Validate the footer</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@enter_name</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@enter_name</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:45 AM</td>
-<td>
-<a href="#" class="linked" test-id='167' id='178'>Enter Program Name</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Enter Program Name</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@edit_feature</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@edit_feature</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:32 AM</td>
-<td>
-<a href="#" class="linked" test-id='115' id='121'>Edit Feature</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Edit Program of LMS UI Program Page.Edit Feature</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@verify_homepage_heading</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@verify_homepage_heading</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='53' id='54'>Verify the heading of the Home page</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Heading of LMS UI HomePage.Verify the heading of the Home page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@clickyes</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@clickyes</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:42 AM</td>
-<td>
-<a href="#" class="linked" test-id='146' id='157'>Click Yes</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Click Yes</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:05 AM</td>
-<td>
-<a href="#" class="linked" test-id='198' id='209'>Click Yes</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page.Click Yes</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@pgm_records</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@pgm_records</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:11 AM</td>
-<td>
-<a href="#" class="linked" test-id='88' id='89'>Validate that number of records displayed</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate No.of.Records in LMS UI Program Page.Validate that number of records displayed</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@select_status</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@select_status</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:50 AM</td>
-<td>
-<a href="#" class="linked" test-id='167' id='188'>Select Status</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Select Status</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@search_bydescription</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@search_bydescription</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:23 AM</td>
-<td>
-<a href="#" class="linked" test-id='94' id='105'>Search Program By Description</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Search Program By Description</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@user_manage</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@user_manage</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:50 AM</td>
-<td>
-<a href="#" class="linked" test-id='362' id='363'>Verify landing in Manage user page</a>
-<div class="">
-<span class="badge badge-default">Manage User page.Verify landing in Manage user page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@add_newUser</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@add_newUser</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:25:00 AM</td>
-<td>
-<a href="#" class="linked" test-id='391' id='392'>Verify the presence of Add new user button</a>
-<div class="">
-<span class="badge badge-default">Add new user.Verify the presence of Add new user button</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:25:00 AM</td>
-<td>
-<a href="#" class="linked" test-id='391' id='397'>Verify the functionality of Add new user button</a>
-<div class="">
-<span class="badge badge-default">Add new user.Verify the functionality of Add new user button</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>6</span>
-</span>
-<p class="name">@addpgm</p>
-<p class="duration text-sm">6 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@addpgm</h4>
-<span status="pass" class='badge log pass-bg'>6 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:45 AM</td>
-<td>
-<a href="#" class="linked" test-id='167' id='168'>Validate Add New Program</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Validate Add New Program</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:45 AM</td>
-<td>
-<a href="#" class="linked" test-id='167' id='173'>Empty form submission</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Empty form submission</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:45 AM</td>
-<td>
-<a href="#" class="linked" test-id='167' id='178'>Enter Program Name</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Enter Program Name</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:47 AM</td>
-<td>
-<a href="#" class="linked" test-id='167' id='183'>Enter Program Description</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Enter Program Description</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:50 AM</td>
-<td>
-<a href="#" class="linked" test-id='167' id='188'>Select Status</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Select Status</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:52 AM</td>
-<td>
-<a href="#" class="linked" test-id='167' id='193'>Click Save</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Click Save</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@verify_pgmpage_footer</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@verify_pgmpage_footer</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:10 AM</td>
-<td>
-<a href="#" class="linked" test-id='71' id='77'>Validate the footer</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Footer of LMS UI Program Page.Validate the footer</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@verify_pgmpage_deletebtn</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@verify_pgmpage_deletebtn</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:10 AM</td>
-<td>
-<a href="#" class="linked" test-id='82' id='83'>Validating the default state of Delete button</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate state of DeleteButton of LMS UI Program Page.Validating the default state of Delete button</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@verify_btn_program</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@verify_btn_program</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='22' id='23'>Verify Visibility of ProgramButton in HomePage</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of ProgramButton in HomePage</span>
 </div>
 </td>
 </tr>
@@ -4248,7 +3117,7 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:25:25 AM</td>
+<td>08:54:46 AM</td>
 <td>
 <a href="#" class="linked" test-id='423' id='424'>Logging out</a>
 <div class="">
@@ -4265,12 +3134,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@emptysubmission</p>
+<p class="name">@verify_nextlink_inlasttpage</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@emptysubmission</h4>
+<h4>@verify_nextlink_inlasttpage</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -4284,119 +3153,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:45 AM</td>
+<td>08:53:33 AM</td>
 <td>
-<a href="#" class="linked" test-id='167' id='173'>Empty form submission</a>
+<a href="#" class="linked" test-id='221' id='237'>Verify next link on the last page</a>
 <div class="">
-<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Empty form submission</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@change_status</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@change_status</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:37 AM</td>
-<td>
-<a href="#" class="linked" test-id='115' id='136'>Change Program Status</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Edit Program of LMS UI Program Page.Change Program Status</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@description_ascorder</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@description_ascorder</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:24 AM</td>
-<td>
-<a href="#" class="linked" test-id='242' id='248'>Verify that the results are displayed in Ascending order of Program Description</a>
-<div class="">
-<span class="badge badge-default">Validate the Results are displayed in ascending order.Verify that the results are displayed in Ascending order of Program Description</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@user_pageHeading</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@user_pageHeading</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:53 AM</td>
-<td>
-<a href="#" class="linked" test-id='368' id='369'>Verify the manage user page heading</a>
-<div class="">
-<span class="badge badge-default">User Page Heading.Verify the manage user page heading</span>
+<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify next link on the last page</span>
 </div>
 </td>
 </tr>
@@ -4428,7 +3189,7 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:30 AM</td>
+<td>08:52:39 AM</td>
 <td>
 <a href="#" class="linked" test-id='115' id='116'>Select Program</a>
 <div class="">
@@ -4438,7 +3199,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:32 AM</td>
+<td>08:52:42 AM</td>
 <td>
 <a href="#" class="linked" test-id='115' id='121'>Edit Feature</a>
 <div class="">
@@ -4448,7 +3209,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:33 AM</td>
+<td>08:52:42 AM</td>
 <td>
 <a href="#" class="linked" test-id='115' id='126'>Edit Program Name</a>
 <div class="">
@@ -4458,7 +3219,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:35 AM</td>
+<td>08:52:44 AM</td>
 <td>
 <a href="#" class="linked" test-id='115' id='131'>Edit Program Description</a>
 <div class="">
@@ -4468,7 +3229,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:37 AM</td>
+<td>08:52:47 AM</td>
 <td>
 <a href="#" class="linked" test-id='115' id='136'>Change Program Status</a>
 <div class="">
@@ -4478,7 +3239,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:39 AM</td>
+<td>08:52:49 AM</td>
 <td>
 <a href="#" class="linked" test-id='115' id='141'>Click Save</a>
 <div class="">
@@ -4493,50 +3254,14 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@home_title</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@home_title</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='59' id='60'>Verify the title of the Home page</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Title of LMS UI HomePage.Verify the title of the Home page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
 <span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@delete_feature</p>
+<p class="name">@clickyes</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@delete_feature</h4>
+<h4>@clickyes</h4>
 <span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -4550,201 +3275,7 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:42 AM</td>
-<td>
-<a href="#" class="linked" test-id='146' id='152'>Delete Feature</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Delete Feature</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:03 AM</td>
-<td>
-<a href="#" class="linked" test-id='198' id='204'>Delete Feature</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page.Delete Feature</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@assign_footer</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@assign_footer</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:30 AM</td>
-<td>
-<a href="#" class="linked" test-id='258' id='259'>Validate the text below the table</a>
-<div class="">
-<span class="badge badge-default">Assignment Footer.Validate the text below the table</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:33 AM</td>
-<td>
-<a href="#" class="linked" test-id='258' id='264'>Validate the footer</a>
-<div class="">
-<span class="badge badge-default">Assignment Footer.Validate the footer</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@selectpgm</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@selectpgm</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:30 AM</td>
-<td>
-<a href="#" class="linked" test-id='115' id='116'>Select Program</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Edit Program of LMS UI Program Page.Select Program</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:40 AM</td>
-<td>
-<a href="#" class="linked" test-id='146' id='147'>Select Program</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Select Program</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@select_multiplepgm</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@select_multiplepgm</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:52 AM</td>
-<td>
-<a href="#" class="linked" test-id='198' id='199'>Select multiple Program</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page.Select multiple Program</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>4</span>
-</span>
-<p class="name">@pgm_delete</p>
-<p class="duration text-sm">4 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@pgm_delete</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:40 AM</td>
-<td>
-<a href="#" class="linked" test-id='146' id='147'>Select Program</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Select Program</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:42 AM</td>
-<td>
-<a href="#" class="linked" test-id='146' id='152'>Delete Feature</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Delete Feature</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:42 AM</td>
+<td>08:52:52 AM</td>
 <td>
 <a href="#" class="linked" test-id='146' id='157'>Click Yes</a>
 <div class="">
@@ -4754,11 +3285,11 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:42 AM</td>
+<td>08:53:16 AM</td>
 <td>
-<a href="#" class="linked" test-id='146' id='162'>Click No</a>
+<a href="#" class="linked" test-id='198' id='209'>Click Yes</a>
 <div class="">
-<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Click No</span>
+<span class="badge badge-default">Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page.Click Yes</span>
 </div>
 </td>
 </tr>
@@ -4769,467 +3300,8 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
-</span>
-<p class="name">@asc_orderresults</p>
-<p class="duration text-sm">3 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@asc_orderresults</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:21 AM</td>
-<td>
-<a href="#" class="linked" test-id='242' id='243'>Verify that the results are displayed in Ascending order of Program name</a>
-<div class="">
-<span class="badge badge-default">Validate the Results are displayed in ascending order.Verify that the results are displayed in Ascending order of Program name</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:24 AM</td>
-<td>
-<a href="#" class="linked" test-id='242' id='248'>Verify that the results are displayed in Ascending order of Program Description</a>
-<div class="">
-<span class="badge badge-default">Validate the Results are displayed in ascending order.Verify that the results are displayed in Ascending order of Program Description</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:27 AM</td>
-<td>
-<a href="#" class="linked" test-id='242' id='253'>Verify that the results are displayed in Ascending order of Program Status</a>
-<div class="">
-<span class="badge badge-default">Validate the Results are displayed in ascending order.Verify that the results are displayed in Ascending order of Program Status</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>4</span>
-</span>
-<p class="name">@pgm_search</p>
-<p class="duration text-sm">4 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@pgm_search</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:11 AM</td>
-<td>
-<a href="#" class="linked" test-id='94' id='95'>Validate Search Feature</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Validate Search Feature</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:11 AM</td>
-<td>
-<a href="#" class="linked" test-id='94' id='100'>Search Program By Name</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Search Program By Name</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:23 AM</td>
-<td>
-<a href="#" class="linked" test-id='94' id='105'>Search Program By Description</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Search Program By Description</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:26 AM</td>
-<td>
-<a href="#" class="linked" test-id='94' id='110'>Search Program By Status</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Search Program By Status</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@search_bystatus</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@search_bystatus</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:26 AM</td>
-<td>
-<a href="#" class="linked" test-id='94' id='110'>Search Program By Status</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Search Program By Status</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@verify_pgmpage_records</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@verify_pgmpage_records</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:11 AM</td>
-<td>
-<a href="#" class="linked" test-id='88' id='89'>Validate that number of records displayed</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate No.of.Records in LMS UI Program Page.Validate that number of records displayed</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@verify_btn_assignment</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@verify_btn_assignment</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='22' id='38'>Verify Visibility of AssignmentButton in HomePage</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of AssignmentButton in HomePage</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@edit_pgmname</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@edit_pgmname</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:33 AM</td>
-<td>
-<a href="#" class="linked" test-id='115' id='126'>Edit Program Name</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Edit Program of LMS UI Program Page.Edit Program Name</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@click_save</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@click_save</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:52 AM</td>
-<td>
-<a href="#" class="linked" test-id='167' id='193'>Click Save</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Click Save</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@verify_pgmpage_footertxt</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@verify_pgmpage_footertxt</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='71' id='72'>Validate the text below the table</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Footer of LMS UI Program Page.Validate the text below the table</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@save</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@save</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:39 AM</td>
-<td>
-<a href="#" class="linked" test-id='115' id='141'>Click Save</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate Edit Program of LMS UI Program Page.Click Save</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>6</span>
-</span>
-<p class="name">@home_btn</p>
-<p class="duration text-sm">6 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@home_btn</h4>
-<span status="pass" class='badge log pass-bg'>6 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='22' id='23'>Verify Visibility of ProgramButton in HomePage</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of ProgramButton in HomePage</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='22' id='28'>Verify Visibility of BatchButton in HomePage</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of BatchButton in HomePage</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='22' id='33'>Verify Visibility of UserButton in HomePage</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of UserButton in HomePage</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='22' id='38'>Verify Visibility of AssignmentButton in HomePage</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of AssignmentButton in HomePage</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='22' id='43'>Verify Visibility of AttendanceButton in HomePage</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of AttendanceButton in HomePage</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='22' id='48'>Verify Visibility of LogoutButton in HomePage</a>
-<div class="">
-<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of LogoutButton in HomePage</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>8</span>
+<span class='badge log pass-bg'>7</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@assign_edit</p>
 <p class="duration text-sm">8 tests</p>
@@ -5237,7 +3309,8 @@
 <div class="test-contents d-none">
 <div class="info">
 <h4>@assign_edit</h4>
-<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -5248,9 +3321,9 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:49 AM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:54:07 AM</td>
 <td>
 <a href="#" class="linked" test-id='321' id='322'>Select Assignment</a>
 <div class="">
@@ -5260,7 +3333,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:49 AM</td>
+<td>08:54:09 AM</td>
 <td>
 <a href="#" class="linked" test-id='321' id='327'>Edit Feature</a>
 <div class="">
@@ -5270,7 +3343,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:49 AM</td>
+<td>08:54:09 AM</td>
 <td>
 <a href="#" class="linked" test-id='321' id='332'>Edit Assignment Name</a>
 <div class="">
@@ -5280,7 +3353,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:49 AM</td>
+<td>08:54:10 AM</td>
 <td>
 <a href="#" class="linked" test-id='321' id='337'>Edit Assignment Description</a>
 <div class="">
@@ -5290,7 +3363,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:49 AM</td>
+<td>08:54:10 AM</td>
 <td>
 <a href="#" class="linked" test-id='321' id='342'>Edit Assignment Grade</a>
 <div class="">
@@ -5300,7 +3373,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:50 AM</td>
+<td>08:54:11 AM</td>
 <td>
 <a href="#" class="linked" test-id='321' id='347'>Edit Assignment Due Date</a>
 <div class="">
@@ -5310,7 +3383,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:50 AM</td>
+<td>08:54:11 AM</td>
 <td>
 <a href="#" class="linked" test-id='321' id='352'>Click Cancel</a>
 <div class="">
@@ -5320,7 +3393,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:50 AM</td>
+<td>08:54:11 AM</td>
 <td>
 <a href="#" class="linked" test-id='321' id='357'>Click Save</a>
 <div class="">
@@ -5335,14 +3408,50 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_btn_batch</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_btn_batch</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='28'>Verify Visibility of BatchButton in HomePage</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of BatchButton in HomePage</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
 <span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@assign_search</p>
+<p class="name">@user_pagination</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@assign_search</h4>
+<h4>@user_pagination</h4>
 <span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -5356,21 +3465,21 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:36 AM</td>
+<td>08:54:18 AM</td>
 <td>
-<a href="#" class="linked" test-id='269' id='270'>Validate Search Feature</a>
+<a href="#" class="linked" test-id='374' id='375'>Verify the presence of pagination</a>
 <div class="">
-<span class="badge badge-default">Search Assignment.Validate Search Feature</span>
+<span class="badge badge-default">Pagination.Verify the presence of pagination</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:39 AM</td>
+<td>08:54:21 AM</td>
 <td>
-<a href="#" class="linked" test-id='269' id='275'>Search Assignment By Name</a>
+<a href="#" class="linked" test-id='374' id='380'>Verify the pagination control with less rows</a>
 <div class="">
-<span class="badge badge-default">Search Assignment.Search Assignment By Name</span>
+<span class="badge badge-default">Pagination.Verify the pagination control with less rows</span>
 </div>
 </td>
 </tr>
@@ -5381,15 +3490,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>4</span>
 </span>
-<p class="name">@verify_pgmpage_heading</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">@login</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@verify_pgmpage_heading</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@login</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -5402,83 +3511,41 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
+<td>08:52:13 AM</td>
 <td>
-<a href="#" class="linked" test-id='65' id='66'>Verify the heading of the Program page</a>
+<a href="#" class="linked" test-id='1' id='2'>Validating the url</a>
 <div class="">
-<span class="badge badge-default">Feature to Validate Heading of LMS UI Program Page.Verify the heading of the Program page</span>
+<span class="badge badge-default">Login Page.Validating the url</span>
 </div>
 </td>
 </tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@user_footer</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@user_footer</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:25:00 AM</td>
+<td>08:52:17 AM</td>
 <td>
-<a href="#" class="linked" test-id='385' id='386'>Verify table footer</a>
+<a href="#" class="linked" test-id='1' id='7'>Validating Login functionality with invalid password field</a>
 <div class="">
-<span class="badge badge-default">Table footer.Verify table footer</span>
+<span class="badge badge-default">Login Page.Validating Login functionality with invalid password field</span>
 </div>
 </td>
 </tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@search_byname</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@search_byname</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:11 AM</td>
+<td>08:52:17 AM</td>
 <td>
-<a href="#" class="linked" test-id='94' id='100'>Search Program By Name</a>
+<a href="#" class="linked" test-id='1' id='12'>Validating Login functionality with invalid username field</a>
 <div class="">
-<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Search Program By Name</span>
+<span class="badge badge-default">Login Page.Validating Login functionality with invalid username field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:17 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Validating Login functionality with valid username and password</a>
+<div class="">
+<span class="badge badge-default">Login Page.Validating Login functionality with valid username and password</span>
 </div>
 </td>
 </tr>
@@ -5510,11 +3577,731 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:47 AM</td>
+<td>08:52:58 AM</td>
 <td>
 <a href="#" class="linked" test-id='167' id='183'>Enter Program Description</a>
 <div class="">
 <span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Enter Program Description</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@user_header</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@user_header</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:21 AM</td>
+<td>
+<a href="#" class="linked" test-id='402' id='403'>Verify Table header</a>
+<div class="">
+<span class="badge badge-default">Table header.Verify Table header</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:25 AM</td>
+<td>
+<a href="#" class="linked" test-id='402' id='408'>Verify the functionality of sort icon present in table header</a>
+<div class="">
+<span class="badge badge-default">Table header.Verify the functionality of sort icon present in table header</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:25 AM</td>
+<td>
+<a href="#" class="linked" test-id='402' id='413'>User checks Checkbox in table header</a>
+<div class="">
+<span class="badge badge-default">Table header.User checks Checkbox in table header</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='402' id='418'>User unchecks Checkbox in table header</a>
+<div class="">
+<span class="badge badge-default">Table header.User unchecks Checkbox in table header</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_btn_user</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_btn_user</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='33'>Verify Visibility of UserButton in HomePage</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of UserButton in HomePage</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@select_multiplepgm</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@select_multiplepgm</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='198' id='199'>Select multiple Program</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page.Select multiple Program</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@addpgm</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@addpgm</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:54 AM</td>
+<td>
+<a href="#" class="linked" test-id='167' id='168'>Validate Add New Program</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Validate Add New Program</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='167' id='173'>Empty form submission</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Empty form submission</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='167' id='178'>Enter Program Name</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Enter Program Name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='167' id='183'>Enter Program Description</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Enter Program Description</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:00 AM</td>
+<td>
+<a href="#" class="linked" test-id='167' id='188'>Select Status</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Select Status</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='167' id='193'>Click Save</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Click Save</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@assign_footer</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@assign_footer</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='258' id='259'>Validate the text below the table</a>
+<div class="">
+<span class="badge badge-default">Assignment Footer.Validate the text below the table</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:46 AM</td>
+<td>
+<a href="#" class="linked" test-id='258' id='264'>Validate the footer</a>
+<div class="">
+<span class="badge badge-default">Assignment Footer.Validate the footer</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@pgm_deletebtn</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@pgm_deletebtn</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='83'>Validating the default state of Delete button</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate state of DeleteButton of LMS UI Program Page.Validating the default state of Delete button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@pgm_footer</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@pgm_footer</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='72'>Validate the text below the table</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Footer of LMS UI Program Page.Validate the text below the table</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='77'>Validate the footer</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Footer of LMS UI Program Page.Validate the footer</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@pgm_delete</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@pgm_delete</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='147'>Select Program</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Select Program</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='152'>Delete Feature</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Delete Feature</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='157'>Click Yes</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Click Yes</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='162'>Click No</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Click No</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@enter_name</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@enter_name</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='167' id='178'>Enter Program Name</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Enter Program Name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@status_ascorder</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@status_ascorder</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:39 AM</td>
+<td>
+<a href="#" class="linked" test-id='242' id='253'>Verify that the results are displayed in Ascending order of Program Status</a>
+<div class="">
+<span class="badge badge-default">Validate the Results are displayed in ascending order.Verify that the results are displayed in Ascending order of Program Status</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_homepage_heading</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_homepage_heading</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='53' id='54'>Verify the heading of the Home page</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Heading of LMS UI HomePage.Verify the heading of the Home page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@add_newpgm</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@add_newpgm</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:54 AM</td>
+<td>
+<a href="#" class="linked" test-id='167' id='168'>Validate Add New Program</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Validate Add New Program</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@asc_orderresults</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@asc_orderresults</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:33 AM</td>
+<td>
+<a href="#" class="linked" test-id='242' id='243'>Verify that the results are displayed in Ascending order of Program name</a>
+<div class="">
+<span class="badge badge-default">Validate the Results are displayed in ascending order.Verify that the results are displayed in Ascending order of Program name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='242' id='248'>Verify that the results are displayed in Ascending order of Program Description</a>
+<div class="">
+<span class="badge badge-default">Validate the Results are displayed in ascending order.Verify that the results are displayed in Ascending order of Program Description</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:39 AM</td>
+<td>
+<a href="#" class="linked" test-id='242' id='253'>Verify that the results are displayed in Ascending order of Program Status</a>
+<div class="">
+<span class="badge badge-default">Validate the Results are displayed in ascending order.Verify that the results are displayed in Ascending order of Program Status</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@click_save</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@click_save</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='167' id='193'>Click Save</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Click Save</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@pagination</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@pagination</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='221' id='222'>Verify previous link on the first page</a>
+<div class="">
+<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify previous link on the first page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='221' id='227'>Verify next link</a>
+<div class="">
+<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify next link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='221' id='232'>Verify previous link on the first page</a>
+<div class="">
+<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify previous link on the first page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:33 AM</td>
+<td>
+<a href="#" class="linked" test-id='221' id='237'>Verify next link on the last page</a>
+<div class="">
+<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify next link on the last page</span>
 </div>
 </td>
 </tr>
@@ -5546,11 +4333,1201 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:21 AM</td>
+<td>08:53:33 AM</td>
 <td>
 <a href="#" class="linked" test-id='242' id='243'>Verify that the results are displayed in Ascending order of Program name</a>
 <div class="">
 <span class="badge badge-default">Validate the Results are displayed in ascending order.Verify that the results are displayed in Ascending order of Program name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@save</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@save</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='115' id='141'>Click Save</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Edit Program of LMS UI Program Page.Click Save</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@assign_search</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@assign_search</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='269' id='270'>Validate Search Feature</a>
+<div class="">
+<span class="badge badge-default">Search Assignment.Validate Search Feature</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='269' id='275'>Search Assignment By Name</a>
+<div class="">
+<span class="badge badge-default">Search Assignment.Search Assignment By Name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@selectpgm</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@selectpgm</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:39 AM</td>
+<td>
+<a href="#" class="linked" test-id='115' id='116'>Select Program</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Edit Program of LMS UI Program Page.Select Program</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='147'>Select Program</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Select Program</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_pgmpage_deletebtn</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_pgmpage_deletebtn</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='83'>Validating the default state of Delete button</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate state of DeleteButton of LMS UI Program Page.Validating the default state of Delete button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@edit_pgmname</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@edit_pgmname</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='115' id='126'>Edit Program Name</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Edit Program of LMS UI Program Page.Edit Program Name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_search</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_search</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='94' id='95'>Validate Search Feature</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Validate Search Feature</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@user_pageHeading</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@user_pageHeading</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='368' id='369'>Verify the manage user page heading</a>
+<div class="">
+<span class="badge badge-default">User Page Heading.Verify the manage user page heading</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_pgmpage_footer</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_pgmpage_footer</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='77'>Validate the footer</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Footer of LMS UI Program Page.Validate the footer</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@user_footer</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@user_footer</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:21 AM</td>
+<td>
+<a href="#" class="linked" test-id='385' id='386'>Verify table footer</a>
+<div class="">
+<span class="badge badge-default">Table footer.Verify table footer</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_btn_program</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_btn_program</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='23'>Verify Visibility of ProgramButton in HomePage</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of ProgramButton in HomePage</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@user_manage</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@user_manage</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='362' id='363'>Verify landing in Manage user page</a>
+<div class="">
+<span class="badge badge-default">Manage User page.Verify landing in Manage user page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_previouslink_infirstpage</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_previouslink_infirstpage</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='221' id='222'>Verify previous link on the first page</a>
+<div class="">
+<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify previous link on the first page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_previouslink</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_previouslink</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='221' id='232'>Verify previous link on the first page</a>
+<div class="">
+<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify previous link on the first page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_nextlink</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_nextlink</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='221' id='227'>Verify next link</a>
+<div class="">
+<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify next link</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@home_title</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@home_title</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='59' id='60'>Verify the title of the Home page</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Title of LMS UI HomePage.Verify the title of the Home page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@select_status</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@select_status</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:00 AM</td>
+<td>
+<a href="#" class="linked" test-id='167' id='188'>Select Status</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Select Status</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@change_status</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@change_status</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:47 AM</td>
+<td>
+<a href="#" class="linked" test-id='115' id='136'>Change Program Status</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Edit Program of LMS UI Program Page.Change Program Status</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@add_newUser</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@add_newUser</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:21 AM</td>
+<td>
+<a href="#" class="linked" test-id='391' id='392'>Verify the presence of Add new user button</a>
+<div class="">
+<span class="badge badge-default">Add new user.Verify the presence of Add new user button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:21 AM</td>
+<td>
+<a href="#" class="linked" test-id='391' id='397'>Verify the functionality of Add new user button</a>
+<div class="">
+<span class="badge badge-default">Add new user.Verify the functionality of Add new user button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@description_ascorder</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@description_ascorder</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='242' id='248'>Verify that the results are displayed in Ascending order of Program Description</a>
+<div class="">
+<span class="badge badge-default">Validate the Results are displayed in ascending order.Verify that the results are displayed in Ascending order of Program Description</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@search_bystatus</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@search_bystatus</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:34 AM</td>
+<td>
+<a href="#" class="linked" test-id='94' id='110'>Search Program By Status</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Search Program By Status</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@search_bydescription</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@search_bydescription</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='94' id='105'>Search Program By Description</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Search Program By Description</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@edit_pgmdescription</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@edit_pgmdescription</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:44 AM</td>
+<td>
+<a href="#" class="linked" test-id='115' id='131'>Edit Program Description</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Edit Program of LMS UI Program Page.Edit Program Description</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@pgm_search</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@pgm_search</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='94' id='95'>Validate Search Feature</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Validate Search Feature</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='94' id='100'>Search Program By Name</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Search Program By Name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='94' id='105'>Search Program By Description</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Search Program By Description</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:34 AM</td>
+<td>
+<a href="#" class="linked" test-id='94' id='110'>Search Program By Status</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Search Program By Status</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_btn_assignment</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_btn_assignment</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='38'>Verify Visibility of AssignmentButton in HomePage</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of AssignmentButton in HomePage</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_pgmpage_footertxt</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_pgmpage_footertxt</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='71' id='72'>Validate the text below the table</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Footer of LMS UI Program Page.Validate the text below the table</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@home_btn</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@home_btn</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='23'>Verify Visibility of ProgramButton in HomePage</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of ProgramButton in HomePage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='28'>Verify Visibility of BatchButton in HomePage</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of BatchButton in HomePage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='33'>Verify Visibility of UserButton in HomePage</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of UserButton in HomePage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='38'>Verify Visibility of AssignmentButton in HomePage</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of AssignmentButton in HomePage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='43'>Verify Visibility of AttendanceButton in HomePage</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of AttendanceButton in HomePage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='48'>Verify Visibility of LogoutButton in HomePage</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate MenuBarButtons of LMS UI HomePage.Verify Visibility of LogoutButton in HomePage</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_pgmpage_records</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_pgmpage_records</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='88' id='89'>Validate that number of records displayed</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate No.of.Records in LMS UI Program Page.Validate that number of records displayed</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@verify_pgmpage_heading</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@verify_pgmpage_heading</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='66'>Verify the heading of the Program page</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Heading of LMS UI Program Page.Verify the heading of the Program page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@pgm_records</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@pgm_records</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='88' id='89'>Validate that number of records displayed</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate No.of.Records in LMS UI Program Page.Validate that number of records displayed</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@edit_feature</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@edit_feature</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:52:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='115' id='121'>Edit Feature</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Edit Program of LMS UI Program Page.Edit Feature</span>
 </div>
 </td>
 </tr>
@@ -5582,7 +5559,7 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
+<td>08:52:18 AM</td>
 <td>
 <a href="#" class="linked" test-id='22' id='48'>Verify Visibility of LogoutButton in HomePage</a>
 <div class="">
@@ -5618,7 +5595,7 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
+<td>08:52:18 AM</td>
 <td>
 <a href="#" class="linked" test-id='53' id='54'>Verify the heading of the Home page</a>
 <div class="">
@@ -5635,12 +5612,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@verify_nextlink</p>
+<p class="name">@emptysubmission</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@verify_nextlink</h4>
+<h4>@emptysubmission</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -5654,11 +5631,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:20 AM</td>
+<td>08:52:55 AM</td>
 <td>
-<a href="#" class="linked" test-id='221' id='227'>Verify next link</a>
+<a href="#" class="linked" test-id='167' id='173'>Empty form submission</a>
 <div class="">
-<span class="badge badge-default">Validate pagination functionality of LMS UI Program Page.Verify next link</span>
+<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Empty form submission</span>
 </div>
 </td>
 </tr>
@@ -5690,7 +5667,7 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:52 AM</td>
+<td>08:53:03 AM</td>
 <td>
 <a href="#" class="linked" test-id='198' id='199'>Select multiple Program</a>
 <div class="">
@@ -5700,7 +5677,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:03 AM</td>
+<td>08:53:14 AM</td>
 <td>
 <a href="#" class="linked" test-id='198' id='204'>Delete Feature</a>
 <div class="">
@@ -5710,7 +5687,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:05 AM</td>
+<td>08:53:16 AM</td>
 <td>
 <a href="#" class="linked" test-id='198' id='209'>Click Yes</a>
 <div class="">
@@ -5720,7 +5697,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:24:05 AM</td>
+<td>08:53:16 AM</td>
 <td>
 <a href="#" class="linked" test-id='198' id='214'>Click No</a>
 <div class="">
@@ -5756,11 +5733,117 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
+<td>08:52:18 AM</td>
 <td>
 <a href="#" class="linked" test-id='65' id='66'>Verify the heading of the Program page</a>
 <div class="">
 <span class="badge badge-default">Feature to Validate Heading of LMS UI Program Page.Verify the heading of the Program page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+</span>
+<p class="name">@assign_new</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@assign_new</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='280' id='281'>validate add new assignment</a>
+<div class="">
+<span class="badge badge-default">Add new assignment.validate add new assignment</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='280' id='286'>Empty form submission</a>
+<div class="">
+<span class="badge badge-default">Add new assignment.Empty form submission</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='280' id='291'>Enter Assignment Name</a>
+<div class="">
+<span class="badge badge-default">Add new assignment.Enter Assignment Name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='280' id='296'>Enter Assignment Description</a>
+<div class="">
+<span class="badge badge-default">Add new assignment.Enter Assignment Description</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='280' id='301'>Enter assignment grade</a>
+<div class="">
+<span class="badge badge-default">Add new assignment.Enter assignment grade</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:07 AM</td>
+<td>
+<a href="#" class="linked" test-id='280' id='306'>Enter assignment due date</a>
+<div class="">
+<span class="badge badge-default">Add new assignment.Enter assignment due date</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:07 AM</td>
+<td>
+<a href="#" class="linked" test-id='280' id='311'>Click Cancel</a>
+<div class="">
+<span class="badge badge-default">Add new assignment.Click Cancel</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:54:07 AM</td>
+<td>
+<a href="#" class="linked" test-id='280' id='316'>Click Save</a>
+<div class="">
+<span class="badge badge-default">Add new assignment.Click Save</span>
 </div>
 </td>
 </tr>
@@ -5792,7 +5875,7 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:09 AM</td>
+<td>08:52:18 AM</td>
 <td>
 <a href="#" class="linked" test-id='59' id='60'>Verify the title of the Home page</a>
 <div class="">
@@ -5807,15 +5890,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@add_newpgm</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">@delete_feature</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@add_newpgm</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@delete_feature</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -5828,11 +5911,21 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:45 AM</td>
+<td>08:52:52 AM</td>
 <td>
-<a href="#" class="linked" test-id='167' id='168'>Validate Add New Program</a>
+<a href="#" class="linked" test-id='146' id='152'>Delete Feature</a>
 <div class="">
-<span class="badge badge-default">Feature to Validate Add Program Functionality of LMS UI Program Page.Validate Add New Program</span>
+<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Delete Feature</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='198' id='204'>Delete Feature</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page.Delete Feature</span>
 </div>
 </td>
 </tr>
@@ -5843,15 +5936,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@verify_search</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">@clickno</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@verify_search</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@clickno</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -5864,11 +5957,21 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:23:11 AM</td>
+<td>08:52:52 AM</td>
 <td>
-<a href="#" class="linked" test-id='94' id='95'>Validate Search Feature</a>
+<a href="#" class="linked" test-id='146' id='162'>Click No</a>
 <div class="">
-<span class="badge badge-default">Feature to Validate SearchProgram of LMS UI Program Page.Validate Search Feature</span>
+<span class="badge badge-default">Feature to Validate Delete Functionality of LMS UI Program Page.Click No</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:53:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='198' id='214'>Click No</a>
+<div class="">
+<span class="badge badge-default">Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page.Click No</span>
 </div>
 </td>
 </tr>
@@ -5889,25 +5992,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sep 27, 2022 02:22:56 AM</h3>
+<h3>Sep 27, 2022 08:52:12 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sep 27, 2022 02:25:26 AM</h3>
+<h3>Sep 27, 2022 08:54:48 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>26</h3>
+<h3>25</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -5923,12 +6026,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>26</b> features passed
+<div><small data-tooltip='96%'>
+<b>25</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='3%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -5946,9 +6049,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>80</b> scenarios passed</small></div>
+<div><small data-tooltip='98%'><b>79</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='1%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -5966,10 +6069,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>242</b> steps passed</small></div>
+<div><small data-tooltip='99%'><b>241</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -5985,7 +6088,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login Page":11.998,"Feature to Validate MenuBarButtons of LMS UI HomePage":0.424,"Feature to Validate Heading of LMS UI HomePage":0.049,"Feature to Validate Title of LMS UI HomePage":0.014,"Feature to Validate Heading of LMS UI Program Page":0.108,"Feature to Validate Footer of LMS UI Program Page":1.112,"Feature to Validate state of DeleteButton of LMS UI Program Page":0.132,"Feature to Validate No.of.Records in LMS UI Program Page":0.136,"Feature to Validate SearchProgram of LMS UI Program Page":19.358,"Feature to Validate Edit Program of LMS UI Program Page":9.455,"Feature to Validate Delete Functionality of LMS UI Program Page":4.868,"Feature to Validate Add Program Functionality of LMS UI Program Page":7.553,"Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page":27.804,"Validate pagination functionality of LMS UI Program Page":1.039,"Validate the Results are displayed in ascending order":9.097,"Assignment Footer":6.261,"Search Assignment":7.472,"Add new assignment":4.77,"Edit Assignment Details":1.545,"Manage User page":3.34,"User Page Heading":3.034,"Pagination":3.114,"Table footer":0.025,"Add new user":0.293,"Table header":25.049,"Logout":0.773
+"Login Page":4.715,"Feature to Validate MenuBarButtons of LMS UI HomePage":0.28,"Feature to Validate Heading of LMS UI HomePage":0.028,"Feature to Validate Title of LMS UI HomePage":0.008,"Feature to Validate Heading of LMS UI Program Page":0.117,"Feature to Validate Footer of LMS UI Program Page":0.657,"Feature to Validate state of DeleteButton of LMS UI Program Page":0.106,"Feature to Validate No.of.Records in LMS UI Program Page":0.105,"Feature to Validate SearchProgram of LMS UI Program Page":20.106,"Feature to Validate Edit Program of LMS UI Program Page":10.145,"Feature to Validate Delete Functionality of LMS UI Program Page":5.123,"Feature to Validate Add Program Functionality of LMS UI Program Page":8.382,"Feature to Validate Muliple program Deletion Functionality of LMS UI Program Page":28.552,"Validate pagination functionality of LMS UI Program Page":1.351,"Validate the Results are displayed in ascending order":9.555,"Assignment Footer":6.35,"Search Assignment":7.632,"Add new assignment":10.906,"Edit Assignment Details":3.981,"Manage User page":3.335,"User Page Heading":3.035,"Pagination":3.169,"Table footer":0.031,"Add new user":0.343,"Table header":25.01,"Logout":0.917
 };
 </script>
 <div class="row">
@@ -5995,15 +6098,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@verify_previouslink_infirstpage</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@status_ascorder</td>
+<td>@search_byname</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -6019,214 +6114,6 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@pgm_deletebtn</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@edit_pgmdescription</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@verify_btn_batch</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@assign_new</td>
-<td>8</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@login</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@user_header</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@clickno</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@verify_nextlink_inlasttpage</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@user_pagination</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@verify_btn_user</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@pagination</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@verify_previouslink</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@pgm_footer</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@enter_name</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@edit_feature</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@verify_homepage_heading</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@clickyes</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@pgm_records</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@select_status</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@search_bydescription</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@user_manage</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@add_newUser</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@addpgm</td>
-<td>6</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@verify_pgmpage_footer</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@verify_pgmpage_deletebtn</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@verify_btn_program</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
 <td>@logout</td>
 <td>1</td>
 <td>0</td>
@@ -6235,31 +6122,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@emptysubmission</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@change_status</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@description_ascorder</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@user_pageHeading</td>
+<td>@verify_nextlink_inlasttpage</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -6275,7 +6138,23 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@home_title</td>
+<td>@clickyes</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@assign_edit</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>87.5%</td>
+</tr>
+<tr>
+<td>@verify_btn_batch</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -6283,7 +6162,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@delete_feature</td>
+<td>@user_pagination</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -6291,16 +6170,32 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@assign_footer</td>
-<td>2</td>
+<td>@login</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@selectpgm</td>
-<td>2</td>
+<td>@enter_description</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@user_header</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@verify_btn_user</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -6315,8 +6210,72 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
+<td>@addpgm</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@assign_footer</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@pgm_deletebtn</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@pgm_footer</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
 <td>@pgm_delete</td>
 <td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@enter_name</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@status_ascorder</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@verify_homepage_heading</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@add_newpgm</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -6331,46 +6290,6 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@pgm_search</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@search_bystatus</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@verify_pgmpage_records</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@verify_btn_assignment</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@edit_pgmname</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
 <td>@click_save</td>
 <td>1</td>
 <td>0</td>
@@ -6379,7 +6298,15 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@verify_pgmpage_footertxt</td>
+<td>@pagination</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@name_ascorder</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -6395,22 +6322,6 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@home_btn</td>
-<td>6</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@assign_edit</td>
-<td>8</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
 <td>@assign_search</td>
 <td>2</td>
 <td>0</td>
@@ -6419,7 +6330,47 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@verify_pgmpage_heading</td>
+<td>@selectpgm</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@verify_pgmpage_deletebtn</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@edit_pgmname</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@verify_search</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@user_pageHeading</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@verify_pgmpage_footer</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -6435,7 +6386,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@search_byname</td>
+<td>@verify_btn_program</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -6443,7 +6394,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@enter_description</td>
+<td>@user_manage</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -6451,7 +6402,151 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@name_ascorder</td>
+<td>@verify_previouslink_infirstpage</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@verify_previouslink</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@verify_nextlink</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@home_title</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@select_status</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@change_status</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@add_newUser</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@description_ascorder</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@search_bystatus</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@search_bydescription</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@edit_pgmdescription</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@pgm_search</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@verify_btn_assignment</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@verify_pgmpage_footertxt</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@home_btn</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@verify_pgmpage_records</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@verify_pgmpage_heading</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@pgm_records</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@edit_feature</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -6475,7 +6570,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@verify_nextlink</td>
+<td>@emptysubmission</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -6499,6 +6594,14 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
+<td>@assign_new</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
 <td>@verify_homepage_title</td>
 <td>1</td>
 <td>0</td>
@@ -6507,16 +6610,16 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@add_newpgm</td>
-<td>1</td>
+<td>@delete_feature</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@verify_search</td>
-<td>1</td>
+<td>@clickno</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -6531,21 +6634,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 26,
-failParent: 0,
+passParent: 25,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 80,
-failChild: 0,
+passChild: 79,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 242,
-failGrandChild: 0,
+passGrandChild: 241,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 1,
 infoGrandChild: 0,
 eventsCount: 5,
 };
