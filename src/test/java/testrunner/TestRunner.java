@@ -12,7 +12,6 @@ import io.cucumber.junit.CucumberOptions;
 		"src/test/resources/features/Feature3programfeatures",
 		"src/test/resources/features/Feature4assignmentfeatures",
 		"src/test/resources/features/Feature5userfeatures",
-		//"src/test/resources/features/Feature6batchfeatures",
 		"src/test/resources/features/logoutfeature",
 				
 		},
@@ -22,11 +21,8 @@ tags = "@login or @home_title or @home_heading or @home_btn or  "
 		+ "@assign_heading or @assign_footer or @assign_asc or @assign_search or @assign_new or @assign_edit or @assign_delete or "
 		+ "@user_manage or @user_pageHeading or @user_pagination or @user_footer or @add_newUser or @user_header or @user_deleteicon or @logout" , 
 
-//tags = "@login or @user_manage or @user_pageHeading or @user_pagination or @user_footer  or @add_newUser or @user_header",
-
 plugin = { "pretty",
-		    //"io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm",
-			"html:target/HtmlReports",
+			"html:target/HtmlReport.html",
 			"json:target/JSONReports/reports.json", 
 			"junit:target/JUNITReorts/report.xml" ,
 			//"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
@@ -37,4 +33,3 @@ monochrome = true
 public class TestRunner {
 
 }
-//@registrationHeading or @registrationLogin or @registrationSignup or @registration or 
