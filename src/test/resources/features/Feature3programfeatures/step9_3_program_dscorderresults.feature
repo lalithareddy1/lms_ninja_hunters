@@ -1,5 +1,4 @@
 @desc_orderresults
-
 Feature: Validate the Results are displayed in descending order
 
 @name_descorder

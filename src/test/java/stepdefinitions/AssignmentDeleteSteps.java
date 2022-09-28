@@ -13,6 +13,7 @@ public class AssignmentDeleteSteps extends AssignmentPage{
 	
 	@When("User clicks on a <Delete> button after selecting an assignment")
 	public void user_clicks_on_a_delete_button() {
+		System.out.println("==========Inside Assignment Delete ===========");
 		assignpage.click_btndelete();
 	}
 
@@ -24,17 +25,6 @@ public class AssignmentDeleteSteps extends AssignmentPage{
 	@Given("User is on a Confirm Deletion form")
 	public void user_is_on_a_confirm_deletion_form() {
 		assignpage.check_confirmdelteionbox_displayed();
-	}
-
-	@When("User clicks on <Yes> button")
-	public void user_clicks_on_yes_button() {
-		assignpage.click_yesbtn_fordelete();
-	}
-
-	@Then("User can saw the {string} message")
-	public void user_can_see_message(String expected) {
-		if(expected.equals("Successful Program Deleted"))
-			assertEquals("Successful Program Deleted",assignpage.check_program_deleted());	
 	}
 	
 	@When("User clicks on <No> button")
@@ -48,6 +38,19 @@ public class AssignmentDeleteSteps extends AssignmentPage{
 		assertEquals (true,assignpage.check_dialogbox_disappear());
 		
 	}
+
+	@When("User clicks on <Yes> button")
+	public void user_clicks_on_yes_button() {
+		assignpage.click_yesbtn_fordelete();
+	}
+
+	@Then("User can saw the {string} message")
+	public void user_can_see_message(String expected) {
+		if(expected.equals("Successful Program Deleted"))
+			assertEquals("Successful Program Deleted",assignpage.check_program_deleted());	
+	}
+	
+	
 	
 	@Given("User is on Assignment page")
 	public void user_is_on_assignment_page() {

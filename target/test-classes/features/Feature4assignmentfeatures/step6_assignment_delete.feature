@@ -1,7 +1,7 @@
 @assign_delete 
 Feature: Delete Assignment 
 
-Scenario: 
+Scenario: Click Delete
 	Given User is on Assignment page
 	When User clicks on a <Delete> button after selecting an assignment 
 	Then User lands on a Confirm Deletion form. 

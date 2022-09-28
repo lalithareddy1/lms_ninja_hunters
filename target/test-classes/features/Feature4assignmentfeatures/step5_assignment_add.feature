@@ -1,4 +1,4 @@
-@assign_new 
+@assign_add
 Feature: Add new assignment 
 
 Scenario: validate add new assignment 

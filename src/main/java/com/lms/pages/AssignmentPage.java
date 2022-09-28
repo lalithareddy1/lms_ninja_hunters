@@ -256,6 +256,7 @@ public class AssignmentPage extends TestBase {
 
 	public void click_btndelete() {
 		//searchtextvalidation.clear();
+		System.out.println(" ++++++++++++ INSIDE   JAVA CLICK ++++++++++++++++++++=");
 		waitUntillVisibilityOf(firstrow_check_box);
 		firstrow_check_box.click();
 		waitUntillVisibilityOf(clickondeletebutton);
@@ -383,7 +384,7 @@ public class AssignmentPage extends TestBase {
 	}
 
 	public void click_No() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		btn_No.click();
 		System.out.println("Clicked No button");
 

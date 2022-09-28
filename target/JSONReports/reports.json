@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:16:50.705Z",
+        "start_timestamp": "2022-09-28T21:37:45.561Z",
         "line": 4,
         "name": "Validating the url",
         "description": "",
@@ -11,7 +11,7 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "match": {
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1914000000,
+              "duration": 1687000000,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 2486000000,
+              "duration": 4202000000,
               "status": "passed"
             },
             "line": 6,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 13000000,
+              "duration": 12000000,
               "status": "passed"
             },
             "line": 7,
@@ -66,7 +66,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:16:55.193Z",
+        "start_timestamp": "2022-09-28T21:37:51.559Z",
         "line": 9,
         "name": "Validating Login functionality with invalid password field",
         "description": "",
@@ -99,7 +99,7 @@
           },
           {
             "result": {
-              "duration": 214000000,
+              "duration": 215000000,
               "status": "passed"
             },
             "line": 11,
@@ -117,7 +117,7 @@
           },
           {
             "result": {
-              "duration": 267000000,
+              "duration": 235000000,
               "status": "passed"
             },
             "line": 12,
@@ -141,7 +141,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:16:55.696Z",
+        "start_timestamp": "2022-09-28T21:37:52.027Z",
         "line": 14,
         "name": "Validating Login functionality with invalid username field",
         "description": "",
@@ -149,7 +149,7 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -174,7 +174,7 @@
           },
           {
             "result": {
-              "duration": 171000000,
+              "duration": 177000000,
               "status": "passed"
             },
             "line": 16,
@@ -192,7 +192,7 @@
           },
           {
             "result": {
-              "duration": 190000000,
+              "duration": 169000000,
               "status": "passed"
             },
             "line": 17,
@@ -216,7 +216,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:16:56.069Z",
+        "start_timestamp": "2022-09-28T21:37:52.389Z",
         "line": 19,
         "name": "Validating Login functionality with valid username and password",
         "description": "",
@@ -249,7 +249,7 @@
           },
           {
             "result": {
-              "duration": 303000000,
+              "duration": 308000000,
               "status": "passed"
             },
             "line": 21,
@@ -316,7 +316,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 5,
@@ -328,6 +328,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 6,
@@ -340,7 +341,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:16:56.388Z",
+        "start_timestamp": "2022-09-28T21:37:52.715Z",
         "line": 11,
         "name": "Verify Visibility of ProgramButton in HomePage",
         "description": "",
@@ -348,6 +349,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -360,7 +362,7 @@
         "steps": [
           {
             "result": {
-              "duration": 40000000,
+              "duration": 30000000,
               "status": "passed"
             },
             "line": 12,
@@ -395,6 +397,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 5,
@@ -418,7 +421,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:16:56.445Z",
+        "start_timestamp": "2022-09-28T21:37:52.761Z",
         "line": 15,
         "name": "Verify Visibility of BatchButton in HomePage",
         "description": "",
@@ -438,7 +441,7 @@
         "steps": [
           {
             "result": {
-              "duration": 32000000,
+              "duration": 25000000,
               "status": "passed"
             },
             "line": 16,
@@ -496,7 +499,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:16:56.485Z",
+        "start_timestamp": "2022-09-28T21:37:52.799Z",
         "line": 19,
         "name": "Verify Visibility of UserButton in HomePage",
         "description": "",
@@ -516,7 +519,7 @@
         "steps": [
           {
             "result": {
-              "duration": 37000000,
+              "duration": 33000000,
               "status": "passed"
             },
             "line": 20,
@@ -575,7 +578,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:16:56.530Z",
+        "start_timestamp": "2022-09-28T21:37:52.841Z",
         "line": 23,
         "name": "Verify Visibility of AssignmentButton in HomePage",
         "description": "",
@@ -595,7 +598,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18000000,
+              "duration": 30000000,
               "status": "passed"
             },
             "line": 24,
@@ -630,6 +633,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 5,
@@ -653,7 +657,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:16:56.558Z",
+        "start_timestamp": "2022-09-28T21:37:52.880Z",
         "line": 27,
         "name": "Verify Visibility of AttendanceButton in HomePage",
         "description": "",
@@ -732,7 +736,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:16:56.590Z",
+        "start_timestamp": "2022-09-28T21:37:52.913Z",
         "line": 31,
         "name": "Verify Visibility of LogoutButton in HomePage",
         "description": "",
@@ -740,7 +744,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -753,7 +756,7 @@
         "steps": [
           {
             "result": {
-              "duration": 25000000,
+              "duration": 36000000,
               "status": "passed"
             },
             "line": 32,
@@ -800,7 +803,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:16:56.625Z",
+        "start_timestamp": "2022-09-28T21:37:52.961Z",
         "line": 6,
         "name": "Verify  the heading of the Home page",
         "description": "",
@@ -820,7 +823,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 7,
@@ -832,6 +835,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 8,
@@ -843,7 +847,7 @@
           },
           {
             "result": {
-              "duration": 36000000,
+              "duration": 33000000,
               "status": "passed"
             },
             "line": 9,
@@ -890,7 +894,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:16:56.670Z",
+        "start_timestamp": "2022-09-28T21:37:53.010Z",
         "line": 6,
         "name": "Verify  the title of the Home page",
         "description": "",
@@ -898,6 +902,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -910,6 +915,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 7,
@@ -921,7 +927,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 8,
@@ -933,7 +938,7 @@
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 5000000,
               "status": "passed"
             },
             "line": 9,
@@ -980,7 +985,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:16:56.685Z",
+        "start_timestamp": "2022-09-28T21:37:53.030Z",
         "line": 6,
         "name": "Verify  the heading of the Program page",
         "description": "",
@@ -1000,7 +1005,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 7,
@@ -1012,7 +1017,7 @@
           },
           {
             "result": {
-              "duration": 58000000,
+              "duration": 52000000,
               "status": "passed"
             },
             "line": 8,
@@ -1024,7 +1029,7 @@
           },
           {
             "result": {
-              "duration": 29000000,
+              "duration": 38000000,
               "status": "passed"
             },
             "line": 9,
@@ -1091,7 +1096,7 @@
           },
           {
             "result": {
-              "duration": 54000000,
+              "duration": 49000000,
               "status": "passed"
             },
             "line": 6,
@@ -1104,7 +1109,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:16:56.784Z",
+        "start_timestamp": "2022-09-28T21:37:53.134Z",
         "line": 9,
         "name": "Validate the text below the table",
         "description": "",
@@ -1125,7 +1130,7 @@
         "steps": [
           {
             "result": {
-              "duration": 30000000,
+              "duration": 28000000,
               "status": "passed"
             },
             "line": 10,
@@ -1172,7 +1177,7 @@
           },
           {
             "result": {
-              "duration": 50000000,
+              "duration": 54000000,
               "status": "passed"
             },
             "line": 6,
@@ -1185,7 +1190,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:16:56.878Z",
+        "start_timestamp": "2022-09-28T21:37:53.228Z",
         "line": 13,
         "name": "Validate the footer",
         "description": "",
@@ -1193,6 +1198,7 @@
         "after": [
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -1205,7 +1211,7 @@
         "steps": [
           {
             "result": {
-              "duration": 672000000,
+              "duration": 631000000,
               "status": "passed"
             },
             "line": 14,
@@ -1252,7 +1258,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:16:57.613Z",
+        "start_timestamp": "2022-09-28T21:37:53.925Z",
         "line": 6,
         "name": "Validating the default state of Delete button",
         "description": "",
@@ -1260,6 +1266,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -1272,7 +1279,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 7,
@@ -1296,7 +1302,7 @@
           },
           {
             "result": {
-              "duration": 36000000,
+              "duration": 35000000,
               "status": "passed"
             },
             "line": 9,
@@ -1337,7 +1343,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:16:57.721Z",
+        "start_timestamp": "2022-09-28T21:37:54.037Z",
         "line": 6,
         "name": "Validate that number of records displayed",
         "description": "",
@@ -1345,7 +1351,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -1358,7 +1363,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 7,
@@ -1370,7 +1374,7 @@
           },
           {
             "result": {
-              "duration": 58000000,
+              "duration": 49000000,
               "status": "passed"
             },
             "line": 8,
@@ -1382,7 +1386,7 @@
           },
           {
             "result": {
-              "duration": 46000000,
+              "duration": 33000000,
               "status": "passed"
             },
             "line": 9,
@@ -1423,7 +1427,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:16:57.838Z",
+        "start_timestamp": "2022-09-28T21:37:54.132Z",
         "line": 6,
         "name": "Validate Search Feature",
         "description": "",
@@ -1431,7 +1435,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -1456,7 +1459,7 @@
           },
           {
             "result": {
-              "duration": 45000000,
+              "duration": 50000000,
               "status": "passed"
             },
             "line": 8,
@@ -1468,7 +1471,7 @@
           },
           {
             "result": {
-              "duration": 28000000,
+              "duration": 41000000,
               "status": "passed"
             },
             "line": 9,
@@ -1495,7 +1498,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:16:57.925Z",
+        "start_timestamp": "2022-09-28T21:37:54.237Z",
         "line": 13,
         "name": "Search Program By Name",
         "description": "",
@@ -1515,7 +1518,7 @@
         "steps": [
           {
             "result": {
-              "duration": 62000000,
+              "duration": 51000000,
               "status": "passed"
             },
             "line": 14,
@@ -1539,7 +1542,7 @@
           },
           {
             "result": {
-              "duration": 328000000,
+              "duration": 138000000,
               "status": "passed"
             },
             "line": 16,
@@ -1560,7 +1563,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:00.462Z",
+        "start_timestamp": "2022-09-28T21:37:56.574Z",
         "line": 19,
         "name": "Search Program By Description",
         "description": "",
@@ -1568,7 +1571,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -1581,7 +1583,7 @@
         "steps": [
           {
             "result": {
-              "duration": 49000000,
+              "duration": 46000000,
               "status": "passed"
             },
             "line": 20,
@@ -1593,7 +1595,7 @@
           },
           {
             "result": {
-              "duration": 2111000000,
+              "duration": 2128000000,
               "status": "passed"
             },
             "line": 21,
@@ -1605,7 +1607,7 @@
           },
           {
             "result": {
-              "duration": 269000000,
+              "duration": 170000000,
               "status": "passed"
             },
             "line": 22,
@@ -1626,7 +1628,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:02.901Z",
+        "start_timestamp": "2022-09-28T21:37:58.919Z",
         "line": 26,
         "name": "Search Program By Status",
         "description": "",
@@ -1646,7 +1648,7 @@
         "steps": [
           {
             "result": {
-              "duration": 61000000,
+              "duration": 49000000,
               "status": "passed"
             },
             "line": 27,
@@ -1658,7 +1660,7 @@
           },
           {
             "result": {
-              "duration": 2155000000,
+              "duration": 2113000000,
               "status": "passed"
             },
             "line": 28,
@@ -1670,7 +1672,7 @@
           },
           {
             "result": {
-              "duration": 3489000000,
+              "duration": 2045000000,
               "status": "passed"
             },
             "line": 29,
@@ -1711,7 +1713,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:17:08.615Z",
+        "start_timestamp": "2022-09-28T21:38:03.135Z",
         "line": 6,
         "name": "Select Program",
         "description": "",
@@ -1719,7 +1721,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -1732,7 +1733,7 @@
         "steps": [
           {
             "result": {
-              "duration": 61000000,
+              "duration": 54000000,
               "status": "passed"
             },
             "line": 7,
@@ -1744,7 +1745,7 @@
           },
           {
             "result": {
-              "duration": 2190000000,
+              "duration": 2100000000,
               "status": "passed"
             },
             "line": 8,
@@ -1756,7 +1757,7 @@
           },
           {
             "result": {
-              "duration": 41000000,
+              "duration": 36000000,
               "status": "passed"
             },
             "line": 9,
@@ -1777,7 +1778,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:10.918Z",
+        "start_timestamp": "2022-09-28T21:38:05.341Z",
         "line": 13,
         "name": "Edit Feature",
         "description": "",
@@ -1785,6 +1786,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -1797,7 +1799,7 @@
         "steps": [
           {
             "result": {
-              "duration": 57000000,
+              "duration": 62000000,
               "status": "passed"
             },
             "line": 14,
@@ -1809,7 +1811,7 @@
           },
           {
             "result": {
-              "duration": 126000000,
+              "duration": 73000000,
               "status": "passed"
             },
             "line": 15,
@@ -1821,7 +1823,7 @@
           },
           {
             "result": {
-              "duration": 117000000,
+              "duration": 114000000,
               "status": "passed"
             },
             "line": 16,
@@ -1842,7 +1844,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:11.228Z",
+        "start_timestamp": "2022-09-28T21:38:05.603Z",
         "line": 19,
         "name": "Edit Program Name",
         "description": "",
@@ -1862,7 +1864,7 @@
         "steps": [
           {
             "result": {
-              "duration": 119000000,
+              "duration": 98000000,
               "status": "passed"
             },
             "line": 20,
@@ -1874,7 +1876,7 @@
           },
           {
             "result": {
-              "duration": 2279000000,
+              "duration": 2125000000,
               "status": "passed"
             },
             "line": 21,
@@ -1886,7 +1888,7 @@
           },
           {
             "result": {
-              "duration": 45000000,
+              "duration": 32000000,
               "status": "passed"
             },
             "line": 22,
@@ -1907,7 +1909,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:13.677Z",
+        "start_timestamp": "2022-09-28T21:38:07.875Z",
         "line": 25,
         "name": "Edit Program Description",
         "description": "",
@@ -1915,7 +1917,6 @@
         "after": [
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -1928,7 +1929,7 @@
         "steps": [
           {
             "result": {
-              "duration": 99000000,
+              "duration": 101000000,
               "status": "passed"
             },
             "line": 26,
@@ -1940,7 +1941,7 @@
           },
           {
             "result": {
-              "duration": 2211000000,
+              "duration": 2152000000,
               "status": "passed"
             },
             "line": 27,
@@ -1952,7 +1953,7 @@
           },
           {
             "result": {
-              "duration": 43000000,
+              "duration": 31000000,
               "status": "passed"
             },
             "line": 28,
@@ -1973,7 +1974,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:16.044Z",
+        "start_timestamp": "2022-09-28T21:38:10.176Z",
         "line": 31,
         "name": "Change Program Status",
         "description": "",
@@ -1993,7 +1994,7 @@
         "steps": [
           {
             "result": {
-              "duration": 97000000,
+              "duration": 103000000,
               "status": "passed"
             },
             "line": 32,
@@ -2005,7 +2006,7 @@
           },
           {
             "result": {
-              "duration": 2149000000,
+              "duration": 2105000000,
               "status": "passed"
             },
             "line": 33,
@@ -2017,7 +2018,7 @@
           },
           {
             "result": {
-              "duration": 36000000,
+              "duration": 25000000,
               "status": "passed"
             },
             "line": 34,
@@ -2038,7 +2039,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:18.337Z",
+        "start_timestamp": "2022-09-28T21:38:12.424Z",
         "line": 37,
         "name": "Click Save",
         "description": "",
@@ -2058,7 +2059,7 @@
         "steps": [
           {
             "result": {
-              "duration": 104000000,
+              "duration": 95000000,
               "status": "passed"
             },
             "line": 38,
@@ -2070,7 +2071,7 @@
           },
           {
             "result": {
-              "duration": 152000000,
+              "duration": 100000000,
               "status": "passed"
             },
             "line": 39,
@@ -2082,6 +2083,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 40,
@@ -2128,7 +2130,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:17:18.603Z",
+        "start_timestamp": "2022-09-28T21:38:12.630Z",
         "line": 5,
         "name": "Select Program",
         "description": "",
@@ -2148,7 +2150,7 @@
         "steps": [
           {
             "result": {
-              "duration": 207000000,
+              "duration": 191000000,
               "status": "passed"
             },
             "line": 6,
@@ -2160,7 +2162,7 @@
           },
           {
             "result": {
-              "duration": 2147000000,
+              "duration": 2106000000,
               "status": "passed"
             },
             "line": 7,
@@ -2172,7 +2174,7 @@
           },
           {
             "result": {
-              "duration": 61000000,
+              "duration": 40000000,
               "status": "passed"
             },
             "line": 8,
@@ -2193,7 +2195,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:21.033Z",
+        "start_timestamp": "2022-09-28T21:38:14.979Z",
         "line": 11,
         "name": "Delete Feature",
         "description": "",
@@ -2201,6 +2203,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -2213,7 +2216,7 @@
         "steps": [
           {
             "result": {
-              "duration": 58000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 12,
@@ -2225,7 +2228,7 @@
           },
           {
             "result": {
-              "duration": 126000000,
+              "duration": 69000000,
               "status": "passed"
             },
             "line": 13,
@@ -2237,7 +2240,7 @@
           },
           {
             "result": {
-              "duration": 50000000,
+              "duration": 29000000,
               "status": "passed"
             },
             "line": 14,
@@ -2258,7 +2261,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:21.279Z",
+        "start_timestamp": "2022-09-28T21:38:15.152Z",
         "line": 17,
         "name": "Click Yes",
         "description": "",
@@ -2266,7 +2269,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -2291,7 +2293,7 @@
           },
           {
             "result": {
-              "duration": 114000000,
+              "duration": 80000000,
               "status": "passed"
             },
             "line": 19,
@@ -2329,7 +2331,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:21.443Z",
+        "start_timestamp": "2022-09-28T21:38:15.277Z",
         "line": 24,
         "name": "Click No",
         "description": "",
@@ -2349,7 +2351,7 @@
         "steps": [
           {
             "result": {
-              "duration": 190000000,
+              "duration": 196000000,
               "status": "passed"
             },
             "line": 25,
@@ -2361,7 +2363,7 @@
           },
           {
             "result": {
-              "duration": 2117000000,
+              "duration": 2064000000,
               "status": "passed"
             },
             "line": 26,
@@ -2413,7 +2415,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:17:23.764Z",
+        "start_timestamp": "2022-09-28T21:38:17.552Z",
         "line": 6,
         "name": "Validate Add New Program",
         "description": "",
@@ -2421,7 +2423,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -2434,7 +2435,7 @@
         "steps": [
           {
             "result": {
-              "duration": 191000000,
+              "duration": 177000000,
               "status": "passed"
             },
             "line": 7,
@@ -2446,7 +2447,7 @@
           },
           {
             "result": {
-              "duration": 127000000,
+              "duration": 53000000,
               "status": "passed"
             },
             "line": 8,
@@ -2458,7 +2459,7 @@
           },
           {
             "result": {
-              "duration": 131000000,
+              "duration": 101000000,
               "status": "passed"
             },
             "line": 9,
@@ -2479,7 +2480,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:24.223Z",
+        "start_timestamp": "2022-09-28T21:38:17.894Z",
         "line": 12,
         "name": "Empty form submission",
         "description": "",
@@ -2487,6 +2488,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -2499,7 +2501,7 @@
         "steps": [
           {
             "result": {
-              "duration": 117000000,
+              "duration": 97000000,
               "status": "passed"
             },
             "line": 13,
@@ -2511,7 +2513,7 @@
           },
           {
             "result": {
-              "duration": 162000000,
+              "duration": 93000000,
               "status": "passed"
             },
             "line": 14,
@@ -2523,7 +2525,7 @@
           },
           {
             "result": {
-              "duration": 177000000,
+              "duration": 105000000,
               "status": "passed"
             },
             "line": 15,
@@ -2550,7 +2552,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:24.690Z",
+        "start_timestamp": "2022-09-28T21:38:18.199Z",
         "line": 19,
         "name": "Enter Program Name",
         "description": "",
@@ -2570,7 +2572,7 @@
         "steps": [
           {
             "result": {
-              "duration": 107000000,
+              "duration": 103000000,
               "status": "passed"
             },
             "line": 20,
@@ -2582,7 +2584,7 @@
           },
           {
             "result": {
-              "duration": 2137000000,
+              "duration": 2091000000,
               "status": "passed"
             },
             "line": 21,
@@ -2594,7 +2596,7 @@
           },
           {
             "result": {
-              "duration": 78000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 22,
@@ -2615,7 +2617,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:27.018Z",
+        "start_timestamp": "2022-09-28T21:38:20.467Z",
         "line": 25,
         "name": "Enter Program Description",
         "description": "",
@@ -2623,7 +2625,7 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 7000000,
               "status": "passed"
             },
             "match": {
@@ -2636,7 +2638,7 @@
         "steps": [
           {
             "result": {
-              "duration": 98000000,
+              "duration": 100000000,
               "status": "passed"
             },
             "line": 26,
@@ -2648,7 +2650,7 @@
           },
           {
             "result": {
-              "duration": 2116000000,
+              "duration": 2095000000,
               "status": "passed"
             },
             "line": 27,
@@ -2660,7 +2662,7 @@
           },
           {
             "result": {
-              "duration": 72000000,
+              "duration": 57000000,
               "status": "passed"
             },
             "line": 28,
@@ -2681,7 +2683,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:29.314Z",
+        "start_timestamp": "2022-09-28T21:38:22.728Z",
         "line": 31,
         "name": "Select Status",
         "description": "",
@@ -2701,7 +2703,7 @@
         "steps": [
           {
             "result": {
-              "duration": 100000000,
+              "duration": 121000000,
               "status": "passed"
             },
             "line": 32,
@@ -2713,7 +2715,7 @@
           },
           {
             "result": {
-              "duration": 2154000000,
+              "duration": 2088000000,
               "status": "passed"
             },
             "line": 33,
@@ -2725,7 +2727,7 @@
           },
           {
             "result": {
-              "duration": 32000000,
+              "duration": 22000000,
               "status": "passed"
             },
             "line": 34,
@@ -2746,7 +2748,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:31.617Z",
+        "start_timestamp": "2022-09-28T21:38:24.974Z",
         "line": 37,
         "name": "Click Save",
         "description": "",
@@ -2766,7 +2768,7 @@
         "steps": [
           {
             "result": {
-              "duration": 130000000,
+              "duration": 95000000,
               "status": "passed"
             },
             "line": 38,
@@ -2778,7 +2780,7 @@
           },
           {
             "result": {
-              "duration": 186000000,
+              "duration": 97000000,
               "status": "passed"
             },
             "line": 39,
@@ -2836,7 +2838,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:17:31.959Z",
+        "start_timestamp": "2022-09-28T21:38:25.172Z",
         "line": 5,
         "name": "Select multiple Program",
         "description": "",
@@ -2856,7 +2858,7 @@
         "steps": [
           {
             "result": {
-              "duration": 188000000,
+              "duration": 195000000,
               "status": "passed"
             },
             "line": 6,
@@ -2868,7 +2870,7 @@
           },
           {
             "result": {
-              "duration": 11097000000,
+              "duration": 10554000000,
               "status": "passed"
             },
             "line": 7,
@@ -2900,7 +2902,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:43.276Z",
+        "start_timestamp": "2022-09-28T21:38:35.929Z",
         "line": 11,
         "name": "Delete Feature",
         "description": "",
@@ -2908,6 +2910,7 @@
         "after": [
           {
             "result": {
+              "duration": 9000000,
               "status": "passed"
             },
             "match": {
@@ -2920,7 +2923,7 @@
         "steps": [
           {
             "result": {
-              "duration": 74000000,
+              "duration": 53000000,
               "status": "passed"
             },
             "line": 12,
@@ -2932,7 +2935,7 @@
           },
           {
             "result": {
-              "duration": 2210000000,
+              "duration": 2124000000,
               "status": "passed"
             },
             "line": 13,
@@ -2944,7 +2947,7 @@
           },
           {
             "result": {
-              "duration": 64000000,
+              "duration": 33000000,
               "status": "passed"
             },
             "line": 14,
@@ -2965,7 +2968,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:45.637Z",
+        "start_timestamp": "2022-09-28T21:38:38.154Z",
         "line": 17,
         "name": "Click Yes",
         "description": "",
@@ -2985,7 +2988,7 @@
         "steps": [
           {
             "result": {
-              "duration": 64000000,
+              "duration": 35000000,
               "status": "passed"
             },
             "line": 18,
@@ -2997,7 +3000,7 @@
           },
           {
             "result": {
-              "duration": 142000000,
+              "duration": 69000000,
               "status": "passed"
             },
             "line": 19,
@@ -3035,7 +3038,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:17:45.890Z",
+        "start_timestamp": "2022-09-28T21:38:38.276Z",
         "line": 24,
         "name": "Click No",
         "description": "",
@@ -3055,7 +3058,7 @@
         "steps": [
           {
             "result": {
-              "duration": 160000000,
+              "duration": 191000000,
               "status": "passed"
             },
             "line": 25,
@@ -3067,7 +3070,7 @@
           },
           {
             "result": {
-              "duration": 10946000000,
+              "duration": 10553000000,
               "status": "passed"
             },
             "line": 26,
@@ -3079,7 +3082,7 @@
           },
           {
             "result": {
-              "duration": 2171000000,
+              "duration": 2097000000,
               "status": "passed"
             },
             "line": 27,
@@ -3091,7 +3094,7 @@
           },
           {
             "result": {
-              "duration": 2086000000,
+              "duration": 2062000000,
               "status": "passed"
             },
             "line": 28,
@@ -3143,7 +3146,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:18:01.276Z",
+        "start_timestamp": "2022-09-28T21:38:53.187Z",
         "line": 5,
         "name": "Verify previous link on the first page",
         "description": "",
@@ -3163,7 +3166,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 6,
@@ -3175,7 +3178,7 @@
           },
           {
             "result": {
-              "duration": 45000000,
+              "duration": 27000000,
               "status": "passed"
             },
             "line": 7,
@@ -3187,7 +3190,7 @@
           },
           {
             "result": {
-              "duration": 67000000,
+              "duration": 35000000,
               "status": "passed"
             },
             "line": 8,
@@ -3208,7 +3211,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:01.418Z",
+        "start_timestamp": "2022-09-28T21:38:53.260Z",
         "line": 11,
         "name": "Verify next link",
         "description": "",
@@ -3228,6 +3231,7 @@
         "steps": [
           {
             "result": {
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 12,
@@ -3239,7 +3243,7 @@
           },
           {
             "result": {
-              "duration": 193000000,
+              "duration": 109000000,
               "status": "passed"
             },
             "line": 13,
@@ -3251,7 +3255,7 @@
           },
           {
             "result": {
-              "duration": 475000000,
+              "duration": 218000000,
               "status": "passed"
             },
             "line": 14,
@@ -3278,7 +3282,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:02.113Z",
+        "start_timestamp": "2022-09-28T21:38:53.603Z",
         "line": 17,
         "name": "Verify previous link on the first page",
         "description": "",
@@ -3298,7 +3302,7 @@
         "steps": [
           {
             "result": {
-              "duration": 365000000,
+              "duration": 218000000,
               "status": "passed"
             },
             "line": 18,
@@ -3316,7 +3320,7 @@
           },
           {
             "result": {
-              "duration": 173000000,
+              "duration": 71000000,
               "status": "passed"
             },
             "line": 19,
@@ -3328,7 +3332,7 @@
           },
           {
             "result": {
-              "duration": 367000000,
+              "duration": 209000000,
               "status": "passed"
             },
             "line": 20,
@@ -3355,7 +3359,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:03.034Z",
+        "start_timestamp": "2022-09-28T21:38:54.110Z",
         "line": 23,
         "name": "Verify next link on the last page",
         "description": "",
@@ -3363,6 +3367,7 @@
         "after": [
           {
             "result": {
+              "duration": 9000000,
               "status": "passed"
             },
             "match": {
@@ -3375,7 +3380,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 24,
@@ -3387,7 +3392,7 @@
           },
           {
             "result": {
-              "duration": 174000000,
+              "duration": 94000000,
               "status": "passed"
             },
             "line": 25,
@@ -3399,7 +3404,7 @@
           },
           {
             "result": {
-              "duration": 47000000,
+              "duration": 53000000,
               "status": "passed"
             },
             "line": 26,
@@ -3440,7 +3445,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:18:03.304Z",
+        "start_timestamp": "2022-09-28T21:38:54.276Z",
         "line": 5,
         "name": "Verify that the results are displayed in Ascending order of Program name",
         "description": "",
@@ -3448,7 +3453,6 @@
         "after": [
           {
             "result": {
-              "duration": 3000000,
               "status": "passed"
             },
             "match": {
@@ -3461,7 +3465,7 @@
         "steps": [
           {
             "result": {
-              "duration": 172000000,
+              "duration": 66000000,
               "status": "passed"
             },
             "line": 6,
@@ -3473,7 +3477,7 @@
           },
           {
             "result": {
-              "duration": 2199000000,
+              "duration": 2092000000,
               "status": "passed"
             },
             "line": 7,
@@ -3485,7 +3489,7 @@
           },
           {
             "result": {
-              "duration": 1647000000,
+              "duration": 804000000,
               "status": "passed"
             },
             "line": 8,
@@ -3506,7 +3510,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:07.338Z",
+        "start_timestamp": "2022-09-28T21:38:57.250Z",
         "line": 12,
         "name": "Verify that the results are displayed in Ascending order of Program Description",
         "description": "",
@@ -3526,7 +3530,7 @@
         "steps": [
           {
             "result": {
-              "duration": 122000000,
+              "duration": 87000000,
               "status": "passed"
             },
             "line": 13,
@@ -3538,7 +3542,7 @@
           },
           {
             "result": {
-              "duration": 2223000000,
+              "duration": 2117000000,
               "status": "passed"
             },
             "line": 14,
@@ -3550,7 +3554,7 @@
           },
           {
             "result": {
-              "duration": 1621000000,
+              "duration": 801000000,
               "status": "passed"
             },
             "line": 15,
@@ -3571,7 +3575,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:11.319Z",
+        "start_timestamp": "2022-09-28T21:39:00.265Z",
         "line": 18,
         "name": "Verify that the results are displayed in Ascending order of Program Status",
         "description": "",
@@ -3579,6 +3583,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -3591,7 +3596,7 @@
         "steps": [
           {
             "result": {
-              "duration": 127000000,
+              "duration": 82000000,
               "status": "passed"
             },
             "line": 19,
@@ -3603,7 +3608,7 @@
           },
           {
             "result": {
-              "duration": 2161000000,
+              "duration": 2097000000,
               "status": "passed"
             },
             "line": 20,
@@ -3615,7 +3620,7 @@
           },
           {
             "result": {
-              "duration": 1662000000,
+              "duration": 765000000,
               "status": "passed"
             },
             "line": 21,
@@ -3653,6 +3658,308 @@
     ]
   },
   {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-09-28T21:39:03.218Z",
+        "line": 5,
+        "name": "Verify that the results are displayed in descending order of Program name",
+        "description": "",
+        "id": "validate-the-results-are-displayed-in-descending-order;verify-that-the-results-are-displayed-in-descending-order-of-program-name",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 61000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on first page of Manage Program",
+            "match": {
+              "location": "stepdefinitions.Program_PaginationSteps.user_is_on_first_page_of_manage_program()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2136000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on the descending arrow (down ) near to the Program name",
+            "match": {
+              "location": "stepdefinitions.Program_Descorder.user_clicks_on_the_descending_arrow_down_near_to_the_program_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 758000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User can see the results in descending order of Program name",
+            "match": {
+              "location": "stepdefinitions.Program_Descorder.user_can_see_the_results_in_descending_order_of_program_name()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desc_orderresults"
+          },
+          {
+            "name": "@name_descorder"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-28T21:39:06.182Z",
+        "line": 12,
+        "name": "Verify that the results are displayed in descending order of Program Description",
+        "description": "",
+        "id": "validate-the-results-are-displayed-in-descending-order;verify-that-the-results-are-displayed-in-descending-order-of-program-description",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on first page of Manage Program",
+            "match": {
+              "location": "stepdefinitions.Program_PaginationSteps.user_is_on_first_page_of_manage_program()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2133000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User clicks on the descending arrow (down ) near to the Program Description",
+            "match": {
+              "location": "stepdefinitions.Program_Descorder.user_clicks_on_the_descending_arrow_down_near_to_the_program_description()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 724000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User can see the results in descending order of Program Description",
+            "match": {
+              "location": "stepdefinitions.Program_Descorder.user_can_see_the_results_in_descending_order_of_program_description()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desc_orderresults"
+          },
+          {
+            "name": "@description_desccorder"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-28T21:39:09.116Z",
+        "line": 18,
+        "name": "Verify that the results are displayed in descending order of Program Status",
+        "description": "",
+        "id": "validate-the-results-are-displayed-in-descending-order;verify-that-the-results-are-displayed-in-descending-order-of-program-status",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 72000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is on first page of Manage Program",
+            "match": {
+              "location": "stepdefinitions.Program_PaginationSteps.user_is_on_first_page_of_manage_program()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2129000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User clicks on the descending arrow (down ) near to the Program status",
+            "match": {
+              "location": "stepdefinitions.Program_Descorder.user_clicks_on_the_descending_arrow_down_near_to_the_program_status()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 787000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User can see the results in descending order of Program status",
+            "match": {
+              "location": "stepdefinitions.Program_Descorder.user_can_see_the_results_in_descending_order_of_program_status()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desc_orderresults"
+          },
+          {
+            "name": "@status_descorder"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the Results are displayed in descending order",
+    "description": "",
+    "id": "validate-the-results-are-displayed-in-descending-order",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Feature3programfeatures/step9_3_program_dscorderresults.feature",
+    "tags": [
+      {
+        "name": "@desc_orderresults",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-09-28T21:39:12.115Z",
+        "line": 4,
+        "name": "Validate the heading",
+        "description": "",
+        "id": "assignment-heading;validate-the-heading",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is logged on to LMS website",
+            "match": {
+              "location": "stepdefinitions.Assignment_headingSteps.user_is_logged_on_to_lms_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3088000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Manage Assignment page",
+            "match": {
+              "location": "stepdefinitions.Assignment_headingSteps.user_is_on_manage_assignment_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should see a heading with text \u0027Manage Assignment\u0027 on the Assignment page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Manage Assignment\u0027",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinitions.Assignment_headingSteps.user_should_see_a_heading_with_text_on_the_assignment_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@assign_heading"
+          }
+        ]
+      }
+    ],
+    "name": "Assignment Heading",
+    "description": "",
+    "id": "assignment-heading",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Feature4assignmentfeatures/step1_assignment_Heading.feature",
+    "tags": [
+      {
+        "name": "@assign_heading",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
     "line": 3,
     "elements": [
       {
@@ -3664,6 +3971,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 8,
@@ -3675,7 +3983,7 @@
           },
           {
             "result": {
-              "duration": 3202000000,
+              "duration": 3056000000,
               "status": "passed"
             },
             "line": 9,
@@ -3688,7 +3996,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:15.285Z",
+        "start_timestamp": "2022-09-28T21:39:15.249Z",
         "line": 11,
         "name": "Validate the text below the table",
         "description": "",
@@ -3708,7 +4016,7 @@
         "steps": [
           {
             "result": {
-              "duration": 79000000,
+              "duration": 40000000,
               "status": "passed"
             },
             "line": 12,
@@ -3751,7 +4059,7 @@
           },
           {
             "result": {
-              "duration": 3069000000,
+              "duration": 3060000000,
               "status": "passed"
             },
             "line": 9,
@@ -3764,7 +4072,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:18.598Z",
+        "start_timestamp": "2022-09-28T21:39:18.353Z",
         "line": 14,
         "name": "Validate the footer",
         "description": "",
@@ -3784,7 +4092,7 @@
         "steps": [
           {
             "result": {
-              "duration": 63000000,
+              "duration": 34000000,
               "status": "passed"
             },
             "line": 15,
@@ -3828,7 +4136,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:18:21.755Z",
+        "start_timestamp": "2022-09-28T21:39:21.456Z",
         "line": 5,
         "name": "Verify that the results are displayed in Ascending order of Assignment name",
         "description": "",
@@ -3836,6 +4144,7 @@
         "after": [
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -3848,7 +4157,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3064000000,
+              "duration": 3056000000,
               "status": "passed"
             },
             "line": 6,
@@ -3860,6 +4169,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 7,
@@ -3888,7 +4198,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:24.837Z",
+        "start_timestamp": "2022-09-28T21:39:24.523Z",
         "line": 10,
         "name": "Verify that the results are displayed in Ascending order of Assignment Description",
         "description": "",
@@ -3908,7 +4218,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3087000000,
+              "duration": 3063000000,
               "status": "passed"
             },
             "line": 11,
@@ -3920,7 +4230,7 @@
           },
           {
             "result": {
-              "duration": 2213000000,
+              "duration": 2102000000,
               "status": "passed"
             },
             "line": 12,
@@ -3932,7 +4242,7 @@
           },
           {
             "result": {
-              "duration": 203000000,
+              "duration": 120000000,
               "status": "passed"
             },
             "line": 13,
@@ -3970,7 +4280,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:18:30.370Z",
+        "start_timestamp": "2022-09-28T21:39:29.819Z",
         "line": 4,
         "name": "Validate Search Feature",
         "description": "",
@@ -3978,6 +4288,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -4001,7 +4312,7 @@
           },
           {
             "result": {
-              "duration": 3091000000,
+              "duration": 3051000000,
               "status": "passed"
             },
             "line": 6,
@@ -4013,7 +4324,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 33000000,
               "status": "passed"
             },
             "line": 7,
@@ -4037,7 +4348,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:33.539Z",
+        "start_timestamp": "2022-09-28T21:39:32.911Z",
         "line": 9,
         "name": "Search Assignment By Name",
         "description": "",
@@ -4068,7 +4379,7 @@
           },
           {
             "result": {
-              "duration": 2273000000,
+              "duration": 2159000000,
               "status": "passed"
             },
             "line": 11,
@@ -4080,7 +4391,7 @@
           },
           {
             "result": {
-              "duration": 2346000000,
+              "duration": 2186000000,
               "status": "passed"
             },
             "line": 12,
@@ -4118,7 +4429,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:18:38.174Z",
+        "start_timestamp": "2022-09-28T21:39:37.259Z",
         "line": 4,
         "name": "validate add new assignment",
         "description": "",
@@ -4126,7 +4437,7 @@
         "after": [
           {
             "result": {
-              "duration": 3000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -4139,7 +4450,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3084000000,
+              "duration": 3074000000,
               "status": "passed"
             },
             "line": 5,
@@ -4151,7 +4462,7 @@
           },
           {
             "result": {
-              "duration": 385000000,
+              "duration": 227000000,
               "status": "passed"
             },
             "line": 6,
@@ -4163,7 +4474,7 @@
           },
           {
             "result": {
-              "duration": 192000000,
+              "duration": 120000000,
               "status": "passed"
             },
             "line": 7,
@@ -4176,12 +4487,12 @@
         ],
         "tags": [
           {
-            "name": "@assign_new"
+            "name": "@assign_add"
           }
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:41.858Z",
+        "start_timestamp": "2022-09-28T21:39:40.688Z",
         "line": 9,
         "name": "Empty form submission",
         "description": "",
@@ -4212,7 +4523,7 @@
           },
           {
             "result": {
-              "duration": 302000000,
+              "duration": 172000000,
               "status": "passed"
             },
             "line": 11,
@@ -4224,6 +4535,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 12,
@@ -4242,12 +4554,12 @@
         ],
         "tags": [
           {
-            "name": "@assign_new"
+            "name": "@assign_add"
           }
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:42.184Z",
+        "start_timestamp": "2022-09-28T21:39:40.869Z",
         "line": 14,
         "name": "Enter Assignment Name",
         "description": "",
@@ -4267,7 +4579,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 15,
@@ -4279,7 +4591,7 @@
           },
           {
             "result": {
-              "duration": 321000000,
+              "duration": 178000000,
               "status": "passed"
             },
             "line": 16,
@@ -4291,7 +4603,7 @@
           },
           {
             "result": {
-              "duration": 130000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 17,
@@ -4304,12 +4616,12 @@
         ],
         "tags": [
           {
-            "name": "@assign_new"
+            "name": "@assign_add"
           }
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:42.656Z",
+        "start_timestamp": "2022-09-28T21:39:41.119Z",
         "line": 19,
         "name": "Enter Assignment Description",
         "description": "",
@@ -4340,7 +4652,7 @@
           },
           {
             "result": {
-              "duration": 229000000,
+              "duration": 139000000,
               "status": "passed"
             },
             "line": 21,
@@ -4352,7 +4664,7 @@
           },
           {
             "result": {
-              "duration": 107000000,
+              "duration": 71000000,
               "status": "passed"
             },
             "line": 22,
@@ -4365,12 +4677,12 @@
         ],
         "tags": [
           {
-            "name": "@assign_new"
+            "name": "@assign_add"
           }
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:43.006Z",
+        "start_timestamp": "2022-09-28T21:39:41.338Z",
         "line": 24,
         "name": "Enter assignment grade",
         "description": "",
@@ -4378,7 +4690,6 @@
         "after": [
           {
             "result": {
-              "duration": 3000000,
               "status": "passed"
             },
             "match": {
@@ -4402,7 +4713,7 @@
           },
           {
             "result": {
-              "duration": 264000000,
+              "duration": 142000000,
               "status": "passed"
             },
             "line": 26,
@@ -4414,7 +4725,7 @@
           },
           {
             "result": {
-              "duration": 103000000,
+              "duration": 68000000,
               "status": "passed"
             },
             "line": 27,
@@ -4427,12 +4738,12 @@
         ],
         "tags": [
           {
-            "name": "@assign_new"
+            "name": "@assign_add"
           }
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:43.404Z",
+        "start_timestamp": "2022-09-28T21:39:41.553Z",
         "line": 29,
         "name": "Enter assignment due date",
         "description": "",
@@ -4440,6 +4751,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -4452,6 +4764,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 30,
@@ -4463,7 +4776,7 @@
           },
           {
             "result": {
-              "duration": 406000000,
+              "duration": 208000000,
               "status": "passed"
             },
             "line": 31,
@@ -4475,7 +4788,7 @@
           },
           {
             "result": {
-              "duration": 120000000,
+              "duration": 59000000,
               "status": "passed"
             },
             "line": 32,
@@ -4488,12 +4801,12 @@
         ],
         "tags": [
           {
-            "name": "@assign_new"
+            "name": "@assign_add"
           }
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:43.956Z",
+        "start_timestamp": "2022-09-28T21:39:41.832Z",
         "line": 34,
         "name": "Click Cancel",
         "description": "",
@@ -4501,6 +4814,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -4524,7 +4838,7 @@
           },
           {
             "result": {
-              "duration": 112000000,
+              "duration": 57000000,
               "status": "passed"
             },
             "line": 36,
@@ -4536,7 +4850,7 @@
           },
           {
             "result": {
-              "duration": 41000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 37,
@@ -4549,12 +4863,12 @@
         ],
         "tags": [
           {
-            "name": "@assign_new"
+            "name": "@assign_add"
           }
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:44.125Z",
+        "start_timestamp": "2022-09-28T21:39:41.916Z",
         "line": 40,
         "name": "Click Save",
         "description": "",
@@ -4585,7 +4899,7 @@
           },
           {
             "result": {
-              "duration": 168000000,
+              "duration": 64000000,
               "status": "passed"
             },
             "line": 42,
@@ -4597,6 +4911,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 43,
@@ -4615,7 +4930,7 @@
         ],
         "tags": [
           {
-            "name": "@assign_new"
+            "name": "@assign_add"
           }
         ]
       }
@@ -4627,7 +4942,7 @@
     "uri": "file:src/test/resources/features/Feature4assignmentfeatures/step5_assignment_add.feature",
     "tags": [
       {
-        "name": "@assign_new",
+        "name": "@assign_add",
         "type": "Tag",
         "location": {
           "line": 1,
@@ -4640,11 +4955,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:18:44.312Z",
+        "start_timestamp": "2022-09-28T21:39:41.989Z",
         "line": 4,
-        "name": "",
+        "name": "Click Delete",
         "description": "",
-        "id": "delete-assignment;",
+        "id": "delete-assignment;click-delete",
         "after": [
           {
             "result": {
@@ -4660,6 +4975,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 5,
@@ -4671,7 +4987,7 @@
           },
           {
             "result": {
-              "duration": 390000000,
+              "duration": 258000000,
               "status": "passed"
             },
             "line": 6,
@@ -4683,7 +4999,7 @@
           },
           {
             "result": {
-              "duration": 77000000,
+              "duration": 34000000,
               "status": "passed"
             },
             "line": 7,
@@ -4701,7 +5017,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:44.794Z",
+        "start_timestamp": "2022-09-28T21:39:42.298Z",
         "line": 9,
         "name": "Click No",
         "description": "",
@@ -4721,7 +5037,7 @@
         "steps": [
           {
             "result": {
-              "duration": 64000000,
+              "duration": 54000000,
               "status": "passed"
             },
             "line": 10,
@@ -4733,7 +5049,7 @@
           },
           {
             "result": {
-              "duration": 2107000000,
+              "duration": 1064000000,
               "status": "passed"
             },
             "line": 11,
@@ -4762,7 +5078,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:47.000Z",
+        "start_timestamp": "2022-09-28T21:39:43.429Z",
         "line": 14,
         "name": "Click Yes",
         "description": "",
@@ -4782,7 +5098,7 @@
         "steps": [
           {
             "result": {
-              "duration": 61000000,
+              "duration": 31000000,
               "status": "passed"
             },
             "line": 15,
@@ -4794,7 +5110,7 @@
           },
           {
             "result": {
-              "duration": 265000000,
+              "duration": 195000000,
               "status": "passed"
             },
             "line": 16,
@@ -4806,6 +5122,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 17,
@@ -4849,7 +5166,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:18:47.329Z",
+        "start_timestamp": "2022-09-28T21:39:43.669Z",
         "line": 4,
         "name": "Select Assignment",
         "description": "",
@@ -4880,7 +5197,7 @@
           },
           {
             "result": {
-              "duration": 292000000,
+              "duration": 187000000,
               "status": "passed"
             },
             "line": 6,
@@ -4892,7 +5209,7 @@
           },
           {
             "result": {
-              "duration": 33000000,
+              "duration": 26000000,
               "status": "passed"
             },
             "line": 7,
@@ -4910,7 +5227,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:47.701Z",
+        "start_timestamp": "2022-09-28T21:39:43.891Z",
         "line": 9,
         "name": "Edit Feature",
         "description": "",
@@ -4918,7 +5235,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -4931,6 +5247,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 10,
@@ -4942,7 +5259,7 @@
           },
           {
             "result": {
-              "duration": 216000000,
+              "duration": 90000000,
               "status": "passed"
             },
             "line": 11,
@@ -4954,7 +5271,7 @@
           },
           {
             "result": {
-              "duration": 95000000,
+              "duration": 39000000,
               "status": "passed"
             },
             "line": 12,
@@ -4972,7 +5289,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:48.028Z",
+        "start_timestamp": "2022-09-28T21:39:44.029Z",
         "line": 14,
         "name": "Edit Assignment Name",
         "description": "",
@@ -4980,6 +5297,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -4992,6 +5310,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 15,
@@ -5003,7 +5322,7 @@
           },
           {
             "result": {
-              "duration": 333000000,
+              "duration": 200000000,
               "status": "passed"
             },
             "line": 16,
@@ -5015,7 +5334,7 @@
           },
           {
             "result": {
-              "duration": 112000000,
+              "duration": 62000000,
               "status": "passed"
             },
             "line": 17,
@@ -5033,7 +5352,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:48.503Z",
+        "start_timestamp": "2022-09-28T21:39:44.301Z",
         "line": 19,
         "name": "Edit Assignment Description",
         "description": "",
@@ -5053,7 +5372,6 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 20,
@@ -5065,7 +5383,7 @@
           },
           {
             "result": {
-              "duration": 222000000,
+              "duration": 131000000,
               "status": "passed"
             },
             "line": 21,
@@ -5077,7 +5395,7 @@
           },
           {
             "result": {
-              "duration": 114000000,
+              "duration": 56000000,
               "status": "passed"
             },
             "line": 22,
@@ -5095,7 +5413,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:48.858Z",
+        "start_timestamp": "2022-09-28T21:39:44.496Z",
         "line": 24,
         "name": "Edit Assignment Grade",
         "description": "",
@@ -5126,7 +5444,7 @@
           },
           {
             "result": {
-              "duration": 268000000,
+              "duration": 125000000,
               "status": "passed"
             },
             "line": 26,
@@ -5138,7 +5456,7 @@
           },
           {
             "result": {
-              "duration": 112000000,
+              "duration": 66000000,
               "status": "passed"
             },
             "line": 27,
@@ -5156,7 +5474,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:49.267Z",
+        "start_timestamp": "2022-09-28T21:39:44.696Z",
         "line": 29,
         "name": "Edit Assignment Due Date",
         "description": "",
@@ -5164,7 +5482,7 @@
         "after": [
           {
             "result": {
-              "duration": 9000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -5188,7 +5506,7 @@
           },
           {
             "result": {
-              "duration": 319000000,
+              "duration": 161000000,
               "status": "passed"
             },
             "line": 31,
@@ -5200,7 +5518,7 @@
           },
           {
             "result": {
-              "duration": 117000000,
+              "duration": 81000000,
               "status": "passed"
             },
             "line": 32,
@@ -5218,7 +5536,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:49.729Z",
+        "start_timestamp": "2022-09-28T21:39:44.946Z",
         "line": 34,
         "name": "Click Cancel",
         "description": "",
@@ -5238,6 +5556,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 35,
@@ -5249,7 +5568,7 @@
           },
           {
             "result": {
-              "duration": 121000000,
+              "duration": 56000000,
               "status": "passed"
             },
             "line": 36,
@@ -5261,7 +5580,7 @@
           },
           {
             "result": {
-              "duration": 58000000,
+              "duration": 25000000,
               "status": "passed"
             },
             "line": 37,
@@ -5279,7 +5598,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:49.935Z",
+        "start_timestamp": "2022-09-28T21:39:45.037Z",
         "line": 39,
         "name": "Click Save",
         "description": "",
@@ -5299,6 +5618,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 40,
@@ -5310,7 +5630,7 @@
           },
           {
             "result": {
-              "duration": 126000000,
+              "duration": 76000000,
               "status": "passed"
             },
             "line": 41,
@@ -5365,7 +5685,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:18:50.092Z",
+        "start_timestamp": "2022-09-28T21:39:45.122Z",
         "line": 4,
         "name": "Verify landing in Manage user page",
         "description": "",
@@ -5373,6 +5693,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -5385,7 +5706,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3012000000,
+              "duration": 3006000000,
               "status": "passed"
             },
             "line": 5,
@@ -5397,7 +5718,7 @@
           },
           {
             "result": {
-              "duration": 311000000,
+              "duration": 293000000,
               "status": "passed"
             },
             "line": 6,
@@ -5415,7 +5736,7 @@
           },
           {
             "result": {
-              "duration": 14000000,
+              "duration": 5000000,
               "status": "passed"
             },
             "line": 7,
@@ -5453,7 +5774,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:18:53.440Z",
+        "start_timestamp": "2022-09-28T21:39:48.439Z",
         "line": 4,
         "name": "Verify the manage user page heading",
         "description": "",
@@ -5473,7 +5794,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3007000000,
+              "duration": 3015000000,
               "status": "passed"
             },
             "line": 5,
@@ -5485,7 +5806,7 @@
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 6,
@@ -5497,7 +5818,7 @@
           },
           {
             "result": {
-              "duration": 63000000,
+              "duration": 30000000,
               "status": "passed"
             },
             "line": 7,
@@ -5541,7 +5862,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:18:56.541Z",
+        "start_timestamp": "2022-09-28T21:39:51.489Z",
         "line": 4,
         "name": "Verify the presence of pagination",
         "description": "",
@@ -5561,7 +5882,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3003000000,
+              "duration": 3006000000,
               "status": "passed"
             },
             "line": 5,
@@ -5573,7 +5894,7 @@
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 6,
@@ -5585,7 +5906,7 @@
           },
           {
             "result": {
-              "duration": 59000000,
+              "duration": 30000000,
               "status": "passed"
             },
             "line": 7,
@@ -5603,7 +5924,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:59.624Z",
+        "start_timestamp": "2022-09-28T21:39:54.539Z",
         "line": 9,
         "name": "Verify the pagination control with less rows",
         "description": "",
@@ -5634,7 +5955,7 @@
           },
           {
             "result": {
-              "duration": 27000000,
+              "duration": 10000000,
               "status": "passed"
             },
             "line": 11,
@@ -5652,7 +5973,7 @@
           },
           {
             "result": {
-              "duration": 63000000,
+              "duration": 30000000,
               "status": "passed"
             },
             "line": 12,
@@ -5690,7 +6011,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:18:59.735Z",
+        "start_timestamp": "2022-09-28T21:39:54.579Z",
         "line": 4,
         "name": "Verify table footer",
         "description": "",
@@ -5698,6 +6019,7 @@
         "after": [
           {
             "result": {
+              "duration": 8000000,
               "status": "passed"
             },
             "match": {
@@ -5732,7 +6054,7 @@
           },
           {
             "result": {
-              "duration": 67000000,
+              "duration": 10000000,
               "status": "passed"
             },
             "line": 7,
@@ -5776,7 +6098,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:18:59.814Z",
+        "start_timestamp": "2022-09-28T21:39:54.609Z",
         "line": 4,
         "name": "Verify the presence of Add new user button",
         "description": "",
@@ -5807,6 +6129,7 @@
           },
           {
             "result": {
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 6,
@@ -5818,7 +6141,7 @@
           },
           {
             "result": {
-              "duration": 45000000,
+              "duration": 12000000,
               "status": "passed"
             },
             "line": 7,
@@ -5842,7 +6165,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:18:59.875Z",
+        "start_timestamp": "2022-09-28T21:39:54.639Z",
         "line": 9,
         "name": "Verify the functionality of Add new user button",
         "description": "",
@@ -5873,7 +6196,7 @@
           },
           {
             "result": {
-              "duration": 420000000,
+              "duration": 126000000,
               "status": "passed"
             },
             "line": 11,
@@ -5885,7 +6208,7 @@
           },
           {
             "result": {
-              "duration": 223000000,
+              "duration": 93000000,
               "status": "passed"
             },
             "line": 12,
@@ -5929,7 +6252,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:19:00.550Z",
+        "start_timestamp": "2022-09-28T21:39:54.875Z",
         "line": 4,
         "name": "Verify Table header",
         "description": "",
@@ -5949,7 +6272,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3009000000,
+              "duration": 3018000000,
               "status": "passed"
             },
             "line": 5,
@@ -5972,7 +6295,7 @@
           },
           {
             "result": {
-              "duration": 493000000,
+              "duration": 237000000,
               "status": "passed"
             },
             "line": 7,
@@ -5990,7 +6313,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:19:04.068Z",
+        "start_timestamp": "2022-09-28T21:39:58.139Z",
         "line": 10,
         "name": "Verify the functionality of sort icon present in table header",
         "description": "",
@@ -6010,6 +6333,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 11,
@@ -6021,7 +6345,7 @@
           },
           {
             "result": {
-              "duration": 118000000,
+              "duration": 42000000,
               "status": "passed"
             },
             "line": 12,
@@ -6033,7 +6357,7 @@
           },
           {
             "result": {
-              "duration": 102000000,
+              "duration": 74000000,
               "status": "passed"
             },
             "line": 13,
@@ -6051,7 +6375,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:19:04.304Z",
+        "start_timestamp": "2022-09-28T21:39:58.265Z",
         "line": 15,
         "name": "User checks Checkbox in table header",
         "description": "",
@@ -6071,7 +6395,6 @@
         "steps": [
           {
             "result": {
-              "duration": 11000000,
               "status": "passed"
             },
             "line": 16,
@@ -6083,7 +6406,7 @@
           },
           {
             "result": {
-              "duration": 20370000000,
+              "duration": 20162000000,
               "status": "passed"
             },
             "line": 17,
@@ -6095,7 +6418,7 @@
           },
           {
             "result": {
-              "duration": 177000000,
+              "duration": 141000000,
               "status": "passed"
             },
             "line": 18,
@@ -6113,7 +6436,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:19:24.879Z",
+        "start_timestamp": "2022-09-28T21:40:18.579Z",
         "line": 20,
         "name": "User unchecks Checkbox in table header",
         "description": "",
@@ -6144,7 +6467,7 @@
           },
           {
             "result": {
-              "duration": 1125000000,
+              "duration": 1044000000,
               "status": "passed"
             },
             "line": 22,
@@ -6156,7 +6479,7 @@
           },
           {
             "result": {
-              "duration": 155000000,
+              "duration": 146000000,
               "status": "passed"
             },
             "line": 23,
@@ -6194,7 +6517,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:19:26.177Z",
+        "start_timestamp": "2022-09-28T21:40:19.769Z",
         "line": 4,
         "name": "Verifying the presence of Delete icon in manage user page",
         "description": "",
@@ -6214,7 +6537,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3000000000,
+              "duration": 3016000000,
               "status": "passed"
             },
             "line": 5,
@@ -6237,7 +6560,7 @@
           },
           {
             "result": {
-              "duration": 63000000,
+              "duration": 34000000,
               "status": "passed"
             },
             "line": 7,
@@ -6255,7 +6578,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:19:29.267Z",
+        "start_timestamp": "2022-09-28T21:40:22.829Z",
         "line": 10,
         "name": "Behaviour of delete icon when rows unchecked",
         "description": "",
@@ -6275,7 +6598,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 11,
@@ -6287,7 +6609,7 @@
           },
           {
             "result": {
-              "duration": 168000000,
+              "duration": 150000000,
               "status": "passed"
             },
             "line": 12,
@@ -6299,7 +6621,7 @@
           },
           {
             "result": {
-              "duration": 5429000000,
+              "duration": 5350000000,
               "status": "passed"
             },
             "line": 13,
@@ -6317,7 +6639,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-27T21:19:34.865Z",
+        "start_timestamp": "2022-09-28T21:40:28.335Z",
         "line": 15,
         "name": "Behaviour of delete icon when rows checked",
         "description": "",
@@ -6348,7 +6670,7 @@
           },
           {
             "result": {
-              "duration": 443000000,
+              "duration": 264000000,
               "status": "passed"
             },
             "line": 17,
@@ -6397,7 +6719,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-27T21:19:35.340Z",
+        "start_timestamp": "2022-09-28T21:40:28.604Z",
         "line": 3,
         "name": "Logging out",
         "description": "",
@@ -6417,6 +6739,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 4,
@@ -6428,7 +6751,7 @@
           },
           {
             "result": {
-              "duration": 144000000,
+              "duration": 64000000,
               "status": "passed"
             },
             "line": 5,
@@ -6440,7 +6763,7 @@
           },
           {
             "result": {
-              "duration": 795000000,
+              "duration": 719000000,
               "status": "passed"
             },
             "line": 6,
