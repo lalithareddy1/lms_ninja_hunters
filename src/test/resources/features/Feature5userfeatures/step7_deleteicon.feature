@@ -16,3 +16,11 @@ Scenario: Behaviour of delete icon when rows checked
 Given User table is displayed in manage user page
 When User checks rows in the user table
 Then Delete icon on the top left corner of the user table enabled
+
+#Scenario: Behavior of delete icon when clicks on delete button when enabled
+#Given User checks rows in the user table
+#When User clicks the delete icon at the top left corner of the user table
+#Then confirm dialogue box should be displayed with text "Are you sure you want to delete the selected Users?"
+#And button with text 'No'
+#And button with text 'Yes' 
+

@@ -423,6 +423,7 @@ public class ProgramPage extends TestBase {
 		return btn_confirm_deletion_dialogbox.isDisplayed();
 	}
 	public void click_yesbtn_fordelete() {
+		if(btn_yes.isDisplayed())
 		btn_yes.click();
 
 	}
@@ -431,8 +432,13 @@ public class ProgramPage extends TestBase {
 	}
 	public void click_No() throws InterruptedException {
 		Thread.sleep(2000);
-		btn_No.click();
+		if(btn_No.isDisplayed())
+
+			{
+			btn_No.click();
+			
 		System.out.println("Clicked No button");
+			}
 
 	}
 	public boolean check_dialogbox_disappear() {
@@ -448,7 +454,7 @@ public class ProgramPage extends TestBase {
 		currentpage_records=driver.findElements(By.xpath("//table/tbody/tr/td[1]"));
 		System.out.println("Current page records are: "+currentpage_records.size());
 
-		for(int row=1;row<=currentpage_records.size();row=row+1)
+		for(int row=1;row<=currentpage_records.size();row=row+4)
 		{
 			WebElement record=driver.findElement(By.xpath("//table/tbody/tr["+row+"]/td[1]"));
 			waitUntillVisibilityOf(record);
@@ -523,12 +529,13 @@ public class ProgramPage extends TestBase {
 	public void goto_lastpage() {
 
 		waitUntillVisibilityOf(lastpage_link);
+		if(lastpage_link.isEnabled())
 		lastpage_link.click();
 	}
-	public String check_nextpagelink() {
+	public void check_nextpagelink() {
 		String actual=next_link.getAttribute("disabled");
 		System.out.println("Disabled attr is present : "+actual);
-		return actual;
+		
 	}
 
 	//Ascending order feature

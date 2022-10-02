@@ -33,6 +33,7 @@ public class UserDeleteiconSteps {
 	public void delete_icon_on_the_top_left_corner_of_the_user_table_disabled() {
 	    // Write code here that turns the phrase above into concrete actions
 		boolean actualValue = userPage.validate_headerDeleteIconEnabled();
+
 		if(actualValue) {
 			Assert.fail();
 		}
@@ -49,10 +50,46 @@ public class UserDeleteiconSteps {
 	@Then("Delete icon on the top left corner of the user table enabled")
 	public void delete_icon_on_the_top_left_corner_of_the_user_table_enabled() {
 	    // Write code here that turns the phrase above into concrete actions
-		//boolean actualValue = userPage.validate_headerDeleteIconEnabled();
-		//System.out.println("sjkkkkkkkkkkh" + actualValue);
-		
+		boolean actualValue = userPage.validate_headerDeleteIconEnabled();
+		if(!actualValue) {
+			Assert.fail();
+
+		}
 
 	}
+	
+	@When("User clicks the delete icon at the top left corner of the user table")
+	public void user_clicks_the_delete_icon_at_the_top_left_corner_of_the_user_table() {
+		
+		userPage.click_headerdeleteIcon();
+		
+	}
+
+	@Then("confirm dialogue box should be displayed with text {string}")
+	public void confirm_dialogue_box_should_be_displayed_with_text(String string) {
+		
+		userPage.deleteTextDialogueBox();
+	    
+	}
+
+	@Then("button with text {string}")
+	public void button_with_text(String expectedValue) {
+		if(expectedValue.equals("Yes")) {
+			String actualValue = userPage.verifyYesButton();
+			if(!actualValue.equals(expectedValue)) {
+				Assert.fail();
+			}
+		}
+		
+		if(expectedValue.equals("No")) {
+			String actualValue = userPage.verifyNoButton();
+			if(!actualValue.equals(expectedValue)) {
+				Assert.fail();
+			}
+		}
+		
+	    
+	}
+
 
 }

@@ -3,15 +3,366 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:37:45.561Z",
+        "start_timestamp": "2022-10-02T17:07:51.707Z",
         "line": 4,
-        "name": "Validating the url",
+        "name": "Validating the heading of Registration form",
         "description": "",
-        "id": "login-page;validating-the-url",
+        "id": "heading;validating-the-heading-of-registration-form",
         "after": [
           {
             "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinitions.Hooks.takeScreenshot(Hooks.java:20)\r\n",
               "duration": 3000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on LMS website",
+            "match": {
+              "location": "stepdefinitions.RegistrationHeadingSteps.user_is_on_lms_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat com.lms.pages.RegistrationPage.registration_click(RegistrationPage.java:45)\r\n\tat stepdefinitions.RegistrationHeadingSteps.user_lands_on_registration_page(RegistrationHeadingSteps.java:25)\r\n\tat ✽.User lands on Registration page(file:///D:/JavaSeleniumExamples/LMSNinjaHuntersBDD/src/test/resources/features/Feature0registerfeatures/Step1_RegistrationHeading.feature:6)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User lands on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationHeadingSteps.user_lands_on_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User sees the registration heading on the form as \u0027Registration Form\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Registration Form\u0027",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.RegistrationHeadingSteps.user_sees_the_registration_heading_on_the_form_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationHeading"
+          }
+        ]
+      }
+    ],
+    "name": "Heading",
+    "description": "",
+    "id": "heading",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Feature0registerfeatures/Step1_RegistrationHeading.feature",
+    "tags": [
+      {
+        "name": "@registrationHeading",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-02T17:07:51.800Z",
+        "line": 4,
+        "name": "Validating the Login button visibility",
+        "description": "",
+        "id": "login-button;validating-the-login-button-visibility",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinitions.Hooks.takeScreenshot(Hooks.java:20)\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on LMS website",
+            "match": {
+              "location": "stepdefinitions.RegistrationHeadingSteps.user_is_on_lms_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat com.lms.pages.RegistrationPage.registration_click(RegistrationPage.java:45)\r\n\tat stepdefinitions.RegistrationHeadingSteps.user_lands_on_registration_page(RegistrationHeadingSteps.java:25)\r\n\tat ✽.User lands on Registration page(file:///D:/JavaSeleniumExamples/LMSNinjaHuntersBDD/src/test/resources/features/Feature0registerfeatures/Step2_RegistrationLogin.feature:6)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User lands on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationHeadingSteps.user_lands_on_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User sees a button with text \u0027Log in\u0027 on the form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Log in\u0027",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.RegistrationLoginSteps.user_sees_a_button_with_text_on_the_form(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationLogin"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:51.818Z",
+        "line": 9,
+        "name": "Validating the Login button functionality",
+        "description": "",
+        "id": "login-button;validating-the-login-button-functionality",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinitions.Hooks.takeScreenshot(Hooks.java:20)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat com.lms.pages.RegistrationPage.click_login(RegistrationPage.java:41)\r\n\tat stepdefinitions.RegistrationLoginSteps.user_selects_the_log_in_button(RegistrationLoginSteps.java:26)\r\n\tat ✽.User selects the Log in Button(file:///D:/JavaSeleniumExamples/LMSNinjaHuntersBDD/src/test/resources/features/Feature0registerfeatures/Step2_RegistrationLogin.feature:11)\r\n",
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User selects the Log in Button",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_selects_the_log_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User lands on Log in page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_lands_on_log_in_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationLogin"
+          }
+        ]
+      }
+    ],
+    "name": "Login Button",
+    "description": "",
+    "id": "login-button",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Feature0registerfeatures/Step2_RegistrationLogin.feature",
+    "tags": [
+      {
+        "name": "@registrationLogin",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-02T17:07:51.833Z",
+        "line": 4,
+        "name": "Validating the Sign Up button visibility",
+        "description": "",
+        "id": "sing-up-button;validating-the-sign-up-button-visibility",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinitions.Hooks.takeScreenshot(Hooks.java:20)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on LMS website",
+            "match": {
+              "location": "stepdefinitions.RegistrationHeadingSteps.user_is_on_lms_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat com.lms.pages.RegistrationPage.registration_click(RegistrationPage.java:45)\r\n\tat stepdefinitions.RegistrationHeadingSteps.user_lands_on_registration_page(RegistrationHeadingSteps.java:25)\r\n\tat ✽.User lands on Registration page(file:///D:/JavaSeleniumExamples/LMSNinjaHuntersBDD/src/test/resources/features/Feature0registerfeatures/Step3_RegistrationSignUp.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User lands on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationHeadingSteps.user_lands_on_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User sees a button with text \u0027Sign Up\u0027 on the form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Sign Up\u0027",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.RegistrationLoginSteps.user_sees_a_button_with_text_on_the_form(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationSignup"
+          }
+        ]
+      }
+    ],
+    "name": "Sing Up Button",
+    "description": "",
+    "id": "sing-up-button",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Feature0registerfeatures/Step3_RegistrationSignUp.feature",
+    "tags": [
+      {
+        "name": "@registrationSignup",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:51.870Z",
+        "line": 7,
+        "name": "User fills the First Name field",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;user-fills-the-first-name-field",
+        "after": [
+          {
+            "result": {
               "status": "passed"
             },
             "match": {
@@ -24,7 +375,2064 @@
         "steps": [
           {
             "result": {
-              "duration": 1687000000,
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User fills the \u0027First Name\u0027 in Alphabets only",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "FirstName",
+                  "John"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "\u0027First Name\u0027 will be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:51.903Z",
+        "line": 12,
+        "name": "User fills the Last Name field",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;user-fills-the-last-name-field",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "User fills the \u0027Last Name\u0027 in Alphabets only",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "LastName",
+                  "Kenny"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "\u0027Last Name\u0027 will be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:51.920Z",
+        "line": 17,
+        "name": "User fills the Address field",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;user-fills-the-address-field",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User fills the \u0027Address Field\u0027 using Alpha Numerics and or Symbols",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Address Field\u0027",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_fills_the_using_alpha_numerics_and_or_symbols(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Address",
+                  "5Talbot Street"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "\u0027Address\u0027 will be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:51.935Z",
+        "line": 22,
+        "name": "User fills the Street Name field",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;user-fills-the-street-name-field",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User fills the \u0027Street Name\u0027 Field using Alpha Numerics and or Symbols",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Street Name\u0027",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_fills_the_field_using_alpha_numerics_and_or_symbols(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "StreetName",
+                  "5Talbot Street"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "\u0027Street Name\u0027 will be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:51.947Z",
+        "line": 27,
+        "name": "User fills the City Name field",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;user-fills-the-city-name-field",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "User fills the \u0027City Name\u0027 in Alphabets only",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "City",
+                  "Torrance"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "\u0027City Name\u0027 will be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:51.957Z",
+        "line": 32,
+        "name": "User selects the State field",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;user-selects-the-state-field",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User selects the respective State Name from the DropBox",
+            "match": {
+              "location": "stepdefinitions.RegistrationSteps.user_selects_the_respective_state_name_from_the_drop_box(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "State",
+                  "Connecticut"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 35,
+            "name": "\u0027State Name\u0027 will be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:51.967Z",
+        "line": 37,
+        "name": "User fills the Zip field",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;user-fills-the-zip-field",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User fills the 5 digit zip code using Numbers only",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_fills_the_digit_zip_code_using_numbers_only(java.lang.Integer,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "zip",
+                  "90505"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 40,
+            "name": "\u0027Zip Code\u0027 will be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:51.981Z",
+        "line": 42,
+        "name": "User selects the Birth Date",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;user-selects-the-birth-date",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User selects Date of Birth from the calender",
+            "match": {
+              "location": "stepdefinitions.RegistrationSteps.user_selects_date_of_birth_from_the_calender(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "BirthDate",
+                  "04/20/1990"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 45,
+            "name": "\u0027Birth Date\u0027 will be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:51.991Z",
+        "line": 47,
+        "name": "User fills the UserName",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;user-fills-the-username",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User fills the valid unique UserName",
+            "match": {
+              "location": "stepdefinitions.RegistrationSteps.user_fills_the_valid_unique_user_name(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "uniqueName",
+                  "someName@123"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 50,
+            "name": "\u0027UserName\u0027 will be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.006Z",
+        "line": 52,
+        "name": "User fills the Phone Number",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;user-fills-the-phone-number",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "User fills the valid 10 digit Mobile Number in Numerics",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_fills_the_valid_digit_mobile_number_in_numerics(java.lang.Integer,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "PhoneNum",
+                  "8739127492"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 55,
+            "name": "\u0027Mobile Number\u0027 will be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.017Z",
+        "line": 57,
+        "name": "User fills the Email",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;user-fills-the-email",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "User fills the valid Email",
+            "match": {
+              "location": "stepdefinitions.RegistrationSteps.user_fills_the_valid_email(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Email",
+                  "John@gmail.com"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 60,
+            "name": "\u0027Email\u0027 will be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.030Z",
+        "line": 62,
+        "name": "User fills the Password",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;user-fills-the-password",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "User fills the valid password with 1 upper case, 1 Numeric and 1 special character and 8 characters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 35
+                },
+                {
+                  "val": "1",
+                  "offset": 49
+                },
+                {
+                  "val": "1",
+                  "offset": 63
+                },
+                {
+                  "val": "8",
+                  "offset": 87
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_fills_the_valid_password_with_upper_case_numeric_and_special_character_and_characters(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Password",
+                  "Testing@1"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 65,
+            "name": "\u0027UserPassword\u0027 will be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.040Z",
+        "line": 67,
+        "name": "Validating the sign Up form with all fields empty",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-sign-up-form-with-all-fields-empty",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "User enters submit button with all fields empty",
+            "match": {
+              "location": "stepdefinitions.RegistrationSteps.user_enters_submit_button_with_all_fields_empty()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "User should get a message \u0027Please fill all fields above\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Please fill all fields above\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.050Z",
+        "line": 71,
+        "name": "Validating the First Name field on Registration Page",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-first-name-field-on-registration-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "User click Sign Up button with invalid \u0027First Name\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027First Name\u0027",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_click_sign_up_button_with_invalid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "User should get a message \u0027Please fill valid First Name\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Please fill valid First Name\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.059Z",
+        "line": 75,
+        "name": "Validating the Last Name field on Registration Page",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-last-name-field-on-registration-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "User click Sign Up button with invalid \u0027Last Name\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Last Name\u0027",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_click_sign_up_button_with_invalid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "User should get a message \u0027Please fill valid Last Name\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Please fill valid Last Name\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.070Z",
+        "line": 79,
+        "name": "Validating the Address field on Registration Page",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-address-field-on-registration-page",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "User click Sign Up button with invalid \u0027Address\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Address\u0027",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_click_sign_up_button_with_invalid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "User should get a message \u0027Please fill valid Address\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Please fill valid Address\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.078Z",
+        "line": 83,
+        "name": "Validating the Zip field on Registration Page",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-zip-field-on-registration-page",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "User click Sign Up button with invalid \u0027Zip\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Zip\u0027",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_click_sign_up_button_with_invalid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "User should get a message \u0027Please fill valid Zip\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Please fill valid Zip\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.088Z",
+        "line": 87,
+        "name": "Validating the City field on Registration Page",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-city-field-on-registration-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "User click Sign Up button with invalid \u0027City\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027City\u0027",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_click_sign_up_button_with_invalid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "User should get a message \u0027Please fill valid City\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Please fill valid City\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.096Z",
+        "line": 91,
+        "name": "Validating the State field on Registration Page",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-state-field-on-registration-page",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "User click Sign Up button with invalid \u0027State\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027State\u0027",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_click_sign_up_button_with_invalid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "User should get a message \u0027Please fill valid State\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Please fill valid State\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.105Z",
+        "line": 95,
+        "name": "Validating the Phone Number field on Registration Page",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-phone-number-field-on-registration-page",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "User click Sign Up button with invalid \u0027Phone Number\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Phone Number\u0027",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_click_sign_up_button_with_invalid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "User should get a message \u0027Please fill valid Phone Number\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Please fill valid Phone Number\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.113Z",
+        "line": 99,
+        "name": "Validating the BirthDate field on Registration Page",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-birthdate-field-on-registration-page",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "User click Sign Up button without selecting BirthDate",
+            "match": {
+              "location": "stepdefinitions.RegistrationSteps.user_click_sign_up_button_without_selecting_birth_date()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "User should get a message \u0027Please select BirthDate\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Please select BirthDate\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.123Z",
+        "line": 103,
+        "name": "Validating the UserName field on Registration Page",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-username-field-on-registration-page",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "User click Sign Up button with invalid \u0027UserName\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027UserName\u0027",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_click_sign_up_button_with_invalid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "User should get a message \u0027Please fill valid UserName\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Please fill valid UserName\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.133Z",
+        "line": 107,
+        "name": "Validating the email field on Registration Page",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-email-field-on-registration-page",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "User click Sign Up button with invalid \u0027Email\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Email\u0027",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_click_sign_up_button_with_invalid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "User should get a message \u0027Please fill valid Email\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Please fill valid Email\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.146Z",
+        "line": 111,
+        "name": "Validating the Password field on Registration Page",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-password-field-on-registration-page",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "User click Sign Up button with invalid \u0027Password\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Password\u0027",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_click_sign_up_button_with_invalid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "User should get a message \u0027Please fill valid Password\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Please fill valid Password\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.154Z",
+        "line": 115,
+        "name": "Validating the signup form with existing username",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-signup-form-with-existing-username",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 116,
+            "name": "User click Sign Up button with existing userName",
+            "match": {
+              "location": "stepdefinitions.RegistrationSteps.user_click_sign_up_button_with_existing_user_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 117,
+            "name": "User should get a message \u0027Username already exists\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Username already exists\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Registration page",
+            "match": {
+              "location": "stepdefinitions.RegistrationLoginSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T17:07:52.165Z",
+        "line": 119,
+        "name": "Validating the signup form with valid data",
+        "description": "",
+        "id": "validating-text-fields-on-the-registration-page;validating-the-signup-form-with-valid-data",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "User enters all field value and click \u0027Sign Up\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Sign Up\u0027",
+                  "offset": 38
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_enters_all_field_value_and_click_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 121,
+            "name": "User should get a message \u0027Registration Successfull\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Registration Successfull\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.RegistrationSteps.user_should_get_a_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registration"
+          }
+        ]
+      }
+    ],
+    "name": "Validating text fields on the registration page",
+    "description": "",
+    "id": "validating-text-fields-on-the-registration-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Feature0registerfeatures/Step4_Registration.feature",
+    "tags": [
+      {
+        "name": "@registration",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-02T17:07:52.176Z",
+        "line": 4,
+        "name": "Validating the url",
+        "description": "",
+        "id": "login-page;validating-the-url",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.takeScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1672000000,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +2444,7 @@
           },
           {
             "result": {
-              "duration": 4202000000,
+              "duration": 1109000000,
               "status": "passed"
             },
             "line": 6,
@@ -48,7 +2456,7 @@
           },
           {
             "result": {
-              "duration": 12000000,
+              "duration": 9000000,
               "status": "passed"
             },
             "line": 7,
@@ -66,7 +2474,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:51.559Z",
+        "start_timestamp": "2022-10-02T17:07:54.978Z",
         "line": 9,
         "name": "Validating Login functionality with invalid password field",
         "description": "",
@@ -87,7 +2495,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 10,
@@ -99,7 +2506,7 @@
           },
           {
             "result": {
-              "duration": 215000000,
+              "duration": 204000000,
               "status": "passed"
             },
             "line": 11,
@@ -117,7 +2524,7 @@
           },
           {
             "result": {
-              "duration": 235000000,
+              "duration": 289000000,
               "status": "passed"
             },
             "line": 12,
@@ -141,7 +2548,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:52.027Z",
+        "start_timestamp": "2022-10-02T17:07:55.480Z",
         "line": 14,
         "name": "Validating Login functionality with invalid username field",
         "description": "",
@@ -149,7 +2556,7 @@
         "after": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -174,7 +2581,7 @@
           },
           {
             "result": {
-              "duration": 177000000,
+              "duration": 180000000,
               "status": "passed"
             },
             "line": 16,
@@ -192,7 +2599,7 @@
           },
           {
             "result": {
-              "duration": 169000000,
+              "duration": 178000000,
               "status": "passed"
             },
             "line": 17,
@@ -216,7 +2623,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:52.389Z",
+        "start_timestamp": "2022-10-02T17:07:55.852Z",
         "line": 19,
         "name": "Validating Login functionality with valid username and password",
         "description": "",
@@ -224,7 +2631,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -237,7 +2643,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 20,
@@ -249,7 +2654,7 @@
           },
           {
             "result": {
-              "duration": 308000000,
+              "duration": 331000000,
               "status": "passed"
             },
             "line": 21,
@@ -328,7 +2733,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 6,
@@ -341,7 +2745,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:52.715Z",
+        "start_timestamp": "2022-10-02T17:07:56.198Z",
         "line": 11,
         "name": "Verify Visibility of ProgramButton in HomePage",
         "description": "",
@@ -397,7 +2801,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 5,
@@ -421,7 +2824,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:52.761Z",
+        "start_timestamp": "2022-10-02T17:07:56.245Z",
         "line": 15,
         "name": "Verify Visibility of BatchButton in HomePage",
         "description": "",
@@ -441,7 +2844,7 @@
         "steps": [
           {
             "result": {
-              "duration": 25000000,
+              "duration": 43000000,
               "status": "passed"
             },
             "line": 16,
@@ -499,7 +2902,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:52.799Z",
+        "start_timestamp": "2022-10-02T17:07:56.303Z",
         "line": 19,
         "name": "Verify Visibility of UserButton in HomePage",
         "description": "",
@@ -519,7 +2922,7 @@
         "steps": [
           {
             "result": {
-              "duration": 33000000,
+              "duration": 38000000,
               "status": "passed"
             },
             "line": 20,
@@ -554,7 +2957,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 5,
@@ -566,6 +2968,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 6,
@@ -578,7 +2981,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:52.841Z",
+        "start_timestamp": "2022-10-02T17:07:56.350Z",
         "line": 23,
         "name": "Verify Visibility of AssignmentButton in HomePage",
         "description": "",
@@ -598,7 +3001,7 @@
         "steps": [
           {
             "result": {
-              "duration": 30000000,
+              "duration": 31000000,
               "status": "passed"
             },
             "line": 24,
@@ -657,7 +3060,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:52.880Z",
+        "start_timestamp": "2022-10-02T17:07:56.393Z",
         "line": 27,
         "name": "Verify Visibility of AttendanceButton in HomePage",
         "description": "",
@@ -665,6 +3068,7 @@
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -677,7 +3081,7 @@
         "steps": [
           {
             "result": {
-              "duration": 22000000,
+              "duration": 23000000,
               "status": "passed"
             },
             "line": 28,
@@ -712,7 +3116,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 5,
@@ -736,7 +3139,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:52.913Z",
+        "start_timestamp": "2022-10-02T17:07:56.425Z",
         "line": 31,
         "name": "Verify Visibility of LogoutButton in HomePage",
         "description": "",
@@ -756,7 +3159,7 @@
         "steps": [
           {
             "result": {
-              "duration": 36000000,
+              "duration": 19000000,
               "status": "passed"
             },
             "line": 32,
@@ -803,7 +3206,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:37:52.961Z",
+        "start_timestamp": "2022-10-02T17:07:56.451Z",
         "line": 6,
         "name": "Verify  the heading of the Home page",
         "description": "",
@@ -823,7 +3226,6 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 7,
@@ -835,7 +3237,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 8,
@@ -847,7 +3248,7 @@
           },
           {
             "result": {
-              "duration": 33000000,
+              "duration": 22000000,
               "status": "passed"
             },
             "line": 9,
@@ -894,7 +3295,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:37:53.010Z",
+        "start_timestamp": "2022-10-02T17:07:56.484Z",
         "line": 6,
         "name": "Verify  the title of the Home page",
         "description": "",
@@ -902,7 +3303,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -938,7 +3338,7 @@
           },
           {
             "result": {
-              "duration": 5000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 9,
@@ -985,7 +3385,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:37:53.030Z",
+        "start_timestamp": "2022-10-02T17:07:56.494Z",
         "line": 6,
         "name": "Verify  the heading of the Program page",
         "description": "",
@@ -1005,7 +3405,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 7,
@@ -1017,7 +3417,7 @@
           },
           {
             "result": {
-              "duration": 52000000,
+              "duration": 58000000,
               "status": "passed"
             },
             "line": 8,
@@ -1029,7 +3429,7 @@
           },
           {
             "result": {
-              "duration": 38000000,
+              "duration": 34000000,
               "status": "passed"
             },
             "line": 9,
@@ -1096,7 +3496,7 @@
           },
           {
             "result": {
-              "duration": 49000000,
+              "duration": 44000000,
               "status": "passed"
             },
             "line": 6,
@@ -1109,7 +3509,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:53.134Z",
+        "start_timestamp": "2022-10-02T17:07:56.599Z",
         "line": 9,
         "name": "Validate the text below the table",
         "description": "",
@@ -1117,7 +3517,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -1130,7 +3529,7 @@
         "steps": [
           {
             "result": {
-              "duration": 28000000,
+              "duration": 40000000,
               "status": "passed"
             },
             "line": 10,
@@ -1165,7 +3564,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 5,
@@ -1177,7 +3576,7 @@
           },
           {
             "result": {
-              "duration": 54000000,
+              "duration": 41000000,
               "status": "passed"
             },
             "line": 6,
@@ -1190,7 +3589,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:53.228Z",
+        "start_timestamp": "2022-10-02T17:07:56.703Z",
         "line": 13,
         "name": "Validate the footer",
         "description": "",
@@ -1198,7 +3597,6 @@
         "after": [
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -1211,7 +3609,7 @@
         "steps": [
           {
             "result": {
-              "duration": 631000000,
+              "duration": 464000000,
               "status": "passed"
             },
             "line": 14,
@@ -1258,7 +3656,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:37:53.925Z",
+        "start_timestamp": "2022-10-02T17:07:57.217Z",
         "line": 6,
         "name": "Validating the default state of Delete button",
         "description": "",
@@ -1266,7 +3664,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -1279,6 +3676,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 7,
@@ -1290,7 +3688,7 @@
           },
           {
             "result": {
-              "duration": 62000000,
+              "duration": 43000000,
               "status": "passed"
             },
             "line": 8,
@@ -1302,7 +3700,7 @@
           },
           {
             "result": {
-              "duration": 35000000,
+              "duration": 28000000,
               "status": "passed"
             },
             "line": 9,
@@ -1343,7 +3741,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:37:54.037Z",
+        "start_timestamp": "2022-10-02T17:07:57.296Z",
         "line": 6,
         "name": "Validate that number of records displayed",
         "description": "",
@@ -1374,7 +3772,7 @@
           },
           {
             "result": {
-              "duration": 49000000,
+              "duration": 50000000,
               "status": "passed"
             },
             "line": 8,
@@ -1386,7 +3784,7 @@
           },
           {
             "result": {
-              "duration": 33000000,
+              "duration": 35000000,
               "status": "passed"
             },
             "line": 9,
@@ -1427,7 +3825,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:37:54.132Z",
+        "start_timestamp": "2022-10-02T17:07:57.391Z",
         "line": 6,
         "name": "Validate Search Feature",
         "description": "",
@@ -1447,7 +3845,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 7,
@@ -1459,7 +3857,7 @@
           },
           {
             "result": {
-              "duration": 50000000,
+              "duration": 46000000,
               "status": "passed"
             },
             "line": 8,
@@ -1471,7 +3869,7 @@
           },
           {
             "result": {
-              "duration": 41000000,
+              "duration": 31000000,
               "status": "passed"
             },
             "line": 9,
@@ -1498,7 +3896,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:54.237Z",
+        "start_timestamp": "2022-10-02T17:07:57.483Z",
         "line": 13,
         "name": "Search Program By Name",
         "description": "",
@@ -1518,7 +3916,7 @@
         "steps": [
           {
             "result": {
-              "duration": 51000000,
+              "duration": 38000000,
               "status": "passed"
             },
             "line": 14,
@@ -1530,7 +3928,7 @@
           },
           {
             "result": {
-              "duration": 2138000000,
+              "duration": 2128000000,
               "status": "passed"
             },
             "line": 15,
@@ -1542,7 +3940,7 @@
           },
           {
             "result": {
-              "duration": 138000000,
+              "duration": 215000000,
               "status": "passed"
             },
             "line": 16,
@@ -1563,7 +3961,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:56.574Z",
+        "start_timestamp": "2022-10-02T17:07:59.896Z",
         "line": 19,
         "name": "Search Program By Description",
         "description": "",
@@ -1583,7 +3981,7 @@
         "steps": [
           {
             "result": {
-              "duration": 46000000,
+              "duration": 54000000,
               "status": "passed"
             },
             "line": 20,
@@ -1595,7 +3993,7 @@
           },
           {
             "result": {
-              "duration": 2128000000,
+              "duration": 2127000000,
               "status": "passed"
             },
             "line": 21,
@@ -1607,7 +4005,7 @@
           },
           {
             "result": {
-              "duration": 170000000,
+              "duration": 249000000,
               "status": "passed"
             },
             "line": 22,
@@ -1628,7 +4026,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:37:58.919Z",
+        "start_timestamp": "2022-10-02T17:08:02.345Z",
         "line": 26,
         "name": "Search Program By Status",
         "description": "",
@@ -1648,7 +4046,7 @@
         "steps": [
           {
             "result": {
-              "duration": 49000000,
+              "duration": 59000000,
               "status": "passed"
             },
             "line": 27,
@@ -1660,7 +4058,7 @@
           },
           {
             "result": {
-              "duration": 2113000000,
+              "duration": 2134000000,
               "status": "passed"
             },
             "line": 28,
@@ -1672,7 +4070,7 @@
           },
           {
             "result": {
-              "duration": 2045000000,
+              "duration": 2343000000,
               "status": "passed"
             },
             "line": 29,
@@ -1713,7 +4111,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:38:03.135Z",
+        "start_timestamp": "2022-10-02T17:08:06.916Z",
         "line": 6,
         "name": "Select Program",
         "description": "",
@@ -1733,7 +4131,7 @@
         "steps": [
           {
             "result": {
-              "duration": 54000000,
+              "duration": 72000000,
               "status": "passed"
             },
             "line": 7,
@@ -1745,7 +4143,7 @@
           },
           {
             "result": {
-              "duration": 2100000000,
+              "duration": 2125000000,
               "status": "passed"
             },
             "line": 8,
@@ -1757,7 +4155,7 @@
           },
           {
             "result": {
-              "duration": 36000000,
+              "duration": 64000000,
               "status": "passed"
             },
             "line": 9,
@@ -1778,7 +4176,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:05.341Z",
+        "start_timestamp": "2022-10-02T17:08:09.207Z",
         "line": 13,
         "name": "Edit Feature",
         "description": "",
@@ -1786,7 +4184,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -1799,7 +4196,7 @@
         "steps": [
           {
             "result": {
-              "duration": 62000000,
+              "duration": 64000000,
               "status": "passed"
             },
             "line": 14,
@@ -1823,7 +4220,7 @@
           },
           {
             "result": {
-              "duration": 114000000,
+              "duration": 165000000,
               "status": "passed"
             },
             "line": 16,
@@ -1844,7 +4241,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:05.603Z",
+        "start_timestamp": "2022-10-02T17:08:09.543Z",
         "line": 19,
         "name": "Edit Program Name",
         "description": "",
@@ -1864,7 +4261,7 @@
         "steps": [
           {
             "result": {
-              "duration": 98000000,
+              "duration": 143000000,
               "status": "passed"
             },
             "line": 20,
@@ -1876,7 +4273,7 @@
           },
           {
             "result": {
-              "duration": 2125000000,
+              "duration": 2198000000,
               "status": "passed"
             },
             "line": 21,
@@ -1888,7 +4285,7 @@
           },
           {
             "result": {
-              "duration": 32000000,
+              "duration": 48000000,
               "status": "passed"
             },
             "line": 22,
@@ -1909,7 +4306,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:07.875Z",
+        "start_timestamp": "2022-10-02T17:08:11.950Z",
         "line": 25,
         "name": "Edit Program Description",
         "description": "",
@@ -1929,7 +4326,7 @@
         "steps": [
           {
             "result": {
-              "duration": 101000000,
+              "duration": 176000000,
               "status": "passed"
             },
             "line": 26,
@@ -1941,7 +4338,7 @@
           },
           {
             "result": {
-              "duration": 2152000000,
+              "duration": 2169000000,
               "status": "passed"
             },
             "line": 27,
@@ -1953,7 +4350,7 @@
           },
           {
             "result": {
-              "duration": 31000000,
+              "duration": 49000000,
               "status": "passed"
             },
             "line": 28,
@@ -1974,7 +4371,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:10.176Z",
+        "start_timestamp": "2022-10-02T17:08:14.360Z",
         "line": 31,
         "name": "Change Program Status",
         "description": "",
@@ -1994,7 +4391,7 @@
         "steps": [
           {
             "result": {
-              "duration": 103000000,
+              "duration": 158000000,
               "status": "passed"
             },
             "line": 32,
@@ -2006,7 +4403,7 @@
           },
           {
             "result": {
-              "duration": 2105000000,
+              "duration": 2159000000,
               "status": "passed"
             },
             "line": 33,
@@ -2018,7 +4415,7 @@
           },
           {
             "result": {
-              "duration": 25000000,
+              "duration": 32000000,
               "status": "passed"
             },
             "line": 34,
@@ -2039,7 +4436,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:12.424Z",
+        "start_timestamp": "2022-10-02T17:08:16.724Z",
         "line": 37,
         "name": "Click Save",
         "description": "",
@@ -2059,7 +4456,7 @@
         "steps": [
           {
             "result": {
-              "duration": 95000000,
+              "duration": 142000000,
               "status": "passed"
             },
             "line": 38,
@@ -2071,7 +4468,7 @@
           },
           {
             "result": {
-              "duration": 100000000,
+              "duration": 140000000,
               "status": "passed"
             },
             "line": 39,
@@ -2083,7 +4480,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 40,
@@ -2130,7 +4526,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:38:12.630Z",
+        "start_timestamp": "2022-10-02T17:08:17.023Z",
         "line": 5,
         "name": "Select Program",
         "description": "",
@@ -2150,7 +4546,7 @@
         "steps": [
           {
             "result": {
-              "duration": 191000000,
+              "duration": 161000000,
               "status": "passed"
             },
             "line": 6,
@@ -2162,7 +4558,7 @@
           },
           {
             "result": {
-              "duration": 2106000000,
+              "duration": 2136000000,
               "status": "passed"
             },
             "line": 7,
@@ -2174,7 +4570,7 @@
           },
           {
             "result": {
-              "duration": 40000000,
+              "duration": 65000000,
               "status": "passed"
             },
             "line": 8,
@@ -2195,7 +4591,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:14.979Z",
+        "start_timestamp": "2022-10-02T17:08:19.400Z",
         "line": 11,
         "name": "Delete Feature",
         "description": "",
@@ -2203,7 +4599,7 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 8000000,
               "status": "passed"
             },
             "match": {
@@ -2216,7 +4612,7 @@
         "steps": [
           {
             "result": {
-              "duration": 63000000,
+              "duration": 54000000,
               "status": "passed"
             },
             "line": 12,
@@ -2228,7 +4624,7 @@
           },
           {
             "result": {
-              "duration": 69000000,
+              "duration": 74000000,
               "status": "passed"
             },
             "line": 13,
@@ -2240,7 +4636,7 @@
           },
           {
             "result": {
-              "duration": 29000000,
+              "duration": 57000000,
               "status": "passed"
             },
             "line": 14,
@@ -2261,7 +4657,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:15.152Z",
+        "start_timestamp": "2022-10-02T17:08:19.609Z",
         "line": 17,
         "name": "Click Yes",
         "description": "",
@@ -2281,7 +4677,7 @@
         "steps": [
           {
             "result": {
-              "duration": 35000000,
+              "duration": 54000000,
               "status": "passed"
             },
             "line": 18,
@@ -2293,7 +4689,7 @@
           },
           {
             "result": {
-              "duration": 80000000,
+              "duration": 109000000,
               "status": "passed"
             },
             "line": 19,
@@ -2331,7 +4727,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:15.277Z",
+        "start_timestamp": "2022-10-02T17:08:19.788Z",
         "line": 24,
         "name": "Click No",
         "description": "",
@@ -2351,7 +4747,7 @@
         "steps": [
           {
             "result": {
-              "duration": 196000000,
+              "duration": 154000000,
               "status": "passed"
             },
             "line": 25,
@@ -2363,7 +4759,7 @@
           },
           {
             "result": {
-              "duration": 2064000000,
+              "duration": 2135000000,
               "status": "passed"
             },
             "line": 26,
@@ -2415,7 +4811,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:38:17.552Z",
+        "start_timestamp": "2022-10-02T17:08:22.095Z",
         "line": 6,
         "name": "Validate Add New Program",
         "description": "",
@@ -2435,7 +4831,7 @@
         "steps": [
           {
             "result": {
-              "duration": 177000000,
+              "duration": 135000000,
               "status": "passed"
             },
             "line": 7,
@@ -2447,7 +4843,7 @@
           },
           {
             "result": {
-              "duration": 53000000,
+              "duration": 83000000,
               "status": "passed"
             },
             "line": 8,
@@ -2459,7 +4855,7 @@
           },
           {
             "result": {
-              "duration": 101000000,
+              "duration": 167000000,
               "status": "passed"
             },
             "line": 9,
@@ -2480,7 +4876,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:17.894Z",
+        "start_timestamp": "2022-10-02T17:08:22.506Z",
         "line": 12,
         "name": "Empty form submission",
         "description": "",
@@ -2488,7 +4884,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -2501,7 +4896,7 @@
         "steps": [
           {
             "result": {
-              "duration": 97000000,
+              "duration": 170000000,
               "status": "passed"
             },
             "line": 13,
@@ -2513,7 +4908,7 @@
           },
           {
             "result": {
-              "duration": 93000000,
+              "duration": 114000000,
               "status": "passed"
             },
             "line": 14,
@@ -2525,7 +4920,7 @@
           },
           {
             "result": {
-              "duration": 105000000,
+              "duration": 133000000,
               "status": "passed"
             },
             "line": 15,
@@ -2552,7 +4947,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:18.199Z",
+        "start_timestamp": "2022-10-02T17:08:22.949Z",
         "line": 19,
         "name": "Enter Program Name",
         "description": "",
@@ -2572,7 +4967,7 @@
         "steps": [
           {
             "result": {
-              "duration": 103000000,
+              "duration": 130000000,
               "status": "passed"
             },
             "line": 20,
@@ -2584,7 +4979,7 @@
           },
           {
             "result": {
-              "duration": 2091000000,
+              "duration": 2108000000,
               "status": "passed"
             },
             "line": 21,
@@ -2596,7 +4991,7 @@
           },
           {
             "result": {
-              "duration": 63000000,
+              "duration": 89000000,
               "status": "passed"
             },
             "line": 22,
@@ -2617,7 +5012,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:20.467Z",
+        "start_timestamp": "2022-10-02T17:08:25.306Z",
         "line": 25,
         "name": "Enter Program Description",
         "description": "",
@@ -2625,7 +5020,6 @@
         "after": [
           {
             "result": {
-              "duration": 7000000,
               "status": "passed"
             },
             "match": {
@@ -2638,7 +5032,7 @@
         "steps": [
           {
             "result": {
-              "duration": 100000000,
+              "duration": 136000000,
               "status": "passed"
             },
             "line": 26,
@@ -2650,7 +5044,7 @@
           },
           {
             "result": {
-              "duration": 2095000000,
+              "duration": 2087000000,
               "status": "passed"
             },
             "line": 27,
@@ -2662,7 +5056,7 @@
           },
           {
             "result": {
-              "duration": 57000000,
+              "duration": 101000000,
               "status": "passed"
             },
             "line": 28,
@@ -2683,7 +5077,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:22.728Z",
+        "start_timestamp": "2022-10-02T17:08:27.658Z",
         "line": 31,
         "name": "Select Status",
         "description": "",
@@ -2703,7 +5097,7 @@
         "steps": [
           {
             "result": {
-              "duration": 121000000,
+              "duration": 142000000,
               "status": "passed"
             },
             "line": 32,
@@ -2715,7 +5109,7 @@
           },
           {
             "result": {
-              "duration": 2088000000,
+              "duration": 2130000000,
               "status": "passed"
             },
             "line": 33,
@@ -2727,7 +5121,7 @@
           },
           {
             "result": {
-              "duration": 22000000,
+              "duration": 34000000,
               "status": "passed"
             },
             "line": 34,
@@ -2748,7 +5142,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:24.974Z",
+        "start_timestamp": "2022-10-02T17:08:29.986Z",
         "line": 37,
         "name": "Click Save",
         "description": "",
@@ -2768,7 +5162,7 @@
         "steps": [
           {
             "result": {
-              "duration": 95000000,
+              "duration": 150000000,
               "status": "passed"
             },
             "line": 38,
@@ -2780,7 +5174,7 @@
           },
           {
             "result": {
-              "duration": 97000000,
+              "duration": 107000000,
               "status": "passed"
             },
             "line": 39,
@@ -2838,7 +5232,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:38:25.172Z",
+        "start_timestamp": "2022-10-02T17:08:30.260Z",
         "line": 5,
         "name": "Select multiple Program",
         "description": "",
@@ -2858,7 +5252,7 @@
         "steps": [
           {
             "result": {
-              "duration": 195000000,
+              "duration": 138000000,
               "status": "passed"
             },
             "line": 6,
@@ -2870,7 +5264,7 @@
           },
           {
             "result": {
-              "duration": 10554000000,
+              "duration": 4394000000,
               "status": "passed"
             },
             "line": 7,
@@ -2902,7 +5296,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:35.929Z",
+        "start_timestamp": "2022-10-02T17:08:34.817Z",
         "line": 11,
         "name": "Delete Feature",
         "description": "",
@@ -2910,7 +5304,6 @@
         "after": [
           {
             "result": {
-              "duration": 9000000,
               "status": "passed"
             },
             "match": {
@@ -2923,7 +5316,7 @@
         "steps": [
           {
             "result": {
-              "duration": 53000000,
+              "duration": 60000000,
               "status": "passed"
             },
             "line": 12,
@@ -2935,7 +5328,7 @@
           },
           {
             "result": {
-              "duration": 2124000000,
+              "duration": 2144000000,
               "status": "passed"
             },
             "line": 13,
@@ -2947,7 +5340,7 @@
           },
           {
             "result": {
-              "duration": 33000000,
+              "duration": 32000000,
               "status": "passed"
             },
             "line": 14,
@@ -2968,7 +5361,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:38.154Z",
+        "start_timestamp": "2022-10-02T17:08:37.084Z",
         "line": 17,
         "name": "Click Yes",
         "description": "",
@@ -2988,7 +5381,7 @@
         "steps": [
           {
             "result": {
-              "duration": 35000000,
+              "duration": 49000000,
               "status": "passed"
             },
             "line": 18,
@@ -3000,7 +5393,7 @@
           },
           {
             "result": {
-              "duration": 69000000,
+              "duration": 110000000,
               "status": "passed"
             },
             "line": 19,
@@ -3038,7 +5431,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:38.276Z",
+        "start_timestamp": "2022-10-02T17:08:37.260Z",
         "line": 24,
         "name": "Click No",
         "description": "",
@@ -3058,7 +5451,7 @@
         "steps": [
           {
             "result": {
-              "duration": 191000000,
+              "duration": 192000000,
               "status": "passed"
             },
             "line": 25,
@@ -3070,7 +5463,7 @@
           },
           {
             "result": {
-              "duration": 10553000000,
+              "duration": 4345000000,
               "status": "passed"
             },
             "line": 26,
@@ -3082,7 +5475,7 @@
           },
           {
             "result": {
-              "duration": 2097000000,
+              "duration": 2112000000,
               "status": "passed"
             },
             "line": 27,
@@ -3094,7 +5487,7 @@
           },
           {
             "result": {
-              "duration": 2062000000,
+              "duration": 2148000000,
               "status": "passed"
             },
             "line": 28,
@@ -3146,7 +5539,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:38:53.187Z",
+        "start_timestamp": "2022-10-02T17:08:46.079Z",
         "line": 5,
         "name": "Verify previous link on the first page",
         "description": "",
@@ -3166,7 +5559,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 6,
@@ -3178,7 +5570,7 @@
           },
           {
             "result": {
-              "duration": 27000000,
+              "duration": 24000000,
               "status": "passed"
             },
             "line": 7,
@@ -3190,7 +5582,7 @@
           },
           {
             "result": {
-              "duration": 35000000,
+              "duration": 49000000,
               "status": "passed"
             },
             "line": 8,
@@ -3211,7 +5603,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:53.260Z",
+        "start_timestamp": "2022-10-02T17:08:46.190Z",
         "line": 11,
         "name": "Verify next link",
         "description": "",
@@ -3231,7 +5623,6 @@
         "steps": [
           {
             "result": {
-              "duration": 4000000,
               "status": "passed"
             },
             "line": 12,
@@ -3243,7 +5634,7 @@
           },
           {
             "result": {
-              "duration": 109000000,
+              "duration": 118000000,
               "status": "passed"
             },
             "line": 13,
@@ -3255,7 +5646,7 @@
           },
           {
             "result": {
-              "duration": 218000000,
+              "duration": 325000000,
               "status": "passed"
             },
             "line": 14,
@@ -3282,7 +5673,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:53.603Z",
+        "start_timestamp": "2022-10-02T17:08:46.649Z",
         "line": 17,
         "name": "Verify previous link on the first page",
         "description": "",
@@ -3302,7 +5693,7 @@
         "steps": [
           {
             "result": {
-              "duration": 218000000,
+              "duration": 223000000,
               "status": "passed"
             },
             "line": 18,
@@ -3320,7 +5711,7 @@
           },
           {
             "result": {
-              "duration": 71000000,
+              "duration": 96000000,
               "status": "passed"
             },
             "line": 19,
@@ -3332,7 +5723,7 @@
           },
           {
             "result": {
-              "duration": 209000000,
+              "duration": 260000000,
               "status": "passed"
             },
             "line": 20,
@@ -3359,7 +5750,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:54.110Z",
+        "start_timestamp": "2022-10-02T17:08:47.242Z",
         "line": 23,
         "name": "Verify next link on the last page",
         "description": "",
@@ -3367,7 +5758,6 @@
         "after": [
           {
             "result": {
-              "duration": 9000000,
               "status": "passed"
             },
             "match": {
@@ -3380,7 +5770,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 24,
@@ -3392,7 +5781,7 @@
           },
           {
             "result": {
-              "duration": 94000000,
+              "duration": 151000000,
               "status": "passed"
             },
             "line": 25,
@@ -3404,7 +5793,7 @@
           },
           {
             "result": {
-              "duration": 53000000,
+              "duration": 49000000,
               "status": "passed"
             },
             "line": 26,
@@ -3445,7 +5834,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:38:54.276Z",
+        "start_timestamp": "2022-10-02T17:08:47.465Z",
         "line": 5,
         "name": "Verify that the results are displayed in Ascending order of Program name",
         "description": "",
@@ -3465,7 +5854,7 @@
         "steps": [
           {
             "result": {
-              "duration": 66000000,
+              "duration": 118000000,
               "status": "passed"
             },
             "line": 6,
@@ -3477,7 +5866,7 @@
           },
           {
             "result": {
-              "duration": 2092000000,
+              "duration": 2158000000,
               "status": "passed"
             },
             "line": 7,
@@ -3489,7 +5878,7 @@
           },
           {
             "result": {
-              "duration": 804000000,
+              "duration": 1011000000,
               "status": "passed"
             },
             "line": 8,
@@ -3510,7 +5899,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:38:57.250Z",
+        "start_timestamp": "2022-10-02T17:08:50.768Z",
         "line": 12,
         "name": "Verify that the results are displayed in Ascending order of Program Description",
         "description": "",
@@ -3530,7 +5919,7 @@
         "steps": [
           {
             "result": {
-              "duration": 87000000,
+              "duration": 88000000,
               "status": "passed"
             },
             "line": 13,
@@ -3542,7 +5931,7 @@
           },
           {
             "result": {
-              "duration": 2117000000,
+              "duration": 2157000000,
               "status": "passed"
             },
             "line": 14,
@@ -3554,7 +5943,7 @@
           },
           {
             "result": {
-              "duration": 801000000,
+              "duration": 1023000000,
               "status": "passed"
             },
             "line": 15,
@@ -3575,7 +5964,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:00.265Z",
+        "start_timestamp": "2022-10-02T17:08:54.060Z",
         "line": 18,
         "name": "Verify that the results are displayed in Ascending order of Program Status",
         "description": "",
@@ -3583,7 +5972,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -3596,7 +5984,7 @@
         "steps": [
           {
             "result": {
-              "duration": 82000000,
+              "duration": 83000000,
               "status": "passed"
             },
             "line": 19,
@@ -3608,7 +5996,7 @@
           },
           {
             "result": {
-              "duration": 2097000000,
+              "duration": 2134000000,
               "status": "passed"
             },
             "line": 20,
@@ -3620,7 +6008,7 @@
           },
           {
             "result": {
-              "duration": 765000000,
+              "duration": 1028000000,
               "status": "passed"
             },
             "line": 21,
@@ -3661,7 +6049,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:39:03.218Z",
+        "start_timestamp": "2022-10-02T17:08:57.343Z",
         "line": 5,
         "name": "Verify that the results are displayed in descending order of Program name",
         "description": "",
@@ -3681,7 +6069,7 @@
         "steps": [
           {
             "result": {
-              "duration": 61000000,
+              "duration": 94000000,
               "status": "passed"
             },
             "line": 6,
@@ -3693,7 +6081,7 @@
           },
           {
             "result": {
-              "duration": 2136000000,
+              "duration": 2189000000,
               "status": "passed"
             },
             "line": 7,
@@ -3705,7 +6093,7 @@
           },
           {
             "result": {
-              "duration": 758000000,
+              "duration": 1006000000,
               "status": "passed"
             },
             "line": 8,
@@ -3726,7 +6114,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:06.182Z",
+        "start_timestamp": "2022-10-02T17:09:00.658Z",
         "line": 12,
         "name": "Verify that the results are displayed in descending order of Program Description",
         "description": "",
@@ -3746,7 +6134,7 @@
         "steps": [
           {
             "result": {
-              "duration": 68000000,
+              "duration": 88000000,
               "status": "passed"
             },
             "line": 13,
@@ -3758,7 +6146,7 @@
           },
           {
             "result": {
-              "duration": 2133000000,
+              "duration": 2153000000,
               "status": "passed"
             },
             "line": 14,
@@ -3770,7 +6158,7 @@
           },
           {
             "result": {
-              "duration": 724000000,
+              "duration": 1026000000,
               "status": "passed"
             },
             "line": 15,
@@ -3791,7 +6179,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:09.116Z",
+        "start_timestamp": "2022-10-02T17:09:03.945Z",
         "line": 18,
         "name": "Verify that the results are displayed in descending order of Program Status",
         "description": "",
@@ -3811,7 +6199,7 @@
         "steps": [
           {
             "result": {
-              "duration": 72000000,
+              "duration": 93000000,
               "status": "passed"
             },
             "line": 19,
@@ -3823,7 +6211,7 @@
           },
           {
             "result": {
-              "duration": 2129000000,
+              "duration": 2165000000,
               "status": "passed"
             },
             "line": 20,
@@ -3835,7 +6223,7 @@
           },
           {
             "result": {
-              "duration": 787000000,
+              "duration": 1026000000,
               "status": "passed"
             },
             "line": 21,
@@ -3876,7 +6264,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:39:12.115Z",
+        "start_timestamp": "2022-10-02T17:09:07.250Z",
         "line": 4,
         "name": "Validate the heading",
         "description": "",
@@ -3907,7 +6295,7 @@
           },
           {
             "result": {
-              "duration": 3088000000,
+              "duration": 3126000000,
               "status": "passed"
             },
             "line": 6,
@@ -3919,7 +6307,7 @@
           },
           {
             "result": {
-              "duration": 37000000,
+              "duration": 38000000,
               "status": "passed"
             },
             "line": 7,
@@ -3971,7 +6359,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 8,
@@ -3983,7 +6370,7 @@
           },
           {
             "result": {
-              "duration": 3056000000,
+              "duration": 3058000000,
               "status": "passed"
             },
             "line": 9,
@@ -3996,7 +6383,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:15.249Z",
+        "start_timestamp": "2022-10-02T17:09:10.433Z",
         "line": 11,
         "name": "Validate the text below the table",
         "description": "",
@@ -4016,7 +6403,7 @@
         "steps": [
           {
             "result": {
-              "duration": 40000000,
+              "duration": 36000000,
               "status": "passed"
             },
             "line": 12,
@@ -4059,7 +6446,7 @@
           },
           {
             "result": {
-              "duration": 3060000000,
+              "duration": 3065000000,
               "status": "passed"
             },
             "line": 9,
@@ -4072,7 +6459,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:18.353Z",
+        "start_timestamp": "2022-10-02T17:09:13.547Z",
         "line": 14,
         "name": "Validate the footer",
         "description": "",
@@ -4092,7 +6479,7 @@
         "steps": [
           {
             "result": {
-              "duration": 34000000,
+              "duration": 36000000,
               "status": "passed"
             },
             "line": 15,
@@ -4136,7 +6523,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:39:21.456Z",
+        "start_timestamp": "2022-10-02T17:09:16.663Z",
         "line": 5,
         "name": "Verify that the results are displayed in Ascending order of Assignment name",
         "description": "",
@@ -4144,7 +6531,6 @@
         "after": [
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -4157,7 +6543,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3056000000,
+              "duration": 3067000000,
               "status": "passed"
             },
             "line": 6,
@@ -4169,7 +6555,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 7,
@@ -4198,7 +6583,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:24.523Z",
+        "start_timestamp": "2022-10-02T17:09:19.750Z",
         "line": 10,
         "name": "Verify that the results are displayed in Ascending order of Assignment Description",
         "description": "",
@@ -4218,7 +6603,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3063000000,
+              "duration": 3064000000,
               "status": "passed"
             },
             "line": 11,
@@ -4230,7 +6615,7 @@
           },
           {
             "result": {
-              "duration": 2102000000,
+              "duration": 2127000000,
               "status": "passed"
             },
             "line": 12,
@@ -4242,7 +6627,7 @@
           },
           {
             "result": {
-              "duration": 120000000,
+              "duration": 127000000,
               "status": "passed"
             },
             "line": 13,
@@ -4280,7 +6665,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:39:29.819Z",
+        "start_timestamp": "2022-10-02T17:09:25.091Z",
         "line": 4,
         "name": "Validate Search Feature",
         "description": "",
@@ -4288,7 +6673,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -4312,7 +6696,7 @@
           },
           {
             "result": {
-              "duration": 3051000000,
+              "duration": 3070000000,
               "status": "passed"
             },
             "line": 6,
@@ -4324,7 +6708,7 @@
           },
           {
             "result": {
-              "duration": 33000000,
+              "duration": 46000000,
               "status": "passed"
             },
             "line": 7,
@@ -4348,7 +6732,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:32.911Z",
+        "start_timestamp": "2022-10-02T17:09:28.225Z",
         "line": 9,
         "name": "Search Assignment By Name",
         "description": "",
@@ -4379,7 +6763,7 @@
           },
           {
             "result": {
-              "duration": 2159000000,
+              "duration": 2178000000,
               "status": "passed"
             },
             "line": 11,
@@ -4391,7 +6775,7 @@
           },
           {
             "result": {
-              "duration": 2186000000,
+              "duration": 2238000000,
               "status": "passed"
             },
             "line": 12,
@@ -4429,7 +6813,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:39:37.259Z",
+        "start_timestamp": "2022-10-02T17:09:32.657Z",
         "line": 4,
         "name": "validate add new assignment",
         "description": "",
@@ -4437,7 +6821,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -4450,7 +6833,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3074000000,
+              "duration": 3068000000,
               "status": "passed"
             },
             "line": 5,
@@ -4462,7 +6845,7 @@
           },
           {
             "result": {
-              "duration": 227000000,
+              "duration": 236000000,
               "status": "passed"
             },
             "line": 6,
@@ -4474,7 +6857,7 @@
           },
           {
             "result": {
-              "duration": 120000000,
+              "duration": 186000000,
               "status": "passed"
             },
             "line": 7,
@@ -4492,7 +6875,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:40.688Z",
+        "start_timestamp": "2022-10-02T17:09:36.163Z",
         "line": 9,
         "name": "Empty form submission",
         "description": "",
@@ -4523,7 +6906,7 @@
           },
           {
             "result": {
-              "duration": 172000000,
+              "duration": 194000000,
               "status": "passed"
             },
             "line": 11,
@@ -4535,7 +6918,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 12,
@@ -4559,7 +6941,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:40.869Z",
+        "start_timestamp": "2022-10-02T17:09:36.381Z",
         "line": 14,
         "name": "Enter Assignment Name",
         "description": "",
@@ -4579,7 +6961,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 15,
@@ -4591,7 +6972,7 @@
           },
           {
             "result": {
-              "duration": 178000000,
+              "duration": 227000000,
               "status": "passed"
             },
             "line": 16,
@@ -4603,7 +6984,7 @@
           },
           {
             "result": {
-              "duration": 63000000,
+              "duration": 72000000,
               "status": "passed"
             },
             "line": 17,
@@ -4621,7 +7002,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:41.119Z",
+        "start_timestamp": "2022-10-02T17:09:36.696Z",
         "line": 19,
         "name": "Enter Assignment Description",
         "description": "",
@@ -4652,7 +7033,7 @@
           },
           {
             "result": {
-              "duration": 139000000,
+              "duration": 191000000,
               "status": "passed"
             },
             "line": 21,
@@ -4664,7 +7045,7 @@
           },
           {
             "result": {
-              "duration": 71000000,
+              "duration": 95000000,
               "status": "passed"
             },
             "line": 22,
@@ -4682,7 +7063,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:41.338Z",
+        "start_timestamp": "2022-10-02T17:09:36.999Z",
         "line": 24,
         "name": "Enter assignment grade",
         "description": "",
@@ -4713,7 +7094,7 @@
           },
           {
             "result": {
-              "duration": 142000000,
+              "duration": 197000000,
               "status": "passed"
             },
             "line": 26,
@@ -4725,7 +7106,7 @@
           },
           {
             "result": {
-              "duration": 68000000,
+              "duration": 80000000,
               "status": "passed"
             },
             "line": 27,
@@ -4743,7 +7124,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:41.553Z",
+        "start_timestamp": "2022-10-02T17:09:37.292Z",
         "line": 29,
         "name": "Enter assignment due date",
         "description": "",
@@ -4751,7 +7132,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -4764,7 +7144,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 30,
@@ -4776,7 +7155,7 @@
           },
           {
             "result": {
-              "duration": 208000000,
+              "duration": 209000000,
               "status": "passed"
             },
             "line": 31,
@@ -4788,7 +7167,7 @@
           },
           {
             "result": {
-              "duration": 59000000,
+              "duration": 90000000,
               "status": "passed"
             },
             "line": 32,
@@ -4806,7 +7185,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:41.832Z",
+        "start_timestamp": "2022-10-02T17:09:37.616Z",
         "line": 34,
         "name": "Click Cancel",
         "description": "",
@@ -4814,7 +7193,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -4850,7 +7228,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 26000000,
               "status": "passed"
             },
             "line": 37,
@@ -4868,7 +7246,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:41.916Z",
+        "start_timestamp": "2022-10-02T17:09:37.715Z",
         "line": 40,
         "name": "Click Save",
         "description": "",
@@ -4888,6 +7266,7 @@
         "steps": [
           {
             "result": {
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 41,
@@ -4899,7 +7278,7 @@
           },
           {
             "result": {
-              "duration": 64000000,
+              "duration": 80000000,
               "status": "passed"
             },
             "line": 42,
@@ -4911,7 +7290,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 43,
@@ -4955,7 +7333,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:39:41.989Z",
+        "start_timestamp": "2022-10-02T17:09:37.827Z",
         "line": 4,
         "name": "Click Delete",
         "description": "",
@@ -4975,7 +7353,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 5,
@@ -4987,7 +7365,7 @@
           },
           {
             "result": {
-              "duration": 258000000,
+              "duration": 250000000,
               "status": "passed"
             },
             "line": 6,
@@ -4999,7 +7377,7 @@
           },
           {
             "result": {
-              "duration": 34000000,
+              "duration": 57000000,
               "status": "passed"
             },
             "line": 7,
@@ -5017,7 +7395,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:42.298Z",
+        "start_timestamp": "2022-10-02T17:09:38.158Z",
         "line": 9,
         "name": "Click No",
         "description": "",
@@ -5037,7 +7415,7 @@
         "steps": [
           {
             "result": {
-              "duration": 54000000,
+              "duration": 41000000,
               "status": "passed"
             },
             "line": 10,
@@ -5049,7 +7427,7 @@
           },
           {
             "result": {
-              "duration": 1064000000,
+              "duration": 1090000000,
               "status": "passed"
             },
             "line": 11,
@@ -5061,6 +7439,7 @@
           },
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 12,
@@ -5078,7 +7457,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:43.429Z",
+        "start_timestamp": "2022-10-02T17:09:39.304Z",
         "line": 14,
         "name": "Click Yes",
         "description": "",
@@ -5098,7 +7477,7 @@
         "steps": [
           {
             "result": {
-              "duration": 31000000,
+              "duration": 51000000,
               "status": "passed"
             },
             "line": 15,
@@ -5110,7 +7489,7 @@
           },
           {
             "result": {
-              "duration": 195000000,
+              "duration": 163000000,
               "status": "passed"
             },
             "line": 16,
@@ -5122,7 +7501,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 17,
@@ -5166,7 +7544,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:39:43.669Z",
+        "start_timestamp": "2022-10-02T17:09:39.547Z",
         "line": 4,
         "name": "Select Assignment",
         "description": "",
@@ -5197,7 +7575,7 @@
           },
           {
             "result": {
-              "duration": 187000000,
+              "duration": 252000000,
               "status": "passed"
             },
             "line": 6,
@@ -5209,7 +7587,7 @@
           },
           {
             "result": {
-              "duration": 26000000,
+              "duration": 25000000,
               "status": "passed"
             },
             "line": 7,
@@ -5227,7 +7605,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:43.891Z",
+        "start_timestamp": "2022-10-02T17:09:39.850Z",
         "line": 9,
         "name": "Edit Feature",
         "description": "",
@@ -5235,6 +7613,7 @@
         "after": [
           {
             "result": {
+              "duration": 7000000,
               "status": "passed"
             },
             "match": {
@@ -5247,7 +7626,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 10,
@@ -5259,7 +7637,7 @@
           },
           {
             "result": {
-              "duration": 90000000,
+              "duration": 152000000,
               "status": "passed"
             },
             "line": 11,
@@ -5271,7 +7649,7 @@
           },
           {
             "result": {
-              "duration": 39000000,
+              "duration": 49000000,
               "status": "passed"
             },
             "line": 12,
@@ -5289,7 +7667,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:44.029Z",
+        "start_timestamp": "2022-10-02T17:09:40.076Z",
         "line": 14,
         "name": "Edit Assignment Name",
         "description": "",
@@ -5297,7 +7675,7 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 8000000,
               "status": "passed"
             },
             "match": {
@@ -5310,7 +7688,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 15,
@@ -5322,7 +7699,7 @@
           },
           {
             "result": {
-              "duration": 200000000,
+              "duration": 211000000,
               "status": "passed"
             },
             "line": 16,
@@ -5334,7 +7711,7 @@
           },
           {
             "result": {
-              "duration": 62000000,
+              "duration": 73000000,
               "status": "passed"
             },
             "line": 17,
@@ -5352,7 +7729,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:44.301Z",
+        "start_timestamp": "2022-10-02T17:09:40.378Z",
         "line": 19,
         "name": "Edit Assignment Description",
         "description": "",
@@ -5383,7 +7760,7 @@
           },
           {
             "result": {
-              "duration": 131000000,
+              "duration": 122000000,
               "status": "passed"
             },
             "line": 21,
@@ -5395,7 +7772,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 73000000,
               "status": "passed"
             },
             "line": 22,
@@ -5413,7 +7790,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:44.496Z",
+        "start_timestamp": "2022-10-02T17:09:40.587Z",
         "line": 24,
         "name": "Edit Assignment Grade",
         "description": "",
@@ -5433,6 +7810,7 @@
         "steps": [
           {
             "result": {
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 25,
@@ -5444,7 +7822,7 @@
           },
           {
             "result": {
-              "duration": 125000000,
+              "duration": 205000000,
               "status": "passed"
             },
             "line": 26,
@@ -5456,7 +7834,7 @@
           },
           {
             "result": {
-              "duration": 66000000,
+              "duration": 88000000,
               "status": "passed"
             },
             "line": 27,
@@ -5474,7 +7852,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:44.696Z",
+        "start_timestamp": "2022-10-02T17:09:40.904Z",
         "line": 29,
         "name": "Edit Assignment Due Date",
         "description": "",
@@ -5482,7 +7860,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -5506,7 +7883,7 @@
           },
           {
             "result": {
-              "duration": 161000000,
+              "duration": 210000000,
               "status": "passed"
             },
             "line": 31,
@@ -5518,7 +7895,7 @@
           },
           {
             "result": {
-              "duration": 81000000,
+              "duration": 98000000,
               "status": "passed"
             },
             "line": 32,
@@ -5536,7 +7913,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:44.946Z",
+        "start_timestamp": "2022-10-02T17:09:41.228Z",
         "line": 34,
         "name": "Click Cancel",
         "description": "",
@@ -5556,7 +7933,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 6000000,
               "status": "passed"
             },
             "line": 35,
@@ -5568,7 +7945,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 65000000,
               "status": "passed"
             },
             "line": 36,
@@ -5580,7 +7957,7 @@
           },
           {
             "result": {
-              "duration": 25000000,
+              "duration": 26000000,
               "status": "passed"
             },
             "line": 37,
@@ -5598,7 +7975,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:45.037Z",
+        "start_timestamp": "2022-10-02T17:09:41.349Z",
         "line": 39,
         "name": "Click Save",
         "description": "",
@@ -5618,7 +7995,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 40,
@@ -5630,7 +8006,7 @@
           },
           {
             "result": {
-              "duration": 76000000,
+              "duration": 94000000,
               "status": "passed"
             },
             "line": 41,
@@ -5685,7 +8061,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:39:45.122Z",
+        "start_timestamp": "2022-10-02T17:09:41.455Z",
         "line": 4,
         "name": "Verify landing in Manage user page",
         "description": "",
@@ -5693,7 +8069,6 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -5706,7 +8081,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3006000000,
+              "duration": 3013000000,
               "status": "passed"
             },
             "line": 5,
@@ -5718,7 +8093,7 @@
           },
           {
             "result": {
-              "duration": 293000000,
+              "duration": 310000000,
               "status": "passed"
             },
             "line": 6,
@@ -5736,7 +8111,7 @@
           },
           {
             "result": {
-              "duration": 5000000,
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 7,
@@ -5774,7 +8149,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:39:48.439Z",
+        "start_timestamp": "2022-10-02T17:09:44.818Z",
         "line": 4,
         "name": "Verify the manage user page heading",
         "description": "",
@@ -5794,7 +8169,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3015000000,
+              "duration": 3004000000,
               "status": "passed"
             },
             "line": 5,
@@ -5806,7 +8181,6 @@
           },
           {
             "result": {
-              "duration": 4000000,
               "status": "passed"
             },
             "line": 6,
@@ -5818,7 +8192,7 @@
           },
           {
             "result": {
-              "duration": 30000000,
+              "duration": 41000000,
               "status": "passed"
             },
             "line": 7,
@@ -5862,7 +8236,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:39:51.489Z",
+        "start_timestamp": "2022-10-02T17:09:47.917Z",
         "line": 4,
         "name": "Verify the presence of pagination",
         "description": "",
@@ -5870,6 +8244,7 @@
         "after": [
           {
             "result": {
+              "duration": 14000000,
               "status": "passed"
             },
             "match": {
@@ -5882,7 +8257,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3006000000,
+              "duration": 3005000000,
               "status": "passed"
             },
             "line": 5,
@@ -5894,7 +8269,7 @@
           },
           {
             "result": {
-              "duration": 4000000,
+              "duration": 7000000,
               "status": "passed"
             },
             "line": 6,
@@ -5906,7 +8281,7 @@
           },
           {
             "result": {
-              "duration": 30000000,
+              "duration": 40000000,
               "status": "passed"
             },
             "line": 7,
@@ -5924,7 +8299,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:54.539Z",
+        "start_timestamp": "2022-10-02T17:09:50.985Z",
         "line": 9,
         "name": "Verify the pagination control with less rows",
         "description": "",
@@ -5955,7 +8330,7 @@
           },
           {
             "result": {
-              "duration": 10000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 11,
@@ -5973,7 +8348,7 @@
           },
           {
             "result": {
-              "duration": 30000000,
+              "duration": 36000000,
               "status": "passed"
             },
             "line": 12,
@@ -6011,7 +8386,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:39:54.579Z",
+        "start_timestamp": "2022-10-02T17:09:51.081Z",
         "line": 4,
         "name": "Verify table footer",
         "description": "",
@@ -6019,7 +8394,6 @@
         "after": [
           {
             "result": {
-              "duration": 8000000,
               "status": "passed"
             },
             "match": {
@@ -6054,7 +8428,7 @@
           },
           {
             "result": {
-              "duration": 10000000,
+              "duration": 31000000,
               "status": "passed"
             },
             "line": 7,
@@ -6098,7 +8472,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:39:54.609Z",
+        "start_timestamp": "2022-10-02T17:09:51.128Z",
         "line": 4,
         "name": "Verify the presence of Add new user button",
         "description": "",
@@ -6129,7 +8503,6 @@
           },
           {
             "result": {
-              "duration": 8000000,
               "status": "passed"
             },
             "line": 6,
@@ -6141,7 +8514,7 @@
           },
           {
             "result": {
-              "duration": 12000000,
+              "duration": 31000000,
               "status": "passed"
             },
             "line": 7,
@@ -6165,7 +8538,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:54.639Z",
+        "start_timestamp": "2022-10-02T17:09:51.192Z",
         "line": 9,
         "name": "Verify the functionality of Add new user button",
         "description": "",
@@ -6196,7 +8569,7 @@
           },
           {
             "result": {
-              "duration": 126000000,
+              "duration": 151000000,
               "status": "passed"
             },
             "line": 11,
@@ -6208,7 +8581,7 @@
           },
           {
             "result": {
-              "duration": 93000000,
+              "duration": 123000000,
               "status": "passed"
             },
             "line": 12,
@@ -6252,7 +8625,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:39:54.875Z",
+        "start_timestamp": "2022-10-02T17:09:51.478Z",
         "line": 4,
         "name": "Verify Table header",
         "description": "",
@@ -6260,6 +8633,7 @@
         "after": [
           {
             "result": {
+              "duration": 3000000,
               "status": "passed"
             },
             "match": {
@@ -6272,7 +8646,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3018000000,
+              "duration": 3005000000,
               "status": "passed"
             },
             "line": 5,
@@ -6295,7 +8669,7 @@
           },
           {
             "result": {
-              "duration": 237000000,
+              "duration": 309000000,
               "status": "passed"
             },
             "line": 7,
@@ -6313,7 +8687,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:58.139Z",
+        "start_timestamp": "2022-10-02T17:09:54.807Z",
         "line": 10,
         "name": "Verify the functionality of sort icon present in table header",
         "description": "",
@@ -6333,7 +8707,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 11,
@@ -6345,7 +8718,7 @@
           },
           {
             "result": {
-              "duration": 42000000,
+              "duration": 71000000,
               "status": "passed"
             },
             "line": 12,
@@ -6357,7 +8730,7 @@
           },
           {
             "result": {
-              "duration": 74000000,
+              "duration": 64000000,
               "status": "passed"
             },
             "line": 13,
@@ -6375,7 +8748,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:39:58.265Z",
+        "start_timestamp": "2022-10-02T17:09:54.958Z",
         "line": 15,
         "name": "User checks Checkbox in table header",
         "description": "",
@@ -6406,7 +8779,7 @@
           },
           {
             "result": {
-              "duration": 20162000000,
+              "duration": 20248000000,
               "status": "passed"
             },
             "line": 17,
@@ -6418,7 +8791,7 @@
           },
           {
             "result": {
-              "duration": 141000000,
+              "duration": 142000000,
               "status": "passed"
             },
             "line": 18,
@@ -6436,7 +8809,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:40:18.579Z",
+        "start_timestamp": "2022-10-02T17:10:15.353Z",
         "line": 20,
         "name": "User unchecks Checkbox in table header",
         "description": "",
@@ -6479,7 +8852,7 @@
           },
           {
             "result": {
-              "duration": 146000000,
+              "duration": 145000000,
               "status": "passed"
             },
             "line": 23,
@@ -6517,7 +8890,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:40:19.769Z",
+        "start_timestamp": "2022-10-02T17:10:16.549Z",
         "line": 4,
         "name": "Verifying the presence of Delete icon in manage user page",
         "description": "",
@@ -6537,7 +8910,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3016000000,
+              "duration": 3012000000,
               "status": "passed"
             },
             "line": 5,
@@ -6549,6 +8922,7 @@
           },
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 6,
@@ -6560,7 +8934,7 @@
           },
           {
             "result": {
-              "duration": 34000000,
+              "duration": 30000000,
               "status": "passed"
             },
             "line": 7,
@@ -6578,7 +8952,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:40:22.829Z",
+        "start_timestamp": "2022-10-02T17:10:19.613Z",
         "line": 10,
         "name": "Behaviour of delete icon when rows unchecked",
         "description": "",
@@ -6609,7 +8983,7 @@
           },
           {
             "result": {
-              "duration": 150000000,
+              "duration": 144000000,
               "status": "passed"
             },
             "line": 12,
@@ -6621,7 +8995,7 @@
           },
           {
             "result": {
-              "duration": 5350000000,
+              "duration": 8471000000,
               "status": "passed"
             },
             "line": 13,
@@ -6639,7 +9013,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-28T21:40:28.335Z",
+        "start_timestamp": "2022-10-02T17:10:28.246Z",
         "line": 15,
         "name": "Behaviour of delete icon when rows checked",
         "description": "",
@@ -6670,7 +9044,7 @@
           },
           {
             "result": {
-              "duration": 264000000,
+              "duration": 237000000,
               "status": "passed"
             },
             "line": 17,
@@ -6682,6 +9056,7 @@
           },
           {
             "result": {
+              "duration": 8462000000,
               "status": "passed"
             },
             "line": 18,
@@ -6719,7 +9094,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T21:40:28.604Z",
+        "start_timestamp": "2022-10-02T17:10:36.961Z",
         "line": 3,
         "name": "Logging out",
         "description": "",
@@ -6739,7 +9114,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 6000000,
               "status": "passed"
             },
             "line": 4,
@@ -6751,7 +9126,7 @@
           },
           {
             "result": {
-              "duration": 64000000,
+              "duration": 66000000,
               "status": "passed"
             },
             "line": 5,
@@ -6763,7 +9138,7 @@
           },
           {
             "result": {
-              "duration": 719000000,
+              "duration": 701000000,
               "status": "passed"
             },
             "line": 6,

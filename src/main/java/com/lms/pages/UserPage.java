@@ -73,6 +73,16 @@ public class UserPage extends TestBase {
 	@FindBy(xpath = "(//button[contains(@class,'p-button-danger p-button')])[1]")
 	WebElement header_delete;
 	
+	
+	@FindBy(xpath = "//p-confirmdialog[@class='ng-tns-c133-8']//span[contains(text(), 'Are you')]")
+	WebElement delete_confirm;
+	
+	@FindBy(xpath = "//button//span[text()='Yes']/..")
+	WebElement btn_yes;
+
+	@FindBy(xpath = "//button//span[text()='No']/..")
+	WebElement btn_No;
+	
 	public UserPage() {
 		// TODO Auto-generated constructor stub
 		super();
@@ -112,7 +122,7 @@ public class UserPage extends TestBase {
 	}
 	
 	public void waitUntillElementSelected(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, 5);
+		WebDriverWait wait = new WebDriverWait(driver, 8);
 		try {
 			wait.until(ExpectedConditions.elementToBeSelected(element));
 		} catch (Exception e) {
@@ -327,10 +337,16 @@ public class UserPage extends TestBase {
 	}
 	
 	public boolean validate_headerDeleteIconEnabled() {
-		waitUntillElementSelected(header_checkbox);
-		return header_checkbox.isSelected();
+		waitUntillElementSelected(header_delete);
+		return header_delete.isEnabled();
 
 		
+	}
+	
+	public void isAttributePresent(WebElement element) {
+		
+		String attributeValue = element.getAttribute("disabled");
+		System.out.println("DSYYYYYYYYYYYYYYYYYU" + attributeValue);
 	}
 	
 	public boolean validate_headerIconAfterSelect() {
@@ -339,6 +355,33 @@ public class UserPage extends TestBase {
 		
 	}
 	
+	public void click_headerdeleteIcon() {	
+		driver.findElement(By.xpath("(//span[contains(@class,'p-button-icon pi')])[1]")).click();
+	//	header_delete.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void deleteTextDialogueBox() {
+		waitUntillVisibilityOf(delete_confirm);
+		String text = delete_confirm.getText();
+		System.out.println("Text====================" + text);
+		
+	}
+	
+	public String verifyYesButton() {
+		
+		return btn_yes.getText();
+	}
+	
+	public String verifyNoButton() {
+		
+		 return btn_No.getText();
+	}
 
 	
 	
